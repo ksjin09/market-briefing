@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.05.29</title>
+  <title>미국증시 브리핑 | 2026.06.02</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -36,11 +36,9 @@
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
       background: linear-gradient(90deg, #58a6ff, #3fb950);
     }
-    .index-card.down::before { background: linear-gradient(90deg, #f85149, #ff7b72); }
     .index-name { font-size: 11px; font-weight: 600; color: #8b949e; letter-spacing: 0.06em; margin-bottom: 10px; }
     .index-value { font-size: 22px; font-weight: 700; color: #f0f6fc; letter-spacing: -0.02em; margin-bottom: 6px; }
     .index-change { font-size: 13px; font-weight: 600; color: #3fb950; }
-    .index-change.down { color: #f85149; }
     .index-pts { font-size: 11px; color: #8b949e; margin-top: 2px; }
     .badge {
       display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
@@ -48,15 +46,6 @@
       color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px;
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
-    .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
-    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
-    .weekly-card {
-      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
-      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
-    }
-    .weekly-label { font-size: 12px; color: #8b949e; }
-    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
-    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -70,90 +59,67 @@
     .stock-ticker { font-size: 11px; font-weight: 700; color: #58a6ff; letter-spacing: 0.1em; margin-bottom: 4px; }
     .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; }
     .stock-desc { font-size: 12px; color: #8b949e; line-height: 1.6; }
-    .notice {
-      background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
-      border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
-    }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
-    .monthly-note { font-size: 10px; color: #484f58; margin-top: 4px; text-align: center; }
   </style>
 </head>
 <body>
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.05.29 (금) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.06.02 (화) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">다우 사상 첫 51,000 돌파 — S&P500 9주 연속 상승, 미-이란 협상 기대에 일제히 최고치</div>
+    <div class="subtitle">3대 지수 사상 최고치 동반 경신 — 엔비디아 AI PC칩 발표가 기술주 랠리 견인</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,032</div>
-      <div class="index-change">▲ +0.72%</div>
-      <div class="index-pts">+363.49pt</div>
-      <div class="badge record">첫 51,000 돌파</div>
+      <div class="index-value">51,078</div>
+      <div class="index-change">▲ +0.09%</div>
+      <div class="index-pts">+46.42pt</div>
+      <div class="badge record">ALL-TIME HIGH</div>
     </div>
     <div class="index-card">
-      <div class="index-name">S&P 500</div>
-      <div class="index-value">7,580</div>
-      <div class="index-change">▲ +0.22%</div>
-      <div class="index-pts">+16.43pt</div>
-      <div class="badge record">사상 최고치</div>
+      <div class="index-name">S&amp;P 500</div>
+      <div class="index-value">7,599</div>
+      <div class="index-change">▲ +0.26%</div>
+      <div class="index-pts">+19.90pt</div>
+      <div class="badge record">ALL-TIME HIGH</div>
     </div>
     <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,972</div>
-      <div class="index-change">▲ +0.26%</div>
-      <div class="index-pts">+55.15pt</div>
-      <div class="badge record">사상 최고치</div>
+      <div class="index-value">27,086</div>
+      <div class="index-change">▲ +0.42%</div>
+      <div class="index-pts">+114.19pt</div>
+      <div class="badge record">ALL-TIME HIGH</div>
     </div>
   </div>
-
-  <div class="section-title">5월 월간 성과</div>
-  <div class="weekly-grid">
-    <div class="weekly-card">
-      <span class="weekly-label">다우</span>
-      <span class="weekly-val">+3.0%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">S&P 500</span>
-      <span class="weekly-val">+5.0%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">나스닥</span>
-      <span class="weekly-val">+8.0%</span>
-    </div>
-  </div>
-  <p class="monthly-note" style="margin-bottom: 32px; margin-top: -20px;">※ S&P 500 9주 연속 상승 마감 — 2023년 이후 최장 연승 기록</p>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
+      <div class="issue-icon">🤖</div>
+      <div>
+        <div class="issue-title">엔비디아, AI PC칩 공개 &amp; GTC 대만 — +6.26% 급등</div>
+        <div class="issue-body">젠슨 황 CEO가 대만 GTC에서 AI PC용 새 칩을 발표했고, 마이크로소프트와의 칩 공동 개발 협약도 공개됐다. 엔비디아가 6.26% 폭등하며 나스닥 전체를 끌어올렸고 MS도 2% 이상 상승했다. AI 인프라 투자 사이클이 PC 단말기 영역으로 확장되는 신호탄으로 평가된다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
       <div class="issue-icon">🕊️</div>
       <div>
-        <div class="issue-title">미-이란 휴전 협상 막판 진전 — 유가 1% 이상 하락</div>
-        <div class="issue-body">JD Vance 부통령이 "협상에 매우 근접했다"고 언급하며 시장 기대감이 높아졌다. 파키스탄 외무장관이 중재 역할을 하며 호르무즈 해협 재개방·이란 핵 프로그램 광범위 합의로 나아가는 모양새다. 유가는 WTI 기준 1.4% 하락해 $87.66까지 밀렸고, 인플레이션 우려 완화로 채권 시장도 안정됐다.</div>
+        <div class="issue-title">미국-이란 협상 — 불확실성 속 진행 중</div>
+        <div class="issue-body">트럼프 대통령은 이란과의 종전 MOU가 "1주일 안팎에 가능"하다고 밝혔지만, 이란 측은 핵·호르무즈 해협 확약 요구를 놓고 제동을 걸고 있다. 휴전 기대감 자체가 다우와 에너지 섹터에 단기 지지를 제공 중이나 협상 결렬 시 변동성 확대 가능.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💻</div>
+      <div class="issue-icon">💾</div>
       <div>
-        <div class="issue-title">DELL 어닝 폭발 + 97억 달러 국방부 계약 수주</div>
-        <div class="issue-body">Dell Technologies가 1분기 어닝 서프라이즈와 함께 $9.7B 규모의 미 국방부 AI 서버 계약을 발표하며 당일 +32%, 주간 +40% 폭등했다. Hewlett Packard Enterprise(+16%), NetApp(+17.6%), Okta(+20%) 등 AI 인프라 관련주가 '공감 랠리'를 펼쳤으며, AI 데이터센터 수요가 구체적인 정부 예산으로 확인됐다.</div>
-      </div>
-    </div>
-    <div class="issue-item">
-      <div class="issue-icon">🚀</div>
-      <div>
-        <div class="issue-title">SpaceX IPO — 역대 최대 규모 $75B 공모 임박</div>
-        <div class="issue-body">SpaceX가 6월 4일 공식 IPO 로드쇼를 시작하고 6월 11일 가격 책정에 나선다고 밝혔다. 목표 기업가치는 1.8조 달러로 역대 최대 IPO 기록을 쓸 전망이다. 단, 경쟁사 Blue Origin의 뉴글렌 로켓이 지상 테스트 중 폭발하는 사고가 발생해 우주 테크 섹터 일부 종목(ASTS -17%)은 급락했다.</div>
+        <div class="issue-title">HPE 어닝 서프라이즈 — 시간 외 +29%</div>
+        <div class="issue-body">장 마감 후 HPE가 시장 예상을 크게 웃도는 실적을 발표하며 시간 외 29% 급등했다. AI 서버 수요 급증이 핵심 요인. 전일 델 테크놀로지스(+32%)에 이어 AI 인프라 기업들의 실적 서프라이즈가 연속되는 흐름이다.</div>
       </div>
     </div>
   </div>
@@ -161,42 +127,38 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">DELL</div>
-      <div class="stock-name">Dell Technologies</div>
-      <div class="stock-desc">1분기 어닝 서프라이즈 + $9.7B 펜타곤 AI 서버 계약. 당일 +32%, 주간 +40%. AI 인프라 수요의 정부 예산화가 본격화되는 분기점.</div>
+      <div class="stock-ticker">NVDA</div>
+      <div class="stock-name">엔비디아</div>
+      <div class="stock-desc">AI PC칩 발표로 +6.26% 급등. 대만 GTC에서 새 칩 공개 및 MS 공동개발 협약. 데이터센터를 넘어 엣지 AI 시장 본격 공략.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">SNOW</div>
-      <div class="stock-name">Snowflake</div>
-      <div class="stock-desc">실적 호조로 주간 +40%. 데이터 클라우드 AI 워크로드 수요 급증을 반영. DELL과 함께 이번 주 S&P500·나스닥 최대 기여 종목.</div>
+      <div class="stock-ticker">MSFT</div>
+      <div class="stock-name">마이크로소프트</div>
+      <div class="stock-desc">엔비디아와 AI PC칩 공동개발 발표로 +2%+ 상승. AI 하드웨어-소프트웨어 수직통합 전략 부각.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">OKTA / NTAP</div>
-      <div class="stock-name">Okta · NetApp</div>
-      <div class="stock-desc">각각 어닝 서프라이즈로 +20%, +17.6%. AI 보안·스토리지 인프라 수요 확대가 실적에 직접 반영되는 추세.</div>
+      <div class="stock-ticker">HPE</div>
+      <div class="stock-name">휴렛팩커드 엔터프라이즈</div>
+      <div class="stock-desc">어닝 서프라이즈로 시간 외 +29%. AI 서버 수요가 실적을 크게 초과. DEL에 이어 AI 인프라 랠리 지속.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">GAP / AEO</div>
-      <div class="stock-name">의류·소비재 약세</div>
-      <div class="stock-desc">Gap -16%, American Eagle -10%. 여성 의류 수요 부진과 중동 분쟁에 따른 연료비 상승이 실적을 압박. 저소득 소비자 층의 지출 위축이 가시화.</div>
+      <div class="stock-ticker">AI INFRA</div>
+      <div class="stock-name">AI 인프라 섹터</div>
+      <div class="stock-desc">NVDA·DEL·HPE 연속 강세. 데이터센터→AI PC→엣지로 투자 영역 확장. 섹터 전반 매수세 유입.</div>
     </div>
-  </div>
-
-  <div class="notice">
-    ⚠️ 5/26(월) Memorial Day 휴장 — 4일 단축 거래주. S&P500 5월 배당수익률이 1.08%로 1800년대 이후 최저치 기록 (과열 신호 주의).
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 미-이란 평화협상 성사 시 유가 추가 하락 + 인플레이션 압력 경감으로 Fed 금리 인하 기대 재점화 가능. DELL·SNOW 어닝이 증명한 AI 인프라 실수요는 단순 기대가 아닌 국방·기업 예산으로 확정된 수요. 5월 S&P500 +5%, 나스닥 +8%의 강한 모멘텀.<br/><br/>
-      <strong>주의 요인:</strong> Morgan Stanley가 "AI 트레이드는 매수보다 홀드 시점"이라고 경고 — 1990년대 중반 반도체 과열과 유사한 구도 지적. S&P500 상위 25개 종목이 전체 지수 비중의 52%를 차지하는 극단적 집중. 소비재·소형주(Russell 2000 -0.6%) 약세가 내수 경기 불균형을 시사. 미-이란 협상은 여전히 "확정되지 않은" 상태로 돌변 리스크 존재.<br/><br/>
-      <strong>결론:</strong> 9주 연속 상승이라는 피로 누적 구간이지만, 이란 협상 타결이라는 잠재적 촉매가 남아 있다. 대형 테크·AI 인프라는 실적으로 정당화된 상태지만 추격 매수보다는 기존 포지션 유지가 합리적인 시점.
+      <strong>긍정 요인:</strong> 3대 지수 동반 사상 최고치 경신이라는 강한 모멘텀 지속. 엔비디아 중심의 AI 투자 사이클이 PC 엣지 영역으로 확장되며 실적 서프라이즈가 잇따르고 있다. 미-이란 협상 진전 시 에너지 가격 안정 및 지정학 리스크 완화 기대도 유효.<br/><br/>
+      <strong>주의 요인:</strong> 미-이란 협상 불확실성이 단기 변동성 요인으로 잠재. 이스라엘-레바논 공습 재개 등 중동 정세 불안 지속 중. 고점 경신 이후 차익실현 매물 출회 가능성도 주시 필요.<br/><br/>
+      <strong>결론:</strong> AI 실적 모멘텀이 시장을 이끌고 있지만, 지정학 변수에 따라 단기 흔들림이 올 수 있는 구간. 기술주 비중 유지하되 중동 뉴스 모니터링 병행이 합리적.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: TheStreet, Naver News, Barchart, WebSearch · 생성일시: 2026.06.01
+    데이터 출처: 네이버 뉴스, Stocktwits, Yahoo Finance · 생성일시: 2026.06.02
   </div>
 
 </div>
