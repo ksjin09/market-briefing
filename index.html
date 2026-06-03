@@ -46,6 +46,7 @@
       color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px;
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
+    .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -59,6 +60,8 @@
     .stock-ticker { font-size: 11px; font-weight: 700; color: #58a6ff; letter-spacing: 0.1em; margin-bottom: 4px; }
     .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; }
     .stock-desc { font-size: 12px; color: #8b949e; line-height: 1.6; }
+    .stock-change-pos { font-size: 12px; font-weight: 700; color: #3fb950; margin-bottom: 6px; }
+    .stock-change-neg { font-size: 12px; font-weight: 700; color: #f85149; margin-bottom: 6px; }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
@@ -71,31 +74,31 @@
   <div class="header">
     <div class="date">📊 US Market Briefing · 2026.06.02 (화) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">3대 지수 사상 최고치 동반 경신 — 엔비디아 AI PC칩 발표가 기술주 랠리 견인</div>
+    <div class="subtitle">반도체 AI 랠리로 3대 지수 연일 사상 최고치 — 마블·HPE 폭등, 알파벳은 약세</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,078</div>
-      <div class="index-change">▲ +0.09%</div>
-      <div class="index-pts">+46.42pt</div>
-      <div class="badge record">ALL-TIME HIGH</div>
+      <div class="index-value">51,307.79</div>
+      <div class="index-change">▲ +0.45%</div>
+      <div class="index-pts">+228.91pt</div>
+      <div class="badge record">신고가</div>
     </div>
     <div class="index-card">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,599</div>
-      <div class="index-change">▲ +0.26%</div>
-      <div class="index-pts">+19.90pt</div>
-      <div class="badge record">ALL-TIME HIGH</div>
+      <div class="index-value">7,609.78</div>
+      <div class="index-change">▲ +0.13%</div>
+      <div class="index-pts">+9.82pt</div>
+      <div class="badge record">7600 첫 돌파</div>
     </div>
     <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">27,086</div>
-      <div class="index-change">▲ +0.42%</div>
-      <div class="index-pts">+114.19pt</div>
-      <div class="badge record">ALL-TIME HIGH</div>
+      <div class="index-value">27,093.90</div>
+      <div class="index-change">▲ +0.03%</div>
+      <div class="index-pts">+7.09pt</div>
+      <div class="badge record">신고가</div>
     </div>
   </div>
 
@@ -104,22 +107,29 @@
     <div class="issue-item">
       <div class="issue-icon">🤖</div>
       <div>
-        <div class="issue-title">엔비디아, AI PC칩 공개 &amp; GTC 대만 — +6.26% 급등</div>
-        <div class="issue-body">젠슨 황 CEO가 대만 GTC에서 AI PC용 새 칩을 발표했고, 마이크로소프트와의 칩 공동 개발 협약도 공개됐다. 엔비디아가 6.26% 폭등하며 나스닥 전체를 끌어올렸고 MS도 2% 이상 상승했다. AI 인프라 투자 사이클이 PC 단말기 영역으로 확장되는 신호탄으로 평가된다.</div>
+        <div class="issue-title">AI 반도체 폭풍 — 마블 +33%, HPE +19%</div>
+        <div class="issue-body">엔비디아 CEO 젠슨 황의 발언이 마블 테크놀로지(MRVL) 주가를 하루 만에 33% 끌어올렸다. 휼렛패커드 엔터프라이즈(HPE)도 실적 서프라이즈로 19% 급등하며 AI 인프라 섹터 전반이 강세를 이어갔다. AI 모멘텀이 지정학 리스크를 압도하는 흐름이 계속되고 있다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🕊️</div>
+      <div class="issue-icon">📉</div>
       <div>
-        <div class="issue-title">미국-이란 협상 — 불확실성 속 진행 중</div>
-        <div class="issue-body">트럼프 대통령은 이란과의 종전 MOU가 "1주일 안팎에 가능"하다고 밝혔지만, 이란 측은 핵·호르무즈 해협 확약 요구를 놓고 제동을 걸고 있다. 휴전 기대감 자체가 다우와 에너지 섹터에 단기 지지를 제공 중이나 협상 결렬 시 변동성 확대 가능.</div>
+        <div class="issue-title">알파벳 -4% — 800억 달러 주식 매각 계획 발표</div>
+        <div class="issue-body">구글 모회사 알파벳(GOOGL)이 AI 인프라 투자 자금 마련을 위해 800억 달러 규모의 주식 매각을 발표하면서 주가가 약 4% 하락했다. AI 패권 경쟁에서 뒤처지지 않으려는 공격적 투자지만, 주주 입장에선 희석 우려가 크다. 마이크로소프트도 -4.1% 동반 하락.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💾</div>
+      <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">HPE 어닝 서프라이즈 — 시간 외 +29%</div>
-        <div class="issue-body">장 마감 후 HPE가 시장 예상을 크게 웃도는 실적을 발표하며 시간 외 29% 급등했다. AI 서버 수요 급증이 핵심 요인. 전일 델 테크놀로지스(+32%)에 이어 AI 인프라 기업들의 실적 서프라이즈가 연속되는 흐름이다.</div>
+        <div class="issue-title">미-이란 긴장 속 유가 상승 — WTI $93.51</div>
+        <div class="issue-body">이스라엘의 레바논 공습과 미-이란 핵협상 교착 우려로 호르무즈 해협 물동량이 제한되며 WTI 원유가 1.46% 상승해 배럴당 $93.51을 기록했다. 트럼프 대통령은 협상이 진행 중이라고 밝혔지만 불확실성은 여전하다. 에너지 ETF는 올해 상반기에만 최대 96% 급등했다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">💼</div>
+      <div>
+        <div class="issue-title">JOLTS 구인건수 760만 — 2년 만의 최고치</div>
+        <div class="issue-body">4월 JOLTS 구인건수가 예상을 뛰어넘는 760만건(+4.6%)으로 집계됐다. 노동시장 강세는 경제 안정 신호지만, 연준이 이달 회의에서 금리 인상을 결정할 명분을 강화시킨다. 금요일 발표될 고용보고서(NFP)가 다음 변수다.</div>
       </div>
     </div>
   </div>
@@ -127,38 +137,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">NVDA</div>
-      <div class="stock-name">엔비디아</div>
-      <div class="stock-desc">AI PC칩 발표로 +6.26% 급등. 대만 GTC에서 새 칩 공개 및 MS 공동개발 협약. 데이터센터를 넘어 엣지 AI 시장 본격 공략.</div>
-    </div>
-    <div class="stock-card">
-      <div class="stock-ticker">MSFT</div>
-      <div class="stock-name">마이크로소프트</div>
-      <div class="stock-desc">엔비디아와 AI PC칩 공동개발 발표로 +2%+ 상승. AI 하드웨어-소프트웨어 수직통합 전략 부각.</div>
+      <div class="stock-ticker">MRVL</div>
+      <div class="stock-name">마블 테크놀로지</div>
+      <div class="stock-change-pos">▲ +32.71%</div>
+      <div class="stock-desc">젠슨 황 CEO의 직접 언급으로 하루 만에 33% 급등. AI 커스텀 칩 수요 기대감이 폭발적으로 반영됐다.</div>
     </div>
     <div class="stock-card">
       <div class="stock-ticker">HPE</div>
-      <div class="stock-name">휴렛팩커드 엔터프라이즈</div>
-      <div class="stock-desc">어닝 서프라이즈로 시간 외 +29%. AI 서버 수요가 실적을 크게 초과. DEL에 이어 AI 인프라 랠리 지속.</div>
+      <div class="stock-name">휼렛패커드 엔터프라이즈</div>
+      <div class="stock-change-pos">▲ +19.25%</div>
+      <div class="stock-desc">AI 서버 수요에 힘입어 실적이 기대치를 크게 상회. AI 인프라 공급망 핵심 수혜주로 부각됐다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">AI INFRA</div>
-      <div class="stock-name">AI 인프라 섹터</div>
-      <div class="stock-desc">NVDA·DEL·HPE 연속 강세. 데이터센터→AI PC→엣지로 투자 영역 확장. 섹터 전반 매수세 유입.</div>
+      <div class="stock-ticker">GOOGL</div>
+      <div class="stock-name">알파벳</div>
+      <div class="stock-change-neg">▼ -3.96%</div>
+      <div class="stock-desc">800억 달러 주식 매각으로 투자자 신뢰 흔들. AI 투자 경쟁 심화로 수익성 우려가 재부각됐다.</div>
+    </div>
+    <div class="stock-card">
+      <div class="stock-ticker">PANW</div>
+      <div class="stock-name">팔로알토 네트웍스</div>
+      <div class="stock-change-pos">▲ +8%+ (시간외)</div>
+      <div class="stock-desc">AI 사이버보안 소프트웨어 출시 및 실적 서프라이즈로 시간외 8% 이상 급등. 사이버보안 섹터 주목.</div>
     </div>
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 3대 지수 동반 사상 최고치 경신이라는 강한 모멘텀 지속. 엔비디아 중심의 AI 투자 사이클이 PC 엣지 영역으로 확장되며 실적 서프라이즈가 잇따르고 있다. 미-이란 협상 진전 시 에너지 가격 안정 및 지정학 리스크 완화 기대도 유효.<br/><br/>
-      <strong>주의 요인:</strong> 미-이란 협상 불확실성이 단기 변동성 요인으로 잠재. 이스라엘-레바논 공습 재개 등 중동 정세 불안 지속 중. 고점 경신 이후 차익실현 매물 출회 가능성도 주시 필요.<br/><br/>
-      <strong>결론:</strong> AI 실적 모멘텀이 시장을 이끌고 있지만, 지정학 변수에 따라 단기 흔들림이 올 수 있는 구간. 기술주 비중 유지하되 중동 뉴스 모니터링 병행이 합리적.
+      <strong>긍정 요인:</strong> AI·반도체 모멘텀이 시장 전반을 견인 중. 마블·HPE 같은 중형 AI 인프라주의 폭발적 반응은 수요가 엔비디아 하나에 국한되지 않음을 보여준다. 노동시장 강세도 경기 연착륙 기대를 뒷받침한다.<br/><br/>
+      <strong>주의 요인:</strong> 연준 금리인상 재개 가능성이 높아졌다. JOLTS 데이터 강세 + 유가 상승은 인플레이션 압박 재점화 신호. 알파벳·마이크로소프트 등 빅테크의 대규모 AI 투자가 단기 수익성 훼손으로 이어질 수 있다. 미-이란 지정학 불확실성도 상존한다.<br/><br/>
+      <strong>결론:</strong> AI 모멘텀이 시장을 지지하는 구조는 유효하지만, 금요일 NFP 고용보고서와 연준 통화정책 신호에 따라 변동성이 급격히 확대될 수 있다. 반도체·AI 인프라 섹터 강세 유지, 빅테크 대형주는 선별적 접근 권고.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: 네이버 뉴스, Stocktwits, Yahoo Finance · 생성일시: 2026.06.02
+    데이터 출처: The Motley Fool, Barchart, Yahoo Finance, Naver News · 생성일시: 2026.06.03
   </div>
 
 </div>
