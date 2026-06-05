@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.06.03</title>
+  <title>미국증시 브리핑 | 2026.06.05</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -47,7 +47,16 @@
       padding: 2px 6px; border-radius: 4px; background: rgba(88, 166, 255, 0.15);
       color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px;
     }
+    .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -76,57 +85,80 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.06.03 (수) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.06.04 (THU) 마감 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">미-이란 긴장 재고조로 9연승 끊긴 S&amp;P 500, 다우 620p 급락</div>
+    <div class="subtitle">다우 사상 최고가 경신, 브로드컴 쇼크에 나스닥 혼조 — 기술주에서 은행·헬스케어로 로테이션</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">50,687</div>
-      <div class="index-change down">▼ -1.21%</div>
-      <div class="index-pts">-620.72pt</div>
-      <div class="badge neg">3월 이후 최대 낙폭</div>
+      <div class="index-value">51,561.93</div>
+      <div class="index-change">▲ +1.73%</div>
+      <div class="index-pts">+874.86pt</div>
+      <div class="badge record">ALL-TIME HIGH</div>
     </div>
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,553.68</div>
-      <div class="index-change down">▼ -0.74%</div>
-      <div class="index-pts">-56.10pt</div>
-      <div class="badge neg">9연승 마감</div>
+      <div class="index-value">7,584.31</div>
+      <div class="index-change">▲ +0.41%</div>
+      <div class="index-pts">+30.98pt</div>
+      <div class="badge">안정권 유지</div>
     </div>
     <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,853.98</div>
-      <div class="index-change down">▼ -0.89%</div>
-      <div class="index-pts">-239.93pt</div>
-      <div class="badge neg">연승 행진 중단</div>
+      <div class="index-value">26,830.96</div>
+      <div class="index-change down">▼ -0.09%</div>
+      <div class="index-pts">-24.20pt</div>
+      <div class="badge neg">칩 약세</div>
+    </div>
+  </div>
+
+  <div class="section-title">주간 성과 (금요일 기준 · 목요일 마감까지)</div>
+  <div class="weekly-grid">
+    <div class="weekly-card">
+      <span class="weekly-label">다우</span>
+      <span class="weekly-val">▲ 강세</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">S&amp;P 500</span>
+      <span class="weekly-val down">▼ 소폭 약세</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">나스닥</span>
+      <span class="weekly-val down">▼ -0.97%↓</span>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">💥</div>
+      <div class="issue-icon">🔴</div>
       <div>
-        <div class="issue-title">미-이란 무력 충돌 — 휴전 협상 좌초 위기</div>
-        <div class="issue-body">이란 혁명수비대가 바레인 미 해군 5함대 사령부를 표적으로 공격했다고 발표하면서 종전 협상이 급속히 냉각됐다. 트럼프 대통령은 미군 사망자 발생 시 휴전을 종료할 수 있다고 경고해 긴장이 고조됐다. 국제 유가와 미국채 금리가 동반 상승하며 위험 자산 전반을 압박했다.</div>
+        <div class="issue-title">브로드컴(AVGO) -13% 급락 — AI 반도체 랠리에 제동</div>
+        <div class="issue-body">브로드컴 Q2 FY2026 매출이 $22.19B으로 컨센서스($22.27B)를 소폭 하회했고, 연간 AI 매출 전망도 $56B으로 시장 기대치($57.6B)에 못 미쳤다. AI 매출은 전년 대비 143% 급증($10.8B)했음에도 불구하고 '기대치 미달'에 민감한 시장이 주가를 13% 이상 끌어내리며 반도체 섹터 전반에 하방 압력을 가했다. 마이크론·웨스턴디지털 등 메모리주도 연쇄 하락.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">📉</div>
+      <div class="issue-icon">🟢</div>
       <div>
-        <div class="issue-title">브로드컴(AVGO) 실적 실망 — AI 반도체 기대 꺾여</div>
-        <div class="issue-body">브로드컴이 장 마감 후 발표한 실적과 AI 반도체 매출 전망이 시장 기대치를 하회하면서 시간외 거래에서 급락했다. 반도체 섹터 전반에 매도 압력이 가해졌으며, AI 수요 낙관론에 제동이 걸리는 모양새다. 관련 ETF도 동반 하락하며 기술주 상승세 일부를 반납했다.</div>
+        <div class="issue-title">다우 사상 최고가 51,561 — 은행·헬스케어 주도 로테이션</div>
+        <div class="issue-body">금융 섹터(+1.7%)와 의료보험(UNH 등 managed healthcare)이 다우를 견인하며 사상 최고가를 경신했다. 기술주 약세에도 불구하고 전통 가치주로의 자금 이동이 뚜렷했으며, 원유 하락(-0.89%, WTI $95.17)이 인플레 우려를 줄여 비에너지 섹터에 우호적으로 작용했다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🏆</div>
+      <div class="issue-icon">⚔️</div>
       <div>
-        <div class="issue-title">VOO, 세계 최초 1조 달러 ETF 달성</div>
-        <div class="issue-body">뱅가드 S&amp;P 500 ETF(VOO)가 운용자산 1조 달러를 돌파하며 역사상 처음으로 이 기록을 세운 ETF가 됐다. 연 보수 0.03%의 초저비용 구조가 투자자 이탈을 막으며 블랙록 IVV(8590억 달러), SPDR SPY(7850억 달러)를 크게 앞섰다. 인덱스 투자로의 거대한 자금 흐름을 상징하는 이정표다.</div>
+        <div class="issue-title">미국-이란 긴장 고조 — 지정학 리스크 재부각</div>
+        <div class="issue-body">이번 주 수요일, 미국과 이란 간 교전이 발생하고 GCC 국가들도 타격을 입으면서 에너지 수출 해상 봉쇄가 장기화될 우려가 커졌다. 당일 다우 -1.21%, S&P 500 -0.74%, 나스닥 -0.89%의 급락을 야기했으나, 목요일에는 은행·헬스케어 강세로 부분 회복했다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">🌩️</div>
+      <div>
+        <div class="issue-title">CrowdStrike(CRWD) -11% — 사이버보안 섹터도 흔들</div>
+        <div class="issue-body">보안 기업 크라우드스트라이크가 Q2 매출 가이던스와 함께 비용 증가를 예고하자 주가가 11% 이상 급락했다. 브로드컴과 같은 날 발표된 대형 기술주 실망 보고서가 겹치면서 나스닥 약세를 가중시켰다.</div>
       </div>
     </div>
   </div>
@@ -135,41 +167,41 @@
   <div class="stock-grid">
     <div class="stock-card">
       <div class="stock-ticker">AVGO</div>
-      <div class="stock-name">브로드컴</div>
-      <div class="stock-desc">AI 반도체 매출 전망이 시장 기대치를 밑돌아 시간외 급락. 반도체 섹터 전반의 단기 조정 촉매가 됐다.</div>
+      <div class="stock-name">Broadcom</div>
+      <div class="stock-desc">AI 매출 143% 성장에도 전망치 소폭 미달로 -13% 급락. 반도체 섹터 전체를 짓눌렀다. AI 칩 랠리의 과열 논쟁을 재점화.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">TSLA / GOOGL / META</div>
-      <div class="stock-name">빅테크 · 전기차</div>
-      <div class="stock-desc">중동 리스크와 금리 상승으로 성장주 차익 매물 출회. 연간 고점 대비 일부 되돌림 진행 중.</div>
+      <div class="stock-ticker">UNH</div>
+      <div class="stock-name">UnitedHealth Group</div>
+      <div class="stock-desc">다우 최고가를 이끈 헬스케어 강자. 기술주 로테이션 수혜 섹터로 부각. 방어주 선호 심리와 맞물려 강세.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">OIL / XLE</div>
-      <div class="stock-name">에너지 섹터</div>
-      <div class="stock-desc">미-이란 긴장 재고조로 국제 유가 상승. 에너지 관련주는 상대적 강세를 보이며 시장 하락을 방어했다.</div>
+      <div class="stock-ticker">XLF</div>
+      <div class="stock-name">금융 섹터 (Banks)</div>
+      <div class="stock-desc">섹터 전체 +1.7% 상승. 원유 하락과 금리 환경이 은행 수익성에 우호적. 기술주에서 자금이 이동하는 로테이션의 핵심 수혜처.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">VOO / SPY / IVV</div>
-      <div class="stock-name">S&amp;P 500 ETF</div>
-      <div class="stock-desc">VOO의 1조 달러 돌파는 인덱스 투자 메가트렌드를 재확인. 단기 조정 속에서도 패시브 자금 유입은 구조적 지지력이다.</div>
+      <div class="stock-ticker">CRWD</div>
+      <div class="stock-name">CrowdStrike</div>
+      <div class="stock-desc">가이던스 부진 및 비용 증가로 -11% 급락. 사이버보안 섹터 전반에 단기 하방 압력. 다음 분기 비용 구조가 관건.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 미-이란 충돌 재점화로 국제 유가 급등 및 미국채 금리 상승 동반. 단기 변동성 확대 구간 진입 가능성.
+    ⚠️ 이번 주 미국-이란 군사 충돌로 인한 지정학 리스크가 지속되고 있으며, 중동 에너지 수출로 관련 변동성에 유의 필요.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> S&amp;P 500이 여전히 7,500대 고점권을 유지하고 있으며, VOO 1조 달러 달성이 보여주듯 패시브 자금의 구조적 유입은 지속 중이다. 젠슨 황의 마벨 테크 극찬 등 AI 수요 내러티브 자체는 건재하다.<br/><br/>
-      <strong>주의 요인:</strong> 미-이란 무력 충돌이 본격화될 경우 유가 급등 → 인플레이션 재점화 → 금리 인하 기대 후퇴의 연쇄 악재가 현실화될 수 있다. 브로드컴 실적 실망으로 AI 반도체 밸류에이션 재평가 압력도 단기 부담이다.<br/><br/>
-      <strong>결론:</strong> 중동 지정학 리스크의 확전 여부가 단기 방향성을 결정할 핵심 변수. 유가·국채금리 동향을 주시하며 변동성 확대에 대비하는 전략이 적절하다.
+      <strong>긍정 요인:</strong> 다우 사상 최고가 경신은 시장의 기초 체력이 건재함을 보여준다. 은행·헬스케어 등 가치주로의 로테이션은 상승 폭을 다양한 섹터로 분산시키고 있으며, 원유 하락은 인플레이션 압력 완화에 기여한다. S&P 500은 7,600 선을 지지대로 삼는 흐름.<br/><br/>
+      <strong>주의 요인:</strong> 브로드컴발 AI 반도체 전망 재평가 국면이 단기적으로 기술주 전반에 하방 압력을 가할 수 있다. 미국-이란 지정학 리스크는 에너지 시장 불안과 함께 위험 자산 전반의 변동성을 높이는 상수. CrowdStrike 가이던스 실망은 성장주 밸류에이션에 대한 의문을 다시 키울 수 있다.<br/><br/>
+      <strong>결론:</strong> '기술주 피로 + 가치주 로테이션'의 구도가 뚜렷하다. AI 랠리가 끝난 게 아니라 숨을 고르는 국면으로 해석하는 게 합리적이다. 지정학 리스크와 실적 시즌 말미의 가이던스 변수를 주시하면서, 단기 변동성 속에서도 다우·S&P의 구조적 강세 흐름은 유효하다고 본다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Barchart, Yahoo Finance, Naver 뉴스, TheStreet · 생성일시: 2026.06.04
+    데이터 출처: Barchart, CNBC, Stocktwits, 247WallSt, TheStreet, WebSearch · 생성일시: 2026.06.05
   </div>
 
 </div>
