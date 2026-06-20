@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.06.17</title>
+  <title>미국증시 브리핑 | 2026.06.18</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -36,11 +36,9 @@
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
       background: linear-gradient(90deg, #58a6ff, #3fb950);
     }
-    .index-card.down::before { background: linear-gradient(90deg, #f85149, #ff7b72); }
     .index-name { font-size: 11px; font-weight: 600; color: #8b949e; letter-spacing: 0.06em; margin-bottom: 10px; }
     .index-value { font-size: 22px; font-weight: 700; color: #f0f6fc; letter-spacing: -0.02em; margin-bottom: 6px; }
     .index-change { font-size: 13px; font-weight: 600; color: #3fb950; }
-    .index-change.down { color: #f85149; }
     .index-pts { font-size: 11px; color: #8b949e; margin-top: 2px; }
     .badge {
       display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.06em;
@@ -48,7 +46,6 @@
       color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px;
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
-    .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -61,6 +58,7 @@
     .stock-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 16px 18px; }
     .stock-ticker { font-size: 11px; font-weight: 700; color: #58a6ff; letter-spacing: 0.1em; margin-bottom: 4px; }
     .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; }
+    .stock-change { font-size: 13px; font-weight: 700; color: #3fb950; margin-bottom: 4px; }
     .stock-desc { font-size: 12px; color: #8b949e; line-height: 1.6; }
     .notice {
       background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
@@ -77,33 +75,33 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.06.17 (수) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.06.18 (목) 기준 · 마지막 거래일 (6/19 Juneteenth 휴장)</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">워시 Fed 의장 첫 FOMC — 예상보다 강한 매파 신호에 3대 지수 일제히 1%대 하락</div>
+    <div class="subtitle">FOMC 충격 딛고 반도체가 이끈 반등 — 나스닥 +1.91%, 필라델피아 반도체 +6.42%</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,492</div>
-      <div class="index-change down">▼ -0.98%</div>
-      <div class="index-pts">-507.12pt</div>
-      <div class="badge neg">사상최고 후 반락</div>
+      <div class="index-value">51,564.70</div>
+      <div class="index-change">▲ +0.14%</div>
+      <div class="index-pts">+72.15pt</div>
+      <div class="badge">소폭 반등</div>
     </div>
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,420</div>
-      <div class="index-change down">▼ -1.21%</div>
-      <div class="index-pts">-91.25pt</div>
-      <div class="badge neg">FOMC 충격</div>
+      <div class="index-value">7,500.58</div>
+      <div class="index-change">▲ +1.08%</div>
+      <div class="index-pts">+80.48pt</div>
+      <div class="badge record">7,500 돌파</div>
     </div>
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,021</div>
-      <div class="index-change down">▼ -1.34%</div>
-      <div class="index-pts">-354.69pt</div>
-      <div class="badge neg">기술주 주도 하락</div>
+      <div class="index-value">26,517.93</div>
+      <div class="index-change">▲ +1.91%</div>
+      <div class="index-pts">강세 반등</div>
+      <div class="badge record">반도체 주도</div>
     </div>
   </div>
 
@@ -112,22 +110,22 @@
     <div class="issue-item">
       <div class="issue-icon">🏦</div>
       <div>
-        <div class="issue-title">워시 의장 첫 FOMC — 점도표 충격, 연내 금리 인상 현실화</div>
-        <div class="issue-body">케빈 워시 신임 연준 의장이 첫 주재한 6월 FOMC에서 기준금리(3.50~3.75%)를 동결했지만, 점도표 결과가 시장 예상보다 훨씬 매파적으로 나왔다. 18명 위원 중 9명이 연내 1회 이상 금리 인상을 전망했으며, 그 중 6명은 복수 인상을 예상했다. 헤드라인 물가 전망치는 2.7%에서 3.6%로 대폭 상향됐고, 연말 기준금리 중간값도 3.4%에서 3.8%로 높아졌다. 10년물 국채금리는 4.50%로 5.5bp 상승했다.</div>
+        <div class="issue-title">FOMC 충격 흡수 — 케빈 워시 첫 회의 후 반등</div>
+        <div class="issue-body">6월 17일 FOMC에서 신임 케빈 워시 Fed 의장이 2026년 하반기 금리 인상 가능성을 시사하며 전날 증시가 1% 이상 급락했다. 하지만 6월 18일 시장은 저가 매수세가 유입되며 빠르게 반등했고, AI·반도체주 중심의 순환매가 낙폭 과대 섹터를 이끌었다. 과도한 긴축 우려를 소화하며 시장은 회복력을 보였다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">⚡</div>
+      <div>
+        <div class="issue-title">반도체 폭발 — 필라델피아 반도체 지수 +6.42%</div>
+        <div class="issue-body">인텔이 +10.64%로 급등을 주도했으며, 마이크론 테크놀로지 +8.70%, 엔비디아 +2.95%, AMD +3.9%, 브로드컴 +3% 등 반도체 전 종목이 강세를 보였다. 트럼프 대통령의 인텔 지원 발언이 촉매제로 작용했고, AI 수요 강세 내러티브가 재확인됐다. SOXX(반도체 ETF)는 +4.6% 상승했다.</div>
       </div>
     </div>
     <div class="issue-item">
       <div class="issue-icon">🕊️</div>
       <div>
-        <div class="issue-title">미국-이란 MOU 전자서명 — 휴전 연장·평화협정 프레임워크</div>
-        <div class="issue-body">미국과 이란이 14개 항목의 양해각서(MOU)에 전자 서명하며 휴전을 연장하고 평화협정 기본 틀을 마련했다. 지정학적 리스크 완화 기대로 초기 선물 시장은 상승했으나, 이후 FOMC 결과의 충격파에 완전히 묻혀버렸다.</div>
-      </div>
-    </div>
-    <div class="issue-item">
-      <div class="issue-icon">🚀</div>
-      <div>
-        <div class="issue-title">SpaceX IPO 랠리 냉각 — 3거래일 +50% 후 개인투자 열기 식어</div>
-        <div class="issue-body">상장 후 3거래일 만에 IPO 가격 대비 약 50% 급등했던 SpaceX 주가가 이날 6% 하락하며 조정에 들어갔다. 초기 개인투자자들의 폭발적 수요가 진정되며 차익실현 매물이 쏟아졌다. 여전히 상장 후 강세권이나, 과열 식힘이 시작된 것으로 분석된다.</div>
+        <div class="issue-title">미·이란 종전 후속 — 봉쇄 해제로 유가 하락</div>
+        <div class="issue-body">미국이 이란에 대한 봉쇄를 공식 해제하면서 지정학적 리스크가 완화됐다. WTI 원유 선물은 0.25% 하락하며 인플레이션 우려를 일부 낮추는 긍정적 역할을 했다. 에너지 섹터는 약세였지만 운송·소비 섹터가 수혜를 받는 구조가 전개됐다.</div>
       </div>
     </div>
   </div>
@@ -135,42 +133,46 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">SPACEX</div>
-      <div class="stock-name">SpaceX — 신규 상장</div>
-      <div class="stock-desc">IPO 후 3거래일간 ~50% 폭등 뒤 -6% 조정. 개인 수요 열기는 식었지만 장기 성장 기대감은 유효. 향후 변동성 주의.</div>
-    </div>
-    <div class="stock-card">
       <div class="stock-ticker">INTC</div>
-      <div class="stock-name">Intel — 반도체 섹터 약세</div>
-      <div class="stock-desc">전날(6/16) 반도체 섹터 전반 급락(-8.5% 등) 이후 연속 압박. FOMC 금리 인상 우려가 성장주·기술주에 추가 부담. 필라델피아 반도체 지수 5.71% 급락 후유증.</div>
+      <div class="stock-name">인텔 (Intel)</div>
+      <div class="stock-change">▲ +10.64%</div>
+      <div class="stock-desc">트럼프의 인텔 지원 발언이 직접적인 촉매. 낙폭 과대 종목에 급격한 매수세 유입, 반도체 섹터 전반의 상승을 견인했다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">UBER</div>
-      <div class="stock-name">Uber — 매파 FOMC 주목주</div>
-      <div class="stock-desc">금리 인상 우려 국면에서 수익성 논쟁이 재부각되는 성장 소비재. FOMC 후 포커스 종목으로 언급됐으며 단기 방향성 주시 필요.</div>
+      <div class="stock-ticker">MU</div>
+      <div class="stock-name">마이크론 테크놀로지</div>
+      <div class="stock-change">▲ +8.70%</div>
+      <div class="stock-desc">AI 메모리 수요 강세 재부각. HBM 공급 확대 기대감과 함께 기관 매수가 집중되며 하루 만에 대폭 반등했다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">NFLX</div>
-      <div class="stock-name">Netflix — 스트리밍 대표주</div>
-      <div class="stock-desc">금리 상승 환경에서 고밸류에이션 성장주로 분류되어 매파 FOMC의 직접적 영향권. 향후 실적 발표 전 불확실성 구간 진입 가능성.</div>
+      <div class="stock-ticker">NVDA</div>
+      <div class="stock-name">엔비디아</div>
+      <div class="stock-change">▲ +2.95%</div>
+      <div class="stock-desc">전일 낙폭을 일부 회복. AI 수요 내러티브가 여전히 강력하며 코스피 9000 돌파에도 직접적 영향을 미쳤다.</div>
+    </div>
+    <div class="stock-card">
+      <div class="stock-ticker">SOXX</div>
+      <div class="stock-name">반도체 섹터 (필라델피아 지수)</div>
+      <div class="stock-change">▲ +6.42%</div>
+      <div class="stock-desc">하루 상승폭으로는 올해 최대 수준. FOMC 공포에서 빠르게 이탈한 시장이 반도체를 피난처이자 성장 엔진으로 재확인했다.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 내일(6월 19일, 금)은 Juneteenth 연방 공휴일로 NYSE·나스닥 휴장. 오늘(6월 18일, 목)이 이번 주 마지막 거래일.
+    ⚠️ 6월 19일(목) Juneteenth 연방 공휴일로 미국 증시 휴장 — 다음 거래는 6월 22일(월)부터 재개
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 미-이란 MOU 체결로 중동 지정학 리스크 완화 기대. 금리 동결 자체는 현 수준 유지로 경제 충격 없음. SpaceX 등 신규 IPO 시장 활성화는 위험선호 심리의 잔존을 시사.<br/><br/>
-      <strong>주의 요인:</strong> 워시 의장 체제 첫 FOMC에서 예상보다 강한 매파 신호 — 점도표 기준 연말 금리 중간값 3.8%는 시장 컨센서스를 크게 상회. 물가 전망치 3.6% 상향은 인플레 재가속 우려를 공식화. 기술주·반도체 섹터는 지난 이틀간 이미 상당한 낙폭. 10년물 금리 4.50% 돌파.<br/><br/>
-      <strong>결론:</strong> 워시 의장의 첫 스탠스가 명확해진 만큼, 연내 금리 인상 가능성이 시장 재료로 본격 부상할 것. 성장주·고밸류에이션주 중심 압박이 당분간 이어질 가능성이 높다. 다음 주 FOMC 의사록·물가 지표가 다음 방향타. 단기 변동성 확대 구간.
+      <strong>긍정 요인:</strong> 반도체 섹터의 강력한 반등이 FOMC 긴축 우려를 압도했다. AI 수요 내러티브는 여전히 건재하며, 트럼프 인텔 지원 발언은 미국 내 반도체 생태계에 대한 정책 의지를 재확인시켰다. 유가 하락으로 인플레이션 압력도 일부 완화됐다.<br/><br/>
+      <strong>주의 요인:</strong> 케빈 워시 의장의 하반기 금리 인상 시사는 구조적으로 밸류에이션 부담을 높인다. 금리 민감 섹터(리츠·유틸리티)는 여전히 압박 상태이며, FOMC 추가 발언이나 경제지표에 따라 변동성 재확대가 가능하다. 다우 (+0.14%) 와 나스닥 (+1.91%) 간 괴리는 시장이 여전히 특정 섹터 쏠림임을 보여준다.<br/><br/>
+      <strong>결론:</strong> 기술·반도체 중심의 선택적 강세가 지속될 가능성이 높다. 다만 워시 발언 후 첫 경제지표 발표(CPI, 고용) 가 변곡점이 될 수 있다. 6월 22일(월) 재개장 후 추가 매수세 유입 여부가 핵심 관전 포인트.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Barchart, TheStreet, 네이버 뉴스, Yahoo Finance · 생성일시: 2026.06.18
+    데이터 출처: TheStreet, News2day, Newspim, Newsworks, NaverFinance · 생성일시: 2026.06.20
   </div>
 
 </div>
