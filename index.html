@@ -62,11 +62,6 @@
     .stock-ticker { font-size: 11px; font-weight: 700; color: #58a6ff; letter-spacing: 0.1em; margin-bottom: 4px; }
     .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; }
     .stock-desc { font-size: 12px; color: #8b949e; line-height: 1.6; }
-    .notice {
-      background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
-      border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
-    }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
@@ -77,57 +72,57 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.06.23 (화) 마감 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.06.24 (WED) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">AI·반도체 셀오프 이틀째 — 나스닥 2.22% 급락, 마이크론 11% 폭락</div>
+    <div class="subtitle">다우 혼자 올랐지만 기술주 매도세에 나스닥·S&amp;P500 하락 — 마이크론 시간외 급등으로 반전 기대</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,666</div>
-      <div class="index-change down">▼ -0.09%</div>
-      <div class="index-pts">-45.87pt</div>
-      <div class="badge">방어주 선방</div>
+      <div class="index-value">51,848.90</div>
+      <div class="index-change">▲ +0.35%</div>
+      <div class="index-pts">+182.06pt</div>
+      <div class="badge record">상승 마감</div>
     </div>
     <div class="index-card down">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,365</div>
-      <div class="index-change down">▼ -1.44%</div>
-      <div class="index-pts">-107.33pt</div>
-      <div class="badge neg">기술주 약세</div>
+      <div class="index-value">7,358.22</div>
+      <div class="index-change down">▼ -0.10%</div>
+      <div class="index-pts">-7.24pt</div>
+      <div class="badge neg">소폭 하락</div>
     </div>
     <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">25,587</div>
-      <div class="index-change down">▼ -2.22%</div>
-      <div class="index-pts">-579.56pt</div>
-      <div class="badge neg">반도체 직격</div>
+      <div class="index-value">25,476.64</div>
+      <div class="index-change down">▼ -0.43%</div>
+      <div class="index-pts">-109.6pt</div>
+      <div class="badge neg">기술주 약세</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">🇰🇷</div>
+      <div class="issue-icon">🤖</div>
       <div>
-        <div class="issue-title">글로벌 반도체 쇼크 — 한국 KOSPI 약 10% 폭락이 미국으로 전이</div>
-        <div class="issue-body">삼성전자·SK하이닉스가 각각 12% 이상 급락하며 한국 KOSPI가 약 10% 폭락했고, 이 충격파가 유럽을 거쳐 뉴욕 증시로 전이됐다. 엔비디아(NVDA)는 3.2% 하락해 $201.97, 마이크론(MU)은 실적 발표를 앞두고 11.4% 급락해 $1,074.60을 기록했다. TSMC(TSM)도 5.2% 하락하며 AI 공급망 전반에 걸쳐 동반 약세가 펼쳐졌다.</div>
+        <div class="issue-title">AI 투자 과열 우려 — 기술주·반도체 동반 약세</div>
+        <div class="issue-body">AI 랠리 과열 우려가 다시 부상하며 기술주 전반에 매도 압력이 집중됐다. 필라델피아 반도체 지수(SOX)는 이틀 연속 하락(-0.18%)했고, NVDA·AVGO·GOOGL 등 주요 AI 관련주가 일제히 약세를 보였다. VIX 공포지수는 7.81% 급등하며 시장 불안 심리를 반영했다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">💾</div>
+      <div>
+        <div class="issue-title">마이크론(MU) 어닝 서프라이즈 — AI 메모리 수요 확인</div>
+        <div class="issue-body">마이크론이 장 마감 후 3분기 실적을 발표하며 월가 예상치를 대폭 상회하는 서프라이즈를 기록했다. AI 서버향 HBM(고대역폭메모리) 수요가 폭발적으로 증가한 결과로, MU 주가는 시간외 거래에서 급등했다. 이에 따라 퀄컴(QCOM) 등 반도체 관련주도 동반 반등하며 다음날 증시 회복에 대한 기대감을 높였다.</div>
       </div>
     </div>
     <div class="issue-item">
       <div class="issue-icon">🏦</div>
       <div>
-        <div class="issue-title">Fed 추가 금리 인상 우려 — 새 의장 워시의 매파적 기조</div>
-        <div class="issue-body">BofA의 금리 인상 가능성 경고 노트가 시장 심리를 흔들었다. LSEG 데이터에 따르면 트레이더들은 12월까지 두 차례 금리 인상 가능성을 가격에 반영하기 시작했으며, 이는 2주 전만 해도 한 차례 인상 예상과는 크게 달라진 흐름이다. 신임 Fed 의장 케빈 워시의 매파적 통화정책 기조가 배경으로 작용했다.</div>
-      </div>
-    </div>
-    <div class="issue-item">
-      <div class="issue-icon">🚀</div>
-      <div>
-        <div class="issue-title">SpaceX IPO 후폭풍 — SPCX ETF 출시 당일 거래 중단</div>
-        <div class="issue-body">역대 최대 규모 IPO로 화제를 모은 스페이스X가 상장 10일 만에 16.4% 폭락했다. IPO 직후 스페이스X 편입을 선언하며 출시된 SPCX ETF는 출시 당일 몇 시간 만에 거래가 중단되는 해프닝이 벌어졌다. S&P 다우존스 인디시스의 S&P500 조기 편입 제안이 보류된 것도 투자심리를 냉각시켰다.</div>
+        <div class="issue-title">Fed 매파 전환 — "랠리 추격 말고 조정 시 매수" 권고</div>
+        <div class="issue-body">연방준비제도(Fed)가 완화 기조에서 긴축 기조로 방향을 틀면서 시장 변동성이 높아지고 있다. 웰스파고 수석 전략가 스콧 렌은 CNBC 인터뷰에서 "지금 랠리를 추격하지 말고, 연준 정책 변화로 인한 변동성을 매수 기회로 활용하라"고 조언했다. 결과적으로 금리에 민감한 기술 성장주 중심의 매도세가 이어지는 배경이 되고 있다.</div>
       </div>
     </div>
   </div>
@@ -137,40 +132,36 @@
     <div class="stock-card">
       <div class="stock-ticker">MU</div>
       <div class="stock-name">마이크론 테크놀로지</div>
-      <div class="stock-desc">11.4% 급락해 $1,074.60 마감. 실적 발표를 앞두고 불확실성이 극대화됐다. BofA가 목표주가를 상향 조정했음에도 글로벌 반도체 셀오프 앞에서 힘을 쓰지 못했다. 실적 발표 결과에 따라 방향성 재설정이 예상된다.</div>
+      <div class="stock-desc">3분기 실적이 월가 예상치를 대폭 상회하며 시간외 급등. AI 서버향 HBM 수요가 핵심 성장 동력임을 확인했고, 반도체 섹터 전체의 심리 반전 트리거가 될 전망.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">NVDA</div>
-      <div class="stock-name">엔비디아</div>
-      <div class="stock-desc">3.2% 하락, $201.97 마감. AI 인프라 지출의 지속 가능성에 대한 의문이 확산되며 차익실현 매물이 쏟아졌다. 이틀 연속 하락으로 단기 조정 국면에 접어들었으나 AI 수요 펀더멘털은 유지 중.</div>
-    </div>
-    <div class="stock-card">
-      <div class="stock-ticker">TSM</div>
-      <div class="stock-name">TSMC</div>
-      <div class="stock-desc">5.2% 하락, $443.35 마감. 한국발 반도체 공포가 파운드리 업종 전반으로 확산됐다. AI 칩 수주 파이프라인은 견조하나 단기 주가 조정 압력이 거세다.</div>
+      <div class="stock-ticker">NVDA / AVGO</div>
+      <div class="stock-name">AI 반도체 대장주</div>
+      <div class="stock-desc">AI 과열 우려에 장중 매도세를 받았지만, 마이크론 실적 발표 후 시간외에서 동반 반등. AI 인프라 수요 자체는 견고하다는 점이 재확인되는 흐름.</div>
     </div>
     <div class="stock-card">
       <div class="stock-ticker">SPCX</div>
-      <div class="stock-name">SpaceX ETF</div>
-      <div class="stock-desc">출시 당일 몇 시간 만에 거래 중단. 스페이스X IPO 열풍에 편승해 포트폴리오를 전면 교체한 ETF가 규제 이슈로 즉각 제동이 걸렸다. ETF 구조의 허점과 선제적 포트폴리오 변경에 대한 선례 논란이 부각됐다.</div>
+      <div class="stock-name">스페이스X (SpaceX)</div>
+      <div class="stock-desc">나스닥 상장 후 단기 급등한 SPCX를 둘러싼 개인투자자의 단기매매 논란. 섣불리 실적을 성공 공식으로 삼는 것에 대한 경계 시각이 제기되고 있음.</div>
     </div>
-  </div>
-
-  <div class="notice">
-    ⚠️ 마이크론(MU) 실적 발표가 금주 예정돼 있어, 반도체 섹터 전반의 방향성을 결정하는 분수령이 될 전망이다.
+    <div class="stock-card">
+      <div class="stock-ticker">APD</div>
+      <div class="stock-name">에어 프로덕츠 &amp; 케미컬스</div>
+      <div class="stock-desc">44년 연속 배당 인상 기록 보유. 산업용 가스 수요가 계약 기반으로 안정적이어서, 기술주 변동성이 커지는 국면에서 방어주로 주목받고 있음.</div>
+    </div>
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 다우지수가 방어주 중심으로 낙폭을 최소화했고, 마이크론 실적 발표를 앞두고 저가 매수 유입 가능성이 열려 있다. 2026년 1분기 기업들의 어닝서프라이즈 기조가 유지되고 있어 실적 펀더멘털 자체는 훼손되지 않았다.<br/><br/>
-      <strong>주의 요인:</strong> Fed의 추가 금리 인상 기대 상향은 가장 큰 변수다. AI·반도체 밸류에이션에 대한 거품 논란이 글로벌 동반 하락으로 증폭됐으며, 한국 KOSPI 쇼크가 아시아발 리스크로 자리 잡았다. 기술주 이틀 연속 급락은 단순 조정 이상의 신호일 수 있다.<br/><br/>
-      <strong>결론:</strong> 마이크론 실적과 Fed 발언이 핵심 변수. 반도체 섹터는 실적 확인 전까지 변동성 확대 국면 지속이 예상된다. 단기 방어주 비중 유지, 기술주 저점 분할 접근이 유효한 전략이다.
+      <strong>긍정 요인:</strong> 마이크론의 어닝 서프라이즈로 AI 메모리 수요가 여전히 견고함이 입증됐다. S&P500 목표가 상향 전망이 이어지고 있으며, 기술주 과매도 구간에서 저가 매수 기회가 생길 수 있다.<br/><br/>
+      <strong>주의 요인:</strong> Fed의 매파 전환으로 금리 불확실성이 지속되고 있다. VIX 지수 급등으로 시장 변동성이 확대 중이며, AI 관련주의 밸류에이션 부담이 여전히 높다. 소프트웨어 ETF의 추가 하락 가능성도 경계할 필요가 있다.<br/><br/>
+      <strong>결론:</strong> 단기적으로 혼조 내지 변동성 확대 국면이 이어질 가능성이 높다. 마이크론 실적이 기술주 반등의 불씨가 될 수 있으나, 랠리 추격보다는 조정 시 분할 매수 전략이 유효한 시점으로 판단된다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: 네이버금융, Yahoo Finance, TheStreet, Stocktwits · 생성일시: 2026.06.24
+    데이터 출처: CNBC, TheStreet, Naver News, StockTwits, 247WallSt · 생성일시: 2026.06.25
   </div>
 
 </div>
