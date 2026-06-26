@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.06.24</title>
+  <title>미국증시 브리핑 | 2026.06.26</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,6 +49,14 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -72,57 +80,74 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.06.24 (WED) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.06.26 (금) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">다우 혼자 올랐지만 기술주 매도세에 나스닥·S&amp;P500 하락 — 마이크론 시간외 급등으로 반전 기대</div>
+    <div class="subtitle">마이크론 16% 폭등 vs 애플 6% 급락 — 반도체 vs 빅테크 혼조 마감</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,848.90</div>
-      <div class="index-change">▲ +0.35%</div>
-      <div class="index-pts">+182.06pt</div>
-      <div class="badge record">상승 마감</div>
+      <div class="index-value">51,920.62</div>
+      <div class="index-change">▲ +0.14%</div>
+      <div class="index-pts">+71pt</div>
+      <div class="badge record">가치주 강세</div>
     </div>
     <div class="index-card down">
-      <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,358.22</div>
-      <div class="index-change down">▼ -0.10%</div>
-      <div class="index-pts">-7.24pt</div>
-      <div class="badge neg">소폭 하락</div>
+      <div class="index-name">S&P 500</div>
+      <div class="index-value">7,357.49</div>
+      <div class="index-change down">▼ -0.01%</div>
+      <div class="index-pts">-0.74pt</div>
+      <div class="badge neg">보합</div>
     </div>
     <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">25,476.64</div>
-      <div class="index-change down">▼ -0.43%</div>
-      <div class="index-pts">-109.6pt</div>
-      <div class="badge neg">기술주 약세</div>
+      <div class="index-value">25,358.60</div>
+      <div class="index-change down">▼ -0.46%</div>
+      <div class="index-pts">-117pt</div>
+      <div class="badge neg">애플 쇼크</div>
+    </div>
+  </div>
+
+  <!-- 금요일 — 주간 성과 섹션 포함 -->
+  <div class="section-title">주간 성과</div>
+  <div class="weekly-grid">
+    <div class="weekly-card">
+      <span class="weekly-label">다우</span>
+      <span class="weekly-val">확인 필요</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">S&P 500</span>
+      <span class="weekly-val down">확인 필요</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">나스닥</span>
+      <span class="weekly-val down">확인 필요</span>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">🤖</div>
+      <div class="issue-icon">🚀</div>
       <div>
-        <div class="issue-title">AI 투자 과열 우려 — 기술주·반도체 동반 약세</div>
-        <div class="issue-body">AI 랠리 과열 우려가 다시 부상하며 기술주 전반에 매도 압력이 집중됐다. 필라델피아 반도체 지수(SOX)는 이틀 연속 하락(-0.18%)했고, NVDA·AVGO·GOOGL 등 주요 AI 관련주가 일제히 약세를 보였다. VIX 공포지수는 7.81% 급등하며 시장 불안 심리를 반영했다.</div>
+        <div class="issue-title">마이크론(MU) 실적 서프라이즈 — +16% 폭등</div>
+        <div class="issue-body">마이크론이 시장 전망을 크게 웃도는 분기 실적과 강력한 가이던스를 발표하며 장 마감 후 16% 급등했다. AI 서버향 고대역폭 메모리(HBM) 및 데이터센터 DRAM 수요 급증이 실적 호조의 핵심 동인이다. 필라델피아 반도체 지수도 +3.59% 반등하며 이틀간의 조정세를 마무리했다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💾</div>
+      <div class="issue-icon">🍎</div>
       <div>
-        <div class="issue-title">마이크론(MU) 어닝 서프라이즈 — AI 메모리 수요 확인</div>
-        <div class="issue-body">마이크론이 장 마감 후 3분기 실적을 발표하며 월가 예상치를 대폭 상회하는 서프라이즈를 기록했다. AI 서버향 HBM(고대역폭메모리) 수요가 폭발적으로 증가한 결과로, MU 주가는 시간외 거래에서 급등했다. 이에 따라 퀄컴(QCOM) 등 반도체 관련주도 동반 반등하며 다음날 증시 회복에 대한 기대감을 높였다.</div>
+        <div class="issue-title">애플(AAPL) iPhone 가격 인상 발표 — -6% 급락</div>
+        <div class="issue-body">애플이 메모리 및 부품 비용 상승을 이유로 iPhone을 포함한 주요 제품 가격 인상을 공식 발표했다. 이 소식은 소비자 수요 위축과 판매량 감소 우려를 동시에 자극하며 나스닥 하락을 주도했다. 마이크로소프트도 Xbox 가격 인상을 함께 발표해 빅테크 하드웨어 비용 전가 움직임이 본격화됐다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🏦</div>
+      <div class="issue-icon">⚡</div>
       <div>
-        <div class="issue-title">Fed 매파 전환 — "랠리 추격 말고 조정 시 매수" 권고</div>
-        <div class="issue-body">연방준비제도(Fed)가 완화 기조에서 긴축 기조로 방향을 틀면서 시장 변동성이 높아지고 있다. 웰스파고 수석 전략가 스콧 렌은 CNBC 인터뷰에서 "지금 랠리를 추격하지 말고, 연준 정책 변화로 인한 변동성을 매수 기회로 활용하라"고 조언했다. 결과적으로 금리에 민감한 기술 성장주 중심의 매도세가 이어지는 배경이 되고 있다.</div>
+        <div class="issue-title">반도체 섹터 vs 소비자 빅테크 — 양극화 심화</div>
+        <div class="issue-body">이번 주 "검은 화요일(6/23)" 당시 나스닥 -2.22%, 필라델피아 반도체 -7.6%의 충격 이후 반도체 업종은 마이크론 실적 호재로 빠르게 회복됐다. 반면 애플·마이크로소프트 등 소비자 향 빅테크는 가격 인상 부담과 AI 투자 과열 우려로 매도세가 지속되고 있다.</div>
       </div>
     </div>
   </div>
@@ -132,36 +157,36 @@
     <div class="stock-card">
       <div class="stock-ticker">MU</div>
       <div class="stock-name">마이크론 테크놀로지</div>
-      <div class="stock-desc">3분기 실적이 월가 예상치를 대폭 상회하며 시간외 급등. AI 서버향 HBM 수요가 핵심 성장 동력임을 확인했고, 반도체 섹터 전체의 심리 반전 트리거가 될 전망.</div>
+      <div class="stock-desc">시장 전망 상회 실적 발표로 +16% 급등. AI 데이터센터향 HBM 수요가 실적을 견인했으며, 긍정적 가이던스로 메모리 업황 회복 기대감이 확산됐다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">NVDA / AVGO</div>
-      <div class="stock-name">AI 반도체 대장주</div>
-      <div class="stock-desc">AI 과열 우려에 장중 매도세를 받았지만, 마이크론 실적 발표 후 시간외에서 동반 반등. AI 인프라 수요 자체는 견고하다는 점이 재확인되는 흐름.</div>
+      <div class="stock-ticker">AAPL</div>
+      <div class="stock-name">애플</div>
+      <div class="stock-desc">iPhone 가격 인상 발표로 -6% 급락. 메모리 가격 상승 비용을 소비자에게 전가하는 방식이 수요 감소 우려를 촉발했다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">SPCX</div>
-      <div class="stock-name">스페이스X (SpaceX)</div>
-      <div class="stock-desc">나스닥 상장 후 단기 급등한 SPCX를 둘러싼 개인투자자의 단기매매 논란. 섣불리 실적을 성공 공식으로 삼는 것에 대한 경계 시각이 제기되고 있음.</div>
+      <div class="stock-ticker">SOXX</div>
+      <div class="stock-name">반도체 섹터</div>
+      <div class="stock-desc">필라델피아 반도체 지수 +3.59% 반등. 마이크론 실적 호재가 섹터 전반으로 확산되며 검은 화요일 이후 낙폭 일부 만회했다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">APD</div>
-      <div class="stock-name">에어 프로덕츠 &amp; 케미컬스</div>
-      <div class="stock-desc">44년 연속 배당 인상 기록 보유. 산업용 가스 수요가 계약 기반으로 안정적이어서, 기술주 변동성이 커지는 국면에서 방어주로 주목받고 있음.</div>
+      <div class="stock-ticker">MSFT</div>
+      <div class="stock-name">마이크로소프트</div>
+      <div class="stock-desc">Xbox 가격 인상 발표. 부품 비용 상승을 이유로 들었으며, 애플의 가격 인상 움직임과 맞물려 빅테크 하드웨어 수익성 전략 변화로 해석된다.</div>
     </div>
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 마이크론의 어닝 서프라이즈로 AI 메모리 수요가 여전히 견고함이 입증됐다. S&P500 목표가 상향 전망이 이어지고 있으며, 기술주 과매도 구간에서 저가 매수 기회가 생길 수 있다.<br/><br/>
-      <strong>주의 요인:</strong> Fed의 매파 전환으로 금리 불확실성이 지속되고 있다. VIX 지수 급등으로 시장 변동성이 확대 중이며, AI 관련주의 밸류에이션 부담이 여전히 높다. 소프트웨어 ETF의 추가 하락 가능성도 경계할 필요가 있다.<br/><br/>
-      <strong>결론:</strong> 단기적으로 혼조 내지 변동성 확대 국면이 이어질 가능성이 높다. 마이크론 실적이 기술주 반등의 불씨가 될 수 있으나, 랠리 추격보다는 조정 시 분할 매수 전략이 유효한 시점으로 판단된다.
+      <strong>긍정 요인:</strong> 마이크론 실적 서프라이즈로 AI 메모리 수요의 견고함이 재확인됐다. 필라델피아 반도체 지수가 단기 급락 이후 빠르게 반등하며 AI 인프라 투자 사이클이 여전히 유효함을 시사한다.<br/><br/>
+      <strong>주의 요인:</strong> 애플·마이크로소프트의 동시 가격 인상은 소비자 수요 둔화 신호로 읽힐 수 있다. 빅테크 하드웨어 비용 전가가 다른 종목으로 확산될 경우 나스닥 기술주 전반에 추가 하락 압력이 생길 수 있다. 이번 주 내내 이어진 AI 투자 과열 논쟁도 아직 해소되지 않았다.<br/><br/>
+      <strong>결론:</strong> 반도체·AI 인프라 섹터는 실적 기반 강세 흐름 지속 가능성이 높다. 소비자 향 빅테크(애플 등)는 단기 변동성 주의가 필요하며, 다음 주 주요 기업 가이던스에 시장 방향성이 달려 있다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: CNBC, TheStreet, Naver News, StockTwits, 247WallSt · 생성일시: 2026.06.25
+    데이터 출처: 네이버뉴스, YTN, 한국경제TV, CoinReaders · 생성일시: 2026.06.26
   </div>
 
 </div>
