@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.07.16</title>
+  <title>미국증시 브리핑 | 2026.07.17</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,6 +49,14 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -77,57 +85,73 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.07.16 (목) 기준 · 전일(7/15) 마감 데이터</div>
+    <div class="date">📊 US Market Briefing · 2026.07.17 (금) 기준 · 전일(7/16, 목) 마감 데이터</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">PPI 둔화에 3대지수 동반 상승, 애플 사상 최고가 vs 반도체 차익실현 매물</div>
+    <div class="subtitle">TSMC發 반도체 밸류에이션 우려로 3대 지수 동반 하락, 나스닥 1.5%↓</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">52,658.64</div>
-      <div class="index-change">▲ +0.29%</div>
-      <div class="index-pts">+150.37pt</div>
-      <div class="badge">3일 연속 상승</div>
+      <div class="index-value">52,552.97</div>
+      <div class="index-change down">▼ -0.20%</div>
+      <div class="index-pts">-105.67pt</div>
+      <div class="badge neg">UNH 상승에 낙폭 제한</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">S&P 500</div>
-      <div class="index-value">7,572.40</div>
-      <div class="index-change">▲ +0.38%</div>
-      <div class="index-pts">+28.81pt</div>
-      <div class="badge">은행주 실적 호조</div>
+      <div class="index-value">7,533.77</div>
+      <div class="index-change down">▼ -0.51%</div>
+      <div class="index-pts">-38.63pt</div>
+      <div class="badge neg">반도체 약세 주도</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,269.23</div>
-      <div class="index-change">▲ +0.62%</div>
-      <div class="index-pts">+162.22pt</div>
-      <div class="badge record">빅테크 최고 상승폭</div>
+      <div class="index-value">25,881.95</div>
+      <div class="index-change down">▼ -1.47%</div>
+      <div class="index-pts">-387.28pt</div>
+      <div class="badge neg">3대 지수 중 최대 낙폭</div>
+    </div>
+  </div>
+
+  <div class="section-title">주간 성과 (7/13~7/16, WTD)</div>
+  <div class="weekly-grid">
+    <div class="weekly-card">
+      <span class="weekly-label">다우</span>
+      <span class="weekly-val down">-0.5%</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">S&P 500</span>
+      <span class="weekly-val">+1.2%</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">나스닥</span>
+      <span class="weekly-val">+1.7%</span>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">📉</div>
+      <div class="issue-icon">🔻</div>
       <div>
-        <div class="issue-title">6월 PPI 예상보다 둔화 — 인플레 완화 기대 재점화</div>
-        <div class="issue-body">6월 생산자물가지수(PPI)가 전월 대비 0.3% 하락하며 1년여 만에 최대 낙폭을 기록했다. 전날 소비자물가(CPI)에 이어 이틀 연속 물가 지표가 예상을 하회하면서 연준 금리 인하 기대감이 다시 살아났고, 위험자산 선호 심리가 강화됐다.</div>
+        <div class="issue-title">TSMC 실적 서프라이즈에도 반도체주 전반 급락</div>
+        <div class="issue-body">TSMC가 2분기 순이익 77% 증가라는 어닝 서프라이즈를 냈지만, 2026년 설비투자(capex) 전망을 큰 폭으로 상향하면서 AI 인프라 과잉투자·마진 압박 우려가 부각됐다. 이 여파로 마이크론(-5.35%), 브로드컴(-3.63%), 엔비디아(-2.40%), 필라델피아반도체지수(SOXL 기준 -11.04%) 등 반도체 관련 종목이 동반 급락했다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🍎</div>
+      <div class="issue-icon">🤖</div>
       <div>
-        <div class="issue-title">애플 등 메가캡 빅테크, 사상 최고가 경신하며 랠리 주도</div>
-        <div class="issue-body">애플(+4.01%)이 사상 최고가를 경신했고 알파벳(+3.17%), 메타(+3.07%), 아마존(+3.02%), 마이크로소프트(+2.78%) 등 대형 기술주가 일제히 강세를 보이며 나스닥 상승을 견인했다.</div>
+        <div class="issue-title">알파벳, 제미나이 3.5 프로 출시 지연 소식에 하락</div>
+        <div class="issue-body">알파벳(구글) 주가는 차세대 플래그십 AI 모델 '제미나이 3.5 프로' 출시가 지연된다는 보도가 나오며 하락했다. AI 경쟁 구도에서 구글의 속도에 대한 시장 우려가 다시 불거진 모습이다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💾</div>
+      <div class="issue-icon">🏗️</div>
       <div>
-        <div class="issue-title">반도체주는 차익실현 매물에 동반 약세 — 국내 증시까지 여파</div>
-        <div class="issue-body">마이크론(-8.02%), 인텔(-4.43%), AMD(-3.46%) 등 반도체 종목은 필라델피아 반도체지수(SOX) 약세와 함께 AI 인프라 투자 우려로 급락했다. 이 여파로 16일 국내 코스피가 반도체 대형주(삼성전자·SK하이닉스) 급락에 7,000선을 하루 만에 반납하며 매도 사이드카가 발동되기도 했다.</div>
+        <div class="issue-title">모건스탠리, 데이터센터 프로젝트 지연 경고</div>
+        <div class="issue-body">모건스탠리는 데이터센터 개발·운영업체 크루소의 와이오밍주 데이터센터 건설 연기, 뉴욕주 데이터센터 관련 이슈를 지적하며 AI 인프라 투자 둔화 가능성을 제기했다. 다만 6월 생산자물가지수(PPI)는 예상치를 밑돌아 인플레이션 완화 기대감도 동시에 형성됐다.</div>
       </div>
     </div>
   </div>
@@ -135,35 +159,38 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">AAPL</div>
-      <div class="stock-name">애플 (사상 최고가)</div>
-      <div class="stock-desc">전일 +4.01% 급등하며 사상 최고치 경신. 빅테크 랠리의 최선두주.</div>
+      <div class="stock-ticker">반도체 섹터</div>
+      <div class="stock-name">SOXL / MU / AVGO / NVDA</div>
+      <div class="stock-desc">TSMC capex 상향 여파로 AI 반도체 밸류에이션 고점론이 재점화. SK하이닉스 ADR도 나스닥 데뷔 이후 -13.69% 급락하며 투심 위축.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">MU / INTC / AMD</div>
-      <div class="stock-desc">마이크론 -8.02%, 인텔 -4.43%, AMD -3.46%. AI 인프라 투자 우려 속 반도체 업종 전반 차익실현 매물 출회.</div>
+      <div class="stock-ticker">GOOGL</div>
+      <div class="stock-name">알파벳</div>
+      <div class="stock-desc">제미나이 3.5 프로 출시 지연 보도로 하락. AI 모델 경쟁 속도에 대한 시장 신뢰에 영향.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">은행 섹터</div>
-      <div class="stock-desc">사상 최고 수준의 2분기 은행 실적이 지수 상승을 뒷받침. 중동發 유가 리스크는 부담 요인으로 병존.</div>
+      <div class="stock-ticker">UNH</div>
+      <div class="stock-name">유나이티드헬스그룹</div>
+      <div class="stock-desc">개별 종목 강세로 다우지수 낙폭을 제한하는 역할을 함.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">SOX</div>
-      <div class="stock-desc">필라델피아 반도체지수 약세. 빅테크와 반도체 간 순환매 뚜렷.</div>
+      <div class="stock-ticker">소형주 (Small Caps)</div>
+      <div class="stock-name">러셀2000 등</div>
+      <div class="stock-desc">S&P500 대비 2003년 이후 최대 격차로 아웃퍼폼 중. 대형 기술주 쏠림에서 벗어난 시장 저변 확대 신호로 주목.</div>
     </div>
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> CPI에 이어 PPI까지 이틀 연속 예상치 하회, 인플레이션 둔화 신호가 뚜렷해지며 연준 금리 인하 기대가 강화되고 있다. 은행권 2분기 실적도 사상 최고 수준을 기록하며 실적 시즌 초반 분위기가 우호적이다.<br/><br/>
-      <strong>주의 요인:</strong> 반도체 업종의 차익실현 매물이 예상보다 강해 AI 인프라 투자 지속 가능성에 대한 의구심이 재부각됐다. 중동(이란 관련) 긴장에 따른 유가 변동성도 잠재 리스크로 남아있다.<br/><br/>
-      <strong>결론:</strong> 지수 자체는 3대 지수 동반 상승으로 견조하지만, 내부적으로는 빅테크 쏠림과 반도체 조정이 뚜렷한 순환매 장세다. 실적 시즌이 본격화되는 만큼 개별 기업 가이던스와 AI 투자 관련 코멘트에 변동성이 커질 가능성이 있다.
+      <strong>긍정 요인:</strong> 6월 PPI가 예상치를 하회하며 인플레이션 완화 기대가 유지되고 있고, 2분기 실적 시즌 전반은 양호한 흐름을 보이고 있음. 소형주가 대형주 대비 20여 년 만의 최대 강세를 보이며 랠리의 저변이 넓어지는 점도 긍정적.<br/><br/>
+      <strong>주의 요인:</strong> TSMC발 AI 인프라 투자 부담·마진 우려가 반도체 섹터 전반의 밸류에이션 재평가로 번지고 있고, 모건스탠리가 지적한 데이터센터 프로젝트 지연은 AI 투자 사이클 둔화 신호일 수 있음. 알파벳 사례처럼 빅테크 AI 모델 로드맵 지연도 추가 변수.<br/><br/>
+      <strong>결론:</strong> 실적 시즌 자체는 우호적이나 AI 인프라 지출을 둘러싼 눈높이 조정이 반도체·빅테크 중심으로 단기 변동성을 키우는 국면. 다음 주 빅테크 실적 발표와 데이터센터 관련 후속 뉴스가 방향성의 분수령이 될 전망.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: UsStockInfo(SPY 관련 뉴스), Naver 뉴스 검색, WebSearch(Yahoo Finance/TheStreet) · 생성일시: 2026.07.16
+    데이터 출처: NaverSearch(뉴욕마켓워치, 이데일리인포맥스 등), UsStockInfo(Stocktwits, Barchart), WebSearch(Yahoo Finance, CNBC) · 생성일시: 2026.07.17
   </div>
 
 </div>
