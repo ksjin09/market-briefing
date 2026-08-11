@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.08.10</title>
+  <title>미국증시 브리핑 | 2026.08.11</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,14 +49,6 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
-    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
-    .weekly-card {
-      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
-      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
-    }
-    .weekly-label { font-size: 12px; color: #8b949e; }
-    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
-    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -85,73 +77,57 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.08.07 (금) 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.08.10 (월) 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">7월 고용 쇼크가 오히려 랠리를 불렀다 — S&amp;P500 사상 최고 마감, 4월 이후 최강 주간</div>
+    <div class="subtitle">호르무즈 협상 교착에 유가 5% 급등 — 3대 지수 사상 최고치 부근에서 약보합 마감</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">54,036.93</div>
-      <div class="index-change">▲ +0.28%</div>
-      <div class="index-pts">+151.83pt</div>
-      <div class="badge">3대 지수 동반 상승</div>
+      <div class="index-value">53,975.98</div>
+      <div class="index-change down">▼ -0.11%</div>
+      <div class="index-pts">-60.95pt</div>
+      <div class="badge neg">전일 사상최고 후 되돌림</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,757.64</div>
-      <div class="index-change">▲ +0.62%</div>
-      <div class="index-pts">+47.68pt</div>
-      <div class="badge record">사상 최고 마감</div>
+      <div class="index-value">7,753.11</div>
+      <div class="index-change down">▼ -0.06%</div>
+      <div class="index-pts">-4.53pt</div>
+      <div class="badge">최고치 근접 유지</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,690.62</div>
-      <div class="index-change">▲ +1.30%</div>
-      <div class="index-pts">+342.26pt</div>
-      <div class="badge record">기술주 주도</div>
-    </div>
-  </div>
-
-  <div class="section-title">주간 성과 (8/3~8/7)</div>
-  <div class="weekly-grid">
-    <div class="weekly-card">
-      <span class="weekly-label">다우</span>
-      <span class="weekly-val">+2.1%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">S&amp;P 500</span>
-      <span class="weekly-val">+3.4%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">나스닥</span>
-      <span class="weekly-val">+4.9%</span>
+      <div class="index-value">26,605.36</div>
+      <div class="index-change down">▼ -0.32%</div>
+      <div class="index-pts">-85.26pt</div>
+      <div class="badge neg">반도체 약세 주도</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">📉</div>
+      <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">7월 고용 쇼크 — 비농업 고용 2.3만 명 감소</div>
-        <div class="issue-body">시장 예상치(약 +8만 명)를 크게 밑돌며 오히려 감소로 전환했다. 앞선 두 달치도 합계 10만 명 이상 하향 수정됐다. 실업률은 4.1%로 소폭 내렸지만, 이는 고용 개선이 아니라 경제활동참가율 하락에 따른 착시에 가깝다.</div>
+        <div class="issue-title">호르무즈 해협 재개방 협상 교착 — 국제유가 5% 급등</div>
+        <div class="issue-body">이란은 오만과의 통항 합의가 마무리 단계라면서도 미국이 별도 조건을 수용하기 전에는 해협을 열지 않겠다고 못박았다. WTI는 5.05% 오른 배럴당 82.13달러, 브렌트유는 87.72달러까지 뛰었다. 트럼프 대통령이 협상을 "로키(low-key)로 간다"며 경제적 압박에 무게를 싣자 조기 타결 기대가 후퇴했다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🏦</div>
+      <div class="issue-icon">📈</div>
       <div>
-        <div class="issue-title">연준 추가 인상 기대 급랭 — 9월 동결로 무게 이동</div>
-        <div class="issue-body">고용 둔화가 확인되자 페드펀드 선물 시장은 9월 FOMC에서 현 3.50~3.75% 동결을 다수 시나리오로 반영했다. 불과 하루 전만 해도 0.25%p 인상 확률이 55%였던 점을 감안하면 급격한 반전이다. 국채금리가 밀리면서 성장주 밸류에이션에 직접적인 순풍이 됐다.</div>
+        <div class="issue-title">10년물 국채금리 4.70% 돌파 — 유가발 인플레 재점화 우려</div>
+        <div class="issue-body">유가 상승이 물가 둔화 흐름을 제약할 것이라는 관측에 미 10년물 금리가 4.7%를 웃돌았다. 달러인덱스도 99.81로 0.27% 올랐다. 금리 상승은 최고치 부근 지수의 밸류에이션 부담을 키우며 차익실현 압력으로 이어졌다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💻</div>
+      <div class="issue-icon">🤖</div>
       <div>
-        <div class="issue-title">소프트웨어·메가캡 테크가 지수를 끌어올림</div>
-        <div class="issue-body">금리 민감도가 높은 소프트웨어와 대형 기술주로 자금이 몰리며 나스닥이 S&amp;P500의 두 배 넘는 상승률을 기록했다. 엔비디아·세일즈포스가 상승을 주도했고, 주간 기준으로는 4월 중순 이후 가장 강한 한 주로 마감했다.</div>
+        <div class="issue-title">엔비디아 5,000억 달러 AI 인프라 컨소시엄 — 호재보다 부담으로 해석</div>
+        <div class="issue-body">엔비디아가 아폴로글로벌·블랙스톤·블랙록 등 월가 대형 금융사와 최대 5,000억 달러 규모의 AI 설비투자 파트너십을 추진한다는 소식이 전해졌다. 시장은 투자 확대 기대보다 자금조달 구조와 밸류에이션 부담에 초점을 맞췄고, 인텔의 150억 달러 유상증자까지 겹치며 반도체 섹터 전반이 눌렸다.</div>
       </div>
     </div>
   </div>
@@ -159,42 +135,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
+      <div class="stock-ticker">S&amp;P ENERGY</div>
+      <div class="stock-name">에너지 섹터 (+4.46%)</div>
+      <div class="stock-desc">유가 급등을 그대로 따라가며 11개 섹터 중 압도적 1위. 나머지 섹터가 거의 제자리인 것과 대조적으로, 이날 시장의 방향성은 사실상 원유가 결정했다.</div>
+    </div>
+    <div class="stock-card">
       <div class="stock-ticker">NVDA</div>
-      <div class="stock-name">엔비디아</div>
-      <div class="stock-desc">+2.53% 상승하며 나스닥 강세를 견인했다. 금리 인상 우려 후퇴가 AI 인프라 관련 고밸류에이션 종목에 가장 크게 작용하는 구간이다.</div>
+      <div class="stock-name">엔비디아 (-2.9%)</div>
+      <div class="stock-desc">대규모 AI 인프라 금융지원 논의가 오히려 자금조달 리스크로 읽히며 하락. 애플도 장중 2%대 약세를 보이며 다우 하방 압력에 가담했다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">CRM</div>
-      <div class="stock-name">세일즈포스</div>
-      <div class="stock-desc">+2.21%로 다우 상승분에 기여했다. 소프트웨어 섹터 전반이 금리 하락 수혜를 받으며 순환매 자금을 흡수했다.</div>
+      <div class="stock-ticker">INTC</div>
+      <div class="stock-name">인텔 (-4.0%)</div>
+      <div class="stock-desc">150억 달러 규모 보통주 발행 발표에 희석 우려로 급락. 다만 연초 대비 175%, 1년간 414% 급등한 뒤의 조정이라는 점은 감안할 필요가 있다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">SECTOR</div>
-      <div class="stock-name">소프트웨어 / 메가캡 테크</div>
-      <div class="stock-desc">이번 주 상승의 중심축. 실적보다 금리 경로 변화가 주가를 움직인 전형적인 듀레이션 랠리 양상이다.</div>
-    </div>
-    <div class="stock-card">
-      <div class="stock-ticker">BONDS</div>
-      <div class="stock-name">미 국채 / 금리 민감 자산</div>
-      <div class="stock-desc">고용 부진에 국채금리가 하락하며 채권 가격이 올랐다. 리츠·유틸리티 등 금리 민감 섹터도 동반 강세를 보였다.</div>
+      <div class="stock-ticker">ACHR</div>
+      <div class="stock-name">아처 에비에이션 (+18.4%)</div>
+      <div class="stock-desc">보잉 자회사 3곳(위스크 에어로·스카이그리드·인시투) 인수를 발표하며 급등. 보잉은 아처 클래스A 지분 19.75%에 해당하는 대가를 받는다.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 오늘(8/10, 월)은 정상 개장일. 주간 성과는 8/7 금요일 종가 기준 집계이며, 주간 등락률은 출처별로 0.2~0.3%p 편차가 있다.
+    ⚠️ 이번 주 최대 변수는 현지시간 수요일 발표되는 7월 CPI. 슈퍼마이크로(SMCI)·코어위브(CRWV)·시스코(CSCO) 실적도 대기 중이다.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 연준 추가 인상 리스크가 사실상 테이블에서 내려왔다. 국채금리 하락은 성장주 밸류에이션을 직접 지지하고, S&amp;P500의 사상 최고 마감은 기술적 저항선이 사라졌다는 뜻이기도 하다. 4월 이후 최강 주간이라는 모멘텀도 단기적으로는 자금 유입을 부른다.<br/><br/>
-      <strong>주의 요인:</strong> 이번 랠리의 연료는 '좋은 경제'가 아니라 '나쁜 고용'이다. 두 달치 10만 명 이상 하향 수정은 노동시장 균열이 일시적 노이즈가 아닐 가능성을 시사한다. 참가율 하락으로 내려간 실업률도 질이 나쁘다. 지금은 금리 기대가 악재를 덮고 있지만, 고용 부진이 소비·기업 실적으로 번지는 순간 같은 데이터가 정반대로 해석될 수 있다.<br/><br/>
-      <strong>결론:</strong> 방향은 위지만 근거는 취약하다. 9월 FOMC까지 남은 CPI와 소비 지표가 '골디락스'와 '경기 둔화'를 가르는 분기점이 된다. 기술주 쏠림이 심해진 만큼, 추격 매수보다는 지수 최고가 구간에서의 비중 관리가 합리적인 구간이다.
+      <strong>긍정 요인:</strong> 지난주 발표된 7월 고용지표가 예상보다 부진하게 나오면서 연준의 추가 금리 인상 우려가 크게 후퇴했고, 그 힘으로 다우와 S&amp;P500이 사상 최고치를 새로 썼다. JP모건은 두 달 만에 다시 S&amp;P500 목표치를 8,000으로 상향했다 — 알파벳·아마존·마이크로소프트의 클라우드 성장과 수주 잔고가 AI 캐펙스의 수익화를 실증하고 있다는 근거다.<br/><br/>
+      <strong>주의 요인:</strong> 유가가 문제다. 호르무즈가 열리지 않는 한 배럴당 80달러대는 고착될 수 있고, 이는 곧바로 CPI와 10년물 금리를 밀어올린다. 4.7%를 넘긴 금리 레벨에서 최고치 부근의 지수를 정당화하려면 실적이 계속 완벽해야 하는데, 그 여지가 점점 얇아지고 있다. 엔비디아·인텔 사례처럼 AI 투자 뉴스가 '자금조달 부담'으로 재해석되기 시작한 것도 심리 변화의 신호다.<br/><br/>
+      <strong>결론:</strong> 하락폭 자체는 0.1~0.3%로 미미하지만, 성격은 명확한 숨 고르기다. 방향을 정하는 건 지수가 아니라 수요일 CPI와 호르무즈 뉴스 흐름이 될 것이다. 유가가 진정되면 최고치 경신 시도가 재개될 여지가 있고, CPI가 예상을 웃돌면 금리인상 베팅이 되살아나며 조정이 깊어질 수 있다. 지금은 방향을 예단하기보다 에너지·반도체의 극단적 온도차를 관찰할 구간이다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: CNBC · Yahoo Finance · TheStreet · Charles Schwab · Washington Post · 생성일시: 2026.08.10
+    데이터 출처: TheStreet · Yahoo Finance · 연합인포맥스 · 이데일리 · 네이버뉴스 · 생성일시: 2026.08.11
   </div>
 
 </div>
