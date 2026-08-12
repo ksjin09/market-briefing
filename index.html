@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.08.11</title>
+  <title>미국증시 브리핑 | 2026.08.12</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,6 +49,14 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card {
+      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -77,33 +85,33 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.08.10 (월) 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.08.12 (수) · 8/11(화) 뉴욕증시 마감 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">호르무즈 협상 교착에 유가 5% 급등 — 3대 지수 사상 최고치 부근에서 약보합 마감</div>
+    <div class="subtitle">3대 지수 동반 하락 — 호르무즈 협상 교착 + 7월 CPI 발표 앞둔 관망세</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">53,975.98</div>
-      <div class="index-change down">▼ -0.11%</div>
-      <div class="index-pts">-60.95pt</div>
-      <div class="badge neg">전일 사상최고 후 되돌림</div>
+      <div class="index-value">53,791.85</div>
+      <div class="index-change down">▼ -0.34%</div>
+      <div class="index-pts">-184.13pt</div>
+      <div class="badge neg">3일째 숨고르기</div>
     </div>
     <div class="index-card down">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,753.11</div>
-      <div class="index-change down">▼ -0.06%</div>
-      <div class="index-pts">-4.53pt</div>
-      <div class="badge">최고치 근접 유지</div>
+      <div class="index-value">7,728.20</div>
+      <div class="index-change down">▼ -0.32%</div>
+      <div class="index-pts">약 -24.8pt</div>
+      <div class="badge neg">커뮤니케이션 최약세</div>
     </div>
     <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,605.36</div>
-      <div class="index-change down">▼ -0.32%</div>
-      <div class="index-pts">-85.26pt</div>
-      <div class="badge neg">반도체 약세 주도</div>
+      <div class="index-value">26,445.45</div>
+      <div class="index-change down">▼ -0.60%</div>
+      <div class="index-pts">약 -159.6pt</div>
+      <div class="badge neg">기술주 차익실현</div>
     </div>
   </div>
 
@@ -112,22 +120,22 @@
     <div class="issue-item">
       <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">호르무즈 해협 재개방 협상 교착 — 국제유가 5% 급등</div>
-        <div class="issue-body">이란은 오만과의 통항 합의가 마무리 단계라면서도 미국이 별도 조건을 수용하기 전에는 해협을 열지 않겠다고 못박았다. WTI는 5.05% 오른 배럴당 82.13달러, 브렌트유는 87.72달러까지 뛰었다. 트럼프 대통령이 협상을 "로키(low-key)로 간다"며 경제적 압박에 무게를 싣자 조기 타결 기대가 후퇴했다.</div>
+        <div class="issue-title">호르무즈 해협 재개방 협상 교착 — 유가 재부담</div>
+        <div class="issue-body">이란 당국자가 "테헤란의 조건이 충족되기 전까지 호르무즈 해협을 열지 않겠다"고 밝히면서 미·이란 합의 기대가 후퇴했다. 장 초반 합의 가능성에 반등하던 지수는 이 발언 이후 방향을 되돌렸다. 유가 상승 → 인플레이션 압력 → 금리인하 기대 후퇴로 이어지는 경로가 시장의 실질적 부담 요인이다.</div>
       </div>
     </div>
     <div class="issue-item">
       <div class="issue-icon">📈</div>
       <div>
-        <div class="issue-title">10년물 국채금리 4.70% 돌파 — 유가발 인플레 재점화 우려</div>
-        <div class="issue-body">유가 상승이 물가 둔화 흐름을 제약할 것이라는 관측에 미 10년물 금리가 4.7%를 웃돌았다. 달러인덱스도 99.81로 0.27% 올랐다. 금리 상승은 최고치 부근 지수의 밸류에이션 부담을 키우며 차익실현 압력으로 이어졌다.</div>
+        <div class="issue-title">7월 CPI 발표 대기 — 이틀간의 물가 지표가 최대 변수</div>
+        <div class="issue-body">투자자들이 관망세로 돌아서며 지수는 장중 대부분 보합권에서 횡보했다. 향후 이틀간 발표되는 물가 지표가 연준의 통화정책 경로를 좌우할 다음 촉매로 지목된다. 유가 상승이 헤드라인 물가를 자극할 경우 금리인하 기대가 후퇴할 수 있다는 경계감이 짙다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🤖</div>
+      <div class="issue-icon">🔍</div>
       <div>
-        <div class="issue-title">엔비디아 5,000억 달러 AI 인프라 컨소시엄 — 호재보다 부담으로 해석</div>
-        <div class="issue-body">엔비디아가 아폴로글로벌·블랙스톤·블랙록 등 월가 대형 금융사와 최대 5,000억 달러 규모의 AI 설비투자 파트너십을 추진한다는 소식이 전해졌다. 시장은 투자 확대 기대보다 자금조달 구조와 밸류에이션 부담에 초점을 맞췄고, 인텔의 150억 달러 유상증자까지 겹치며 반도체 섹터 전반이 눌렸다.</div>
+        <div class="issue-title">알파벳 3.8% 급락 — 커뮤니케이션 섹터 2% 이상 하락</div>
+        <div class="issue-body">알파벳이 최근 5거래일 중 4일 하락하며 S&amp;P 500 섹터 중 커뮤니케이션서비스를 최대 낙폭 업종으로 끌어내렸다. 지난주 구글이 발표한 AI 조직 개편 소식 이후 매도 압력이 이어지고 있다. 대형 기술주 쏠림에 대한 재평가 신호로 읽을 여지가 있다.</div>
       </div>
     </div>
   </div>
@@ -135,42 +143,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">S&amp;P ENERGY</div>
-      <div class="stock-name">에너지 섹터 (+4.46%)</div>
-      <div class="stock-desc">유가 급등을 그대로 따라가며 11개 섹터 중 압도적 1위. 나머지 섹터가 거의 제자리인 것과 대조적으로, 이날 시장의 방향성은 사실상 원유가 결정했다.</div>
-    </div>
-    <div class="stock-card">
-      <div class="stock-ticker">NVDA</div>
-      <div class="stock-name">엔비디아 (-2.9%)</div>
-      <div class="stock-desc">대규모 AI 인프라 금융지원 논의가 오히려 자금조달 리스크로 읽히며 하락. 애플도 장중 2%대 약세를 보이며 다우 하방 압력에 가담했다.</div>
+      <div class="stock-ticker">GOOGL</div>
+      <div class="stock-name">알파벳</div>
+      <div class="stock-desc">-3.8%. AI 사업부 재편 발표 이후 5거래일 중 4일 하락. 커뮤니케이션서비스 섹터 전체를 2% 넘게 끌어내린 주범.</div>
     </div>
     <div class="stock-card">
       <div class="stock-ticker">INTC</div>
-      <div class="stock-name">인텔 (-4.0%)</div>
-      <div class="stock-desc">150억 달러 규모 보통주 발행 발표에 희석 우려로 급락. 다만 연초 대비 175%, 1년간 414% 급등한 뒤의 조정이라는 점은 감안할 필요가 있다.</div>
+      <div class="stock-name">인텔</div>
+      <div class="stock-desc">AI 반도체 투자 재원 마련을 위한 대규모 유상증자 소식에 -4.06%. 필라델피아반도체지수(SOX)도 -2.94%로 동반 약세.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">ACHR</div>
-      <div class="stock-name">아처 에비에이션 (+18.4%)</div>
-      <div class="stock-desc">보잉 자회사 3곳(위스크 에어로·스카이그리드·인시투) 인수를 발표하며 급등. 보잉은 아처 클래스A 지분 19.75%에 해당하는 대가를 받는다.</div>
+      <div class="stock-ticker">MU / SNDK / WDC</div>
+      <div class="stock-name">메모리 반도체</div>
+      <div class="stock-desc">반도체 전반 약세 속에서도 마이크론·샌디스크·웨스턴디지털은 견조. SK하이닉스 ADR은 4.70%, 샌디스크 2.68% 상승하며 메모리 사이클 차별화를 확인.</div>
+    </div>
+    <div class="stock-card">
+      <div class="stock-ticker">RUT</div>
+      <div class="stock-name">러셀 2000 (중소형주)</div>
+      <div class="stock-desc">대형주가 물가 지표를 앞두고 밀리는 사이 소폭 상승 마감. 대형주 쏠림이 완화되는 구간에서 자금이 어디로 흐르는지 보여주는 신호.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 이번 주 최대 변수는 현지시간 수요일 발표되는 7월 CPI. 슈퍼마이크로(SMCI)·코어위브(CRWV)·시스코(CSCO) 실적도 대기 중이다.
+    ⚠️ 7월 CPI 등 물가 지표가 향후 이틀간 연속 발표됩니다. 발표 전후 변동성 확대 가능성에 유의하세요. WTI는 배럴당 81~82달러대에서 등락 중입니다.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 지난주 발표된 7월 고용지표가 예상보다 부진하게 나오면서 연준의 추가 금리 인상 우려가 크게 후퇴했고, 그 힘으로 다우와 S&amp;P500이 사상 최고치를 새로 썼다. JP모건은 두 달 만에 다시 S&amp;P500 목표치를 8,000으로 상향했다 — 알파벳·아마존·마이크로소프트의 클라우드 성장과 수주 잔고가 AI 캐펙스의 수익화를 실증하고 있다는 근거다.<br/><br/>
-      <strong>주의 요인:</strong> 유가가 문제다. 호르무즈가 열리지 않는 한 배럴당 80달러대는 고착될 수 있고, 이는 곧바로 CPI와 10년물 금리를 밀어올린다. 4.7%를 넘긴 금리 레벨에서 최고치 부근의 지수를 정당화하려면 실적이 계속 완벽해야 하는데, 그 여지가 점점 얇아지고 있다. 엔비디아·인텔 사례처럼 AI 투자 뉴스가 '자금조달 부담'으로 재해석되기 시작한 것도 심리 변화의 신호다.<br/><br/>
-      <strong>결론:</strong> 하락폭 자체는 0.1~0.3%로 미미하지만, 성격은 명확한 숨 고르기다. 방향을 정하는 건 지수가 아니라 수요일 CPI와 호르무즈 뉴스 흐름이 될 것이다. 유가가 진정되면 최고치 경신 시도가 재개될 여지가 있고, CPI가 예상을 웃돌면 금리인상 베팅이 되살아나며 조정이 깊어질 수 있다. 지금은 방향을 예단하기보다 에너지·반도체의 극단적 온도차를 관찰할 구간이다.
+      <strong>긍정 요인:</strong> 지수 자체는 사상 최고치 부근에서 크게 이탈하지 않은 '숨고르기' 수준의 조정에 그쳤다. 러셀 2000이 소폭 상승 마감하며 시장 폭이 완전히 무너지지 않았음을 보여줬고, 메모리 반도체는 수출 호조와 실수요를 배경으로 차별화된 강세를 유지 중이다. 미·이란 협상 자체가 결렬된 것이 아니라 지연된 상태라는 점에서 재료의 반전 여지도 남아 있다.<br/><br/>
+      <strong>주의 요인:</strong> 진짜 리스크는 지정학 그 자체가 아니라 '유가 → 물가 → 금리인하 기대 후퇴'로 이어지는 연쇄 경로다. 호르무즈 봉쇄가 장기화되면 CPI가 예상을 웃돌 확률이 높아지고, 이 경우 연준의 완화 스케줄이 뒤로 밀린다. 알파벳 하락에서 보이듯 AI 대형주에 대한 밸류에이션 인내심도 예전 같지 않다.<br/><br/>
+      <strong>결론:</strong> 방향성 베팅보다 이틀간의 물가 지표 확인 후 대응이 합리적인 구간이다. 지수 레벨보다 유가와 섹터 로테이션(대형 기술주 → 중소형·메모리)을 관찰 지표로 삼는 편이 낫다. 본 브리핑은 정보 제공 목적이며 투자 판단의 책임은 투자자 본인에게 있다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: TheStreet · Yahoo Finance · 연합인포맥스 · 이데일리 · 네이버뉴스 · 생성일시: 2026.08.11
+    데이터 출처: Yahoo Finance · CNBC · TheStreet · Investing.com · 네이버뉴스(한경TV, 이데일리, 뉴스핌 등) · 생성일시: 2026.08.12
   </div>
 
 </div>
