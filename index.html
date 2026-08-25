@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.08.20</title>
+  <title>미국증시 브리핑 | 2026.08.25</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,15 +49,6 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
-    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
-    .macro-card {
-      background: #161b22; border: 1px solid #21262d; border-radius: 10px;
-      padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
-    }
-    .macro-label { font-size: 12px; color: #8b949e; }
-    .macro-val { font-size: 15px; font-weight: 700; color: #3fb950; }
-    .macro-val.down { color: #f85149; }
-    .macro-val.flat { color: #e6edf3; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -74,14 +65,14 @@
     .notice {
       background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
       border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; line-height: 1.6;
+      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
     }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
-    @media (max-width: 640px) {
-      .index-grid, .macro-grid, .stock-grid { grid-template-columns: 1fr; }
+    @media (max-width: 600px) {
+      .index-grid, .stock-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -89,85 +80,57 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.08.19 (수) 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.08.24 (월) 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">재무부 국채 바이백 확대에 장기금리 급락 — 3거래일 연속 하락 끊고 3대 지수 소폭 반등</div>
+    <div class="subtitle">엔비디아 실적 앞두고 반도체·메모리주 급락 — 다우만 홀로 상승한 혼조 마감</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">53,463.05</div>
-      <div class="index-change">▲ +0.22%</div>
-      <div class="index-pts">+119.65pt</div>
-      <div class="badge record">3일 만에 반등</div>
+      <div class="index-value">53,417.16</div>
+      <div class="index-change">▲ +0.26%</div>
+      <div class="index-pts">+140.15pt</div>
+      <div class="badge record">경기방어주 강세</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,707.98</div>
-      <div class="index-change">▲ +0.21%</div>
-      <div class="index-pts">+16.22pt</div>
-      <div class="badge">헬스케어 주도</div>
+      <div class="index-value">7,652.86</div>
+      <div class="index-change down">▼ -0.28%</div>
+      <div class="index-pts">-21.51pt</div>
+      <div class="badge neg">2거래일 연속 하락</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,331.09</div>
-      <div class="index-change">▲ +0.16%</div>
-      <div class="index-pts">+41.38pt</div>
-      <div class="badge neg">반도체 반등 제한</div>
-    </div>
-  </div>
-
-  <div class="section-title">주요 지표</div>
-  <div class="macro-grid">
-    <div class="macro-card">
-      <span class="macro-label">미 10년물</span>
-      <span class="macro-val down">4.653% (-5.3bp)</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">미 30년물</span>
-      <span class="macro-val down">5.194% (-9.1bp)</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">VIX</span>
-      <span class="macro-val flat">14.91</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">금 선물</span>
-      <span class="macro-val">$4,542.80 (+1.19%)</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">WTI 유가</span>
-      <span class="macro-val down">$85.56 (-0.31%)</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">원/달러</span>
-      <span class="macro-val down">1,393.96 (-1.39%)</span>
+      <div class="index-value">25,980.19</div>
+      <div class="index-change down">▼ -0.76%</div>
+      <div class="index-pts">약 -199pt</div>
+      <div class="badge neg">기술주 차익실현</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">🏛️</div>
+      <div class="issue-icon">🔻</div>
       <div>
-        <div class="issue-title">재무부 국채 바이백 확대 — 장기금리 급등세 진정</div>
-        <div class="issue-body">미 재무부가 중장기 국채 재매입(바이백) 규모를 확대하겠다고 발표하면서 30년물 수익률이 하루 만에 약 10bp 급락한 5.19%로 내려왔다. 직전까지 30년물은 19년 만의 최고 수준까지 치솟으며 증시를 3거래일 연속 끌어내렸던 핵심 압력 요인이었다. 금리 부담이 완화되자 위험선호가 살아나며 3대 지수가 일제히 반등에 성공했다.</div>
+        <div class="issue-title">메모리·AI 반도체 동반 급락, 필라델피아 반도체지수 약 2.7% 하락</div>
+        <div class="issue-body">주말 사이 엔비디아가 일부 AI 서버 가격 인상을 검토한다는 보도가 나오면서 메모리 원가 상승 우려가 번졌습니다. 마이크론(MU)이 5.8% 급락했고 AMD는 3% 이상, 브로드컴은 2% 이상 밀렸습니다. 엔비디아도 2.91% 하락하며 7거래일 연속 약세를 이어갔습니다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🧬</div>
+      <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">모더나 +176.9% 폭등 — mRNA 암 백신 3상 성공</div>
-        <div class="issue-body">모더나와 머크가 공동 개발한 mRNA 기반 암 백신이 임상 3상에서 성공했다는 소식에 모더나 주가가 176.9% 폭등했고, 머크도 12.6% 급등했다. 바이오·헬스케어 섹터 전반이 동반 강세를 보이며 이날 지수 상승을 실질적으로 견인했다. 헬스케어 ETF들은 실적 개선과 M&amp;A 가속, FDA 승인 호조가 겹치며 52주 신고가 구간에 진입했다.</div>
+        <div class="issue-title">베선트 재무장관, 이란 2차 제재 'Operation Economic Outcast' 발표</div>
+        <div class="issue-body">미 재무부가 이란과 거래를 유지하는 제3국 기업·국가로 세컨더리 제재를 확대한다고 밝혔습니다. 이란 전쟁이 6개월차에 접어드는 가운데 경제 압박 수위를 대폭 끌어올린 조치로, 장 개장 전부터 관망세가 짙게 깔렸습니다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💾</div>
+      <div class="issue-icon">📉</div>
       <div>
-        <div class="issue-title">반도체 반등 제한적 — 전날 필반지수 -4.98% 충격 여진</div>
-        <div class="issue-body">직전 거래일 필라델피아반도체지수가 4.98% 급락하며 7월 말 이후 최악의 하루를 보낸 뒤, 이날 반도체주의 회복세는 미미했다. 마이크론·샌디스크·웨스턴디지털 등 메모리 관련주가 7~9%씩 빠진 충격이 아시아 시장으로 번지며 코스피는 사이드카가 발동될 만큼 급락했다. SK하이닉스 ADR 반등폭이 0.35%에 그친 점은 국내 투자자에게 특히 실망스러운 대목이다.</div>
+        <div class="issue-title">국채금리 하락에도 위험선호 회복 실패 — 달러는 3개월 최저</div>
+        <div class="issue-body">10년물 금리가 전주 4.73% 고점에서 되밀렸지만 지수를 끌어올리지는 못했습니다. 재무부 국채 바이백 계획에 달러가 3개월 만의 최저권으로 내려앉았고, 미·캐나다 관세 마찰과 AI 데이터센터에 대한 정치권 규제 압박도 기술주 투심을 눌렀습니다.</div>
       </div>
     </div>
   </div>
@@ -175,42 +138,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">MRNA</div>
-      <div class="stock-name">모더나 · +176.9%</div>
-      <div class="stock-desc">머크와 공동 개발한 mRNA 암 백신 3상 성공으로 하루 만에 주가가 세 배 가까이 뛰었다. 팬데믹 이후 오랜 부진을 단번에 뒤집는 이벤트로, 파이프라인 가치 재평가가 본격화될 가능성이 크다.</div>
+      <div class="stock-ticker">NVDA</div>
+      <div class="stock-name">엔비디아</div>
+      <div class="stock-desc">2.91% 하락, 7거래일 연속 약세. 이번 주 실적 발표를 앞두고 눈높이가 이미 높아져 있어 '어닝 서프라이즈에도 주가는 빠질 수 있다'는 경계감이 큽니다. 이번 주 시장 방향을 사실상 결정할 이벤트.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">MRK</div>
-      <div class="stock-name">머크 · +12.6%</div>
-      <div class="stock-desc">모더나와의 공동 개발 파트너로서 임상 성공 수혜를 나눠 가졌다. 대형 제약주가 두 자릿수로 뛰는 것은 드문 일로, 헬스케어 섹터 전반의 리레이팅 신호로 읽힌다.</div>
+      <div class="stock-ticker">MU</div>
+      <div class="stock-name">마이크론</div>
+      <div class="stock-desc">5.8% 급락하며 메모리 섹터 낙폭을 주도했습니다. 샌디스크(SNDK), SK하이닉스 ADR도 동반 하락. AI 서버 가격 인상 보도가 메모리 수요·마진 논쟁에 다시 불을 붙였습니다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">SOX</div>
-      <div class="stock-name">필라델피아 반도체지수</div>
-      <div class="stock-desc">전날 4.98% 급락 후 반등이 거의 나오지 않았다. 고금리 부담과 최근 급등에 따른 차익실현이 겹친 구간으로, 메모리 업황 개선 기대가 가격에 과도하게 선반영됐는지가 관건이다.</div>
+      <div class="stock-ticker">AVGO · AMD</div>
+      <div class="stock-name">브로드컴 · AMD</div>
+      <div class="stock-desc">각각 2%, 3% 이상 하락. AI 데이터센터 규제 논의와 밸류에이션 부담이 겹치며 AI 반도체 전반에 차익 실현 매물이 나왔습니다. 섹터 전체가 같은 방향으로 움직인 하루.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">GC=F</div>
-      <div class="stock-name">금 선물 · +1.19%</div>
-      <div class="stock-desc">온스당 4,542달러까지 오르며 강세를 이어갔다. 금리 하락과 달러 약세가 동시에 작용했고, 비트코인도 7% 급등해 위험자산과 안전자산이 함께 오르는 유동성 장세 양상을 보였다.</div>
+      <div class="stock-ticker">BTC ETF</div>
+      <div class="stock-name">비트코인 현물 ETF</div>
+      <div class="stock-desc">미국 상장 13개 현물 ETF에 하루 19억 2000만 달러(약 2조 6000억 원)가 유입됐습니다. 비트코인은 일주일 만에 22% 반등해 7만 8000달러대. 주식에서 빠진 위험자금의 행선지로 읽힙니다.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 반등폭이 0.2% 안팎에 그쳐 추세 전환으로 보기엔 이르다. 30년물 금리는 급락 후에도 5.19%로 여전히 19년래 최고 부근이며, 시장 일각에서는 AI 트레이드 전반에 대한 버블 경고가 나오고 있다.
+    ⚠️ 이번 주 최대 이벤트는 엔비디아 실적 발표입니다. 발표 전후 반도체·AI 섹터 변동성 확대에 유의하세요.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 증시를 짓눌러온 장기금리가 재무부 바이백이라는 명확한 정책 수단으로 진정됐다는 점이 가장 크다. VIX가 14.9로 낮게 유지되고 있고 옵션 내재변동성은 1월 이후 최저 수준으로 내려앉아, 시장이 공포 국면에 있지 않음을 보여준다. 모더나·머크 사례처럼 AI·반도체 밖에서 새로운 상승 동력이 나온 것도 지수 저변을 넓히는 신호다. 원/달러가 1,394원으로 1.4% 하락한 점은 국내 수급에도 우호적이다.<br/><br/>
-      <strong>주의 요인:</strong> 바이백은 금리 상승의 원인이 아니라 증상을 다루는 조치라는 점을 잊으면 안 된다. 30년물 5.19%는 여전히 역사적 고점권이고, 재정적자 구조가 그대로인 한 언제든 재상승할 수 있다. 반도체가 전날 5% 폭락 후 사실상 반등하지 못한 것은 리더십 훼손 신호이며, 나스닥이 다우보다 덜 오른 배경이기도 하다. 소형주로의 순환매를 권하는 전략가 목소리가 늘고 있다는 건 대형 기술주 주도력에 대한 의구심이 커졌다는 뜻이다.<br/><br/>
-      <strong>결론:</strong> 이번 반등은 펀더멘털 개선이 아니라 금리 안정에 기댄 기술적 성격이 강하다. 지금 확인해야 할 것은 지수의 방향보다 <strong>리더십의 이동</strong>이다. 반도체가 조정을 소화하고 다시 올라오는지, 아니면 헬스케어·소형주가 바통을 이어받는지에 따라 향후 몇 주의 성격이 갈린다. 장기금리 5.2% 선의 재돌파 여부가 가장 확실한 트리거이므로 이 레벨을 기준점으로 삼는 것이 합리적이다.
+      <strong>긍정 요인:</strong> 국채금리가 전주 고점에서 되밀리며 금리 부담이 완화됐고, 다우가 상승 마감할 만큼 경기방어·가치주로의 순환매가 작동하고 있습니다. 지수 하락폭 자체는 0.3~0.8%로 제한적이어서 패닉이라기보다 고밸류 섹터의 차익 실현 성격이 강합니다.<br/><br/>
+      <strong>주의 요인:</strong> 엔비디아 7거래일 연속 하락은 AI 트레이드 자체에 대한 피로감을 보여줍니다. 실적이 좋아도 눈높이를 넘지 못하면 조정이 깊어질 수 있습니다. 여기에 이란 2차 제재 확대, 미·캐나다 관세 마찰, AI 데이터센터 규제 논의까지 정책 리스크가 동시다발적으로 쌓이는 국면입니다.<br/><br/>
+      <strong>결론:</strong> 지수보다 섹터가 갈리는 장입니다. 반도체·AI 쏠림은 엔비디아 실적이 나오기 전까지 방향을 잡기 어렵고, 그 사이 자금은 다우형 가치주와 비트코인 ETF 같은 대체 자산으로 분산되는 흐름이 보입니다. 이번 주는 포지션을 크게 키우기보다 이벤트 통과를 확인하고 움직이는 편이 합리적으로 보입니다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Yahoo Finance · 네이버 뉴스 · CNBC / TheStreet · 한국경제TV · 생성일시: 2026.08.20
+    데이터 출처: Reuters · Yahoo Finance · TheStreet · 뉴스핌 · 네이버뉴스 · 생성일시: 2026.08.25
   </div>
 
 </div>
