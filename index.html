@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.09.11</title>
+  <title>미국증시 브리핑 | 2026.09.12</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -57,6 +57,12 @@
     .weekly-label { font-size: 12px; color: #8b949e; }
     .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
     .weekly-val.down { color: #f85149; }
+    .macro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 32px; }
+    .macro-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; }
+    .macro-label { font-size: 10px; color: #8b949e; letter-spacing: 0.06em; margin-bottom: 6px; }
+    .macro-val { font-size: 16px; font-weight: 700; color: #f0f6fc; margin-bottom: 3px; }
+    .macro-chg { font-size: 11px; font-weight: 600; color: #3fb950; }
+    .macro-chg.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -73,14 +79,15 @@
     .notice {
       background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
       border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
+      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; line-height: 1.6;
     }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
     @media (max-width: 640px) {
-      .index-grid, .stock-grid, .weekly-grid { grid-template-columns: 1fr; }
+      .index-grid, .weekly-grid, .stock-grid { grid-template-columns: 1fr; }
+      .macro-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -88,33 +95,73 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.09.11 (금) · 9/10 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.09.11 (금) 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">유가 100달러 돌파 + 10년물 금리 4.9%대 — 3대 지수 나흘 연속 하락</div>
+    <div class="subtitle">유가 3% 급락 + CPI 예상 부합에 3대 지수 5거래일 만에 동반 반등 — 다만 주간 기준으로는 하락 마감</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">52,064.10</div>
-      <div class="index-change down">▼ -0.60%</div>
-      <div class="index-pts">-316.56pt</div>
-      <div class="badge neg">4일 연속 하락</div>
+      <div class="index-value">52,573.29</div>
+      <div class="index-change">▲ +0.98%</div>
+      <div class="index-pts">+509.19pt</div>
+      <div class="badge record">5거래일 만에 반등</div>
     </div>
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,591.70</div>
-      <div class="index-change down">▼ -0.58%</div>
-      <div class="index-pts">-44.66pt</div>
-      <div class="badge neg">지지선 이탈</div>
+      <div class="index-value">7,656.98</div>
+      <div class="index-change">▲ +0.86%</div>
+      <div class="index-pts">+65.28pt</div>
+      <div class="badge record">4거래일 연속 하락 마감</div>
     </div>
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,081.72</div>
-      <div class="index-change down">▼ -0.65%</div>
-      <div class="index-pts">-171.62pt</div>
-      <div class="badge neg">필라델피아 반도체 -2.66%</div>
+      <div class="index-value">26,333.04</div>
+      <div class="index-change">▲ +0.96%</div>
+      <div class="index-pts">+251.32pt</div>
+      <div class="badge">기술주 주도 반등</div>
+    </div>
+  </div>
+
+  <div class="section-title">주간 성과 (9/4 종가 대비)</div>
+  <div class="weekly-grid">
+    <div class="weekly-card">
+      <span class="weekly-label">다우</span>
+      <span class="weekly-val down">-1.57%</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">S&amp;P 500</span>
+      <span class="weekly-val down">-0.80%</span>
+    </div>
+    <div class="weekly-card">
+      <span class="weekly-label">나스닥</span>
+      <span class="weekly-val down">-0.66%</span>
+    </div>
+  </div>
+
+  <div class="section-title">주요 지표</div>
+  <div class="macro-grid">
+    <div class="macro-card">
+      <div class="macro-label">VIX</div>
+      <div class="macro-val">15.84</div>
+      <div class="macro-chg down">-11.21%</div>
+    </div>
+    <div class="macro-card">
+      <div class="macro-label">10년물 금리</div>
+      <div class="macro-val">4.975%</div>
+      <div class="macro-chg">+0.031%p</div>
+    </div>
+    <div class="macro-card">
+      <div class="macro-label">WTI 유가</div>
+      <div class="macro-val">$100.05</div>
+      <div class="macro-chg down">-2.37%</div>
+    </div>
+    <div class="macro-card">
+      <div class="macro-label">원/달러</div>
+      <div class="macro-val">1,341.05</div>
+      <div class="macro-chg down">-0.53%</div>
     </div>
   </div>
 
@@ -123,22 +170,22 @@
     <div class="issue-item">
       <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">WTI 100달러 돌파 — 중동 해상 물류 차단이 방아쇠</div>
-        <div class="issue-body">미국-이란 공방이 이어지는 가운데 친이란 후티 반군이 홍해 연안 모카를 장악하면서 해상 운송 리스크가 급격히 커졌습니다. WTI 선물이 6% 급등해 배럴당 100달러를 넘어섰고 브렌트유는 105~107달러로 7월 이후 최고치를 기록했습니다. 에너지 비용 상승이 곧바로 인플레이션 기대를 자극하며 증시 전반을 눌렀습니다.</div>
+        <div class="issue-title">국제유가 급등세 진정 — 반등의 1등 공신</div>
+        <div class="issue-body">중동 정세 불안으로 최근 급등하던 국제유가가 하루 만에 3% 안팎 되밀렸다. WTI 최근월물은 2.4% 하락한 100.05달러에 마감했고 브렌트유도 약 3% 내렸다. 유가발 인플레이션 공포가 한 발 물러서면서 위험자산 선호 심리가 되살아났고, VIX는 11% 급락한 15.84까지 내려왔다.</div>
       </div>
     </div>
     <div class="issue-item">
       <div class="issue-icon">📈</div>
       <div>
-        <div class="issue-title">10년물 국채금리 4.94% — '금리 인상' 시나리오가 재부상</div>
-        <div class="issue-body">8월 생산자물가지수(PPI)가 전월 대비 0.4% 오르며 시장 예상에 부합했지만 반등 자체가 부담으로 작용했습니다. 미 10년물 국채금리는 4.94~4.95%까지 치솟아 2023년 7월 이후 최고 수준에 도달했고, 연내 금리 인상 가능성을 거론하는 목소리가 늘었습니다. 트럼프 대통령의 대규모 현금 지급 공약도 재정 부담 우려를 키우며 금리 상승을 부추겼습니다.</div>
+        <div class="issue-title">8월 CPI, 헤드라인은 예상 부합 / 근원은 상회</div>
+        <div class="issue-body">8월 소비자물가지수는 전월 대비 0.4%, 전년 대비 3.4% 올라 시장 예상에 부합했다. 다만 변동성이 큰 식품·에너지를 제외한 근원 CPI는 0.3% 상승해 예상치(0.2%)를 웃돌았다. 불확실성 해소라는 안도감이 우선 반영됐지만, 물가 경로 자체는 연준 목표 2%에서 여전히 크게 벗어나 있다.</div>
       </div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">💾</div>
+      <div class="issue-icon">🏛️</div>
       <div>
-        <div class="issue-title">반도체 급락 vs 오라클 호실적 — AI 진영 내부의 온도차</div>
-        <div class="issue-body">필라델피아 반도체지수가 2.66% 급락하며 기술주 약세를 주도했습니다. 반면 장 마감 후 실적을 발표한 오라클은 AI 클라우드 수요 가속을 근거로 가이던스를 상향하며 시간외에서 6% 넘게 올랐고, 어도비는 무난한 실적에도 시간외 약세를 보였습니다. 고금리 국면에서 시장이 '기대 부합'에는 더 이상 값을 쳐주지 않는다는 신호입니다.</div>
+        <div class="issue-title">다음 주 FOMC — 시장은 '금리 인상'에 베팅</div>
+        <div class="issue-body">근원 물가 상회로 다음 주 FOMC에서 금리를 인상할 확률이 85%를 넘어섰다. 채권시장은 이미 이를 반영해 10년물 금리가 4.975%까지 올랐다. 금리 상승에도 주식이 오른 이 조합은 오래 가기 어려운 구도로, 다음 주 연준의 메시지가 방향을 가를 분기점이다.</div>
       </div>
     </div>
   </div>
@@ -146,42 +193,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">ORCL</div>
-      <div class="stock-name">오라클</div>
-      <div class="stock-desc">2분기 실적이 시장 예상을 상회하고 AI 데이터센터 수요를 근거로 전망을 올리면서 시간외 6%대 강세. 매크로 악재 속에서도 AI 인프라 수요가 실제 매출로 잡히고 있다는 점을 확인시킨 유일한 대형 호재였습니다.</div>
+      <div class="stock-ticker">DELL</div>
+      <div class="stock-name">델 테크놀로지스 · +11.98%</div>
+      <div class="stock-desc">AI 서버 수요를 등에 업고 하루 만에 12% 가까이 급등하며 이날 대형주 중 가장 강한 움직임을 보였다. HPE 등 AI 인프라 관련주도 동반 상승하며 나스닥 반등을 견인했다.</div>
     </div>
     <div class="stock-card">
       <div class="stock-ticker">SOX</div>
-      <div class="stock-name">필라델피아 반도체지수</div>
-      <div class="stock-desc">2.66% 급락하며 3대 지수 낙폭을 크게 웃돌았습니다. 금리 상승 국면에서 밸류에이션 부담이 큰 고성장 섹터가 먼저 조정받는 전형적인 패턴으로, 국내 삼성전자·SK하이닉스도 3~4%대 동반 하락했습니다.</div>
+      <div class="stock-name">반도체 · 필라델피아 반도체지수 +1.81%</div>
+      <div class="stock-desc">반도체 섹터가 지수 대비 두 배 가까운 상승률을 기록했다. 다만 엔비디아는 0.03% 하락한 약보합에 머물러 대장주 없이 올라간 랠리였다는 점은 체크 포인트다. 애플은 1.74% 상승.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">ADBE</div>
-      <div class="stock-name">어도비</div>
-      <div class="stock-desc">실적이 시장 기대에 부합했음에도 시간외에서 하락했습니다. 금리가 뛰는 환경에서는 '예상대로'가 더 이상 충분하지 않다는 점을 보여준 사례입니다.</div>
+      <div class="stock-ticker">CIEN / ANET / CSCO</div>
+      <div class="stock-name">네트워킹 장비 · +4~5%</div>
+      <div class="stock-desc">시에나가 실적 발표 후 낙폭을 되돌리며 5% 올랐고 아리스타 네트웍스 5%, 시스코 4% 상승했다. 개별 재료 없이 섹터 전체가 동시에 움직인 흐름으로, AI 데이터센터 네트워크 투자 기대가 배경으로 읽힌다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">ENERGY</div>
-      <div class="stock-name">에너지 / 정유 섹터</div>
-      <div class="stock-desc">유가 급등의 유일한 수혜 진영. 다만 원유 강세의 원인이 수요 회복이 아니라 공급망 차단이라는 점에서, 시장 전체로는 비용 충격에 가깝게 해석되고 있습니다.</div>
+      <div class="stock-ticker">STX / SNDK</div>
+      <div class="stock-name">스토리지 · 차익실현 매물</div>
+      <div class="stock-desc">시게이트가 4%, 샌디스크가 3% 하락하며 올해 급등분을 일부 반납했다. 마이크론은 보합을 지켰다. 반도체 내에서도 메모리·스토리지 쪽은 이익 실현 압력이 먼저 나타나는 구간에 들어섰다.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 오늘(9/11) 장중 8월 소비자물가지수(CPI) 발표 예정 — 유가·금리 방향을 가를 최대 변수입니다. 주간 성과는 이번 주 거래가 아직 종료되지 않아 이번 리포트에서 생략했습니다.
+    ⚠️ 주간 기준으로는 3대 지수 모두 하락 마감(다우 -1.57%, S&amp;P500 -0.80%, 나스닥 -0.66%). 금요일 반등은 4거래일 연속 하락에 대한 되돌림 성격이 강하며, 추세 전환으로 단정하기에는 이르다.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> AI·반도체 주도주의 이익 체력 자체는 훼손되지 않았습니다. 오라클의 AI 클라우드 실적 상향과 마이크로소프트의 38GW 데이터센터 계획은 AI 인프라 수요가 몇 년 단위로 이어진다는 근거로, 이번 하락이 실적이 아니라 할인율에서 비롯됐음을 보여줍니다. 나흘 연속 하락으로 단기 과매도 구간에 진입한 점도 반등 여지를 남깁니다.<br/><br/>
-      <strong>주의 요인:</strong> 유가와 금리가 동시에 오르는 조합이 가장 까다롭습니다. 중동 해상 물류 차단은 통화정책으로 해결되지 않는 공급 충격이고, 10년물 금리가 5%를 넘어서면 기술주 밸류에이션 재계산이 불가피합니다. '인하'가 아니라 '인상'이 논의되기 시작했다는 것 자체가 연초 시나리오가 바뀌었다는 뜻입니다. Fitch는 AI 주도 조정이 현실화될 경우 6개월간 35% 하락 가능성도 모델링했습니다.<br/><br/>
-      <strong>결론:</strong> 방향키는 오늘 밤 8월 CPI가 쥐고 있습니다. 예상에 부합하면 유가·금리 상승분이 일부 되돌려지며 하방 경직성이 확보될 여지가 있지만, 상회할 경우 금리 인상 시나리오가 가격에 반영되며 조정이 길어질 수 있습니다. 지금은 방향을 예단해 베팅하기보다, 유가 100달러선과 10년물 5%선 이 두 지표를 체크포인트로 두고 대응 폭을 좁히는 구간입니다.
+      <strong>긍정 요인:</strong> 유가 급등세가 꺾이면서 시장을 짓누르던 가장 큰 단기 변수 하나가 완화됐다. VIX가 15선까지 내려오며 공포 심리도 정상화됐고, CPI 헤드라인이 예상에 부합하며 '최악은 아니다'라는 안도가 확인됐다. AI 인프라·네트워킹·반도체 등 실적이 뒷받침되는 섹터로 자금이 다시 유입되는 흐름도 살아 있다.<br/><br/>
+      <strong>주의 요인:</strong> 근원 CPI가 예상을 웃돌며 다음 주 금리 인상 확률이 85%를 넘어섰고, 10년물 금리는 5%선을 눈앞에 두고 있다. 금리가 오르는데 주가도 오르는 조합은 지속되기 어렵다. 유가 하락 역시 중동 정세에 달린 문제라 언제든 되돌아올 수 있다. 엔비디아가 빠진 채 올라간 반등이라는 점, 주간으로는 여전히 마이너스라는 점도 반등의 체력을 의심케 한다.<br/><br/>
+      <strong>결론:</strong> 이번 반등은 추세 전환보다 4거래일 낙폭에 대한 기술적 되돌림으로 보는 편이 안전하다. 다음 주 FOMC가 사실상 모든 것을 결정하는 구간이며, 인상 자체보다 연준이 추가 긴축 경로를 어떻게 시사하느냐가 관건이다. 유가와 10년물 금리 5% 돌파 여부, 이 두 가지를 매일 체크하는 것이 지금 가장 실용적인 대응이다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Yahoo Finance · CNBC · TheStreet · 연합인포맥스 · 네이버뉴스 · Benzinga · 생성일시: 2026.09.11
+    데이터 출처: Yahoo Finance · 네이버 뉴스 · Yahoo Finance Live · TheStreet · 연합/뉴시스 · 생성일시: 2026.09.12
   </div>
 
 </div>
