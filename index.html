@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.09.12</title>
+  <title>미국증시 브리핑 | 2026.09.14</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -57,12 +57,6 @@
     .weekly-label { font-size: 12px; color: #8b949e; }
     .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
     .weekly-val.down { color: #f85149; }
-    .macro-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 32px; }
-    .macro-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; }
-    .macro-label { font-size: 10px; color: #8b949e; letter-spacing: 0.06em; margin-bottom: 6px; }
-    .macro-val { font-size: 16px; font-weight: 700; color: #f0f6fc; margin-bottom: 3px; }
-    .macro-chg { font-size: 11px; font-weight: 600; color: #3fb950; }
-    .macro-chg.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -79,25 +73,21 @@
     .notice {
       background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
       border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; line-height: 1.6;
+      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
     }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
-    @media (max-width: 640px) {
-      .index-grid, .weekly-grid, .stock-grid { grid-template-columns: 1fr; }
-      .macro-grid { grid-template-columns: repeat(2, 1fr); }
-    }
   </style>
 </head>
 <body>
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.09.11 (금) 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.09.14 (월) · 9월 11일(금) 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">유가 3% 급락 + CPI 예상 부합에 3대 지수 5거래일 만에 동반 반등 — 다만 주간 기준으로는 하락 마감</div>
+    <div class="subtitle">유가 급락에 3대 지수 5거래일 만에 동반 반등 — 그러나 주말 호르무즈 회담 연기로 유가 재점화</div>
   </div>
 
   <div class="section-title">지수 현황</div>
@@ -114,121 +104,98 @@
       <div class="index-value">7,656.98</div>
       <div class="index-change">▲ +0.86%</div>
       <div class="index-pts">+65.28pt</div>
-      <div class="badge record">4거래일 연속 하락 마감</div>
+      <div class="badge">CPI 부합</div>
     </div>
     <div class="index-card">
       <div class="index-name">NASDAQ</div>
       <div class="index-value">26,333.04</div>
       <div class="index-change">▲ +0.96%</div>
       <div class="index-pts">+251.32pt</div>
-      <div class="badge">기술주 주도 반등</div>
-    </div>
-  </div>
-
-  <div class="section-title">주간 성과 (9/4 종가 대비)</div>
-  <div class="weekly-grid">
-    <div class="weekly-card">
-      <span class="weekly-label">다우</span>
-      <span class="weekly-val down">-1.57%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">S&amp;P 500</span>
-      <span class="weekly-val down">-0.80%</span>
-    </div>
-    <div class="weekly-card">
-      <span class="weekly-label">나스닥</span>
-      <span class="weekly-val down">-0.66%</span>
-    </div>
-  </div>
-
-  <div class="section-title">주요 지표</div>
-  <div class="macro-grid">
-    <div class="macro-card">
-      <div class="macro-label">VIX</div>
-      <div class="macro-val">15.84</div>
-      <div class="macro-chg down">-11.21%</div>
-    </div>
-    <div class="macro-card">
-      <div class="macro-label">10년물 금리</div>
-      <div class="macro-val">4.975%</div>
-      <div class="macro-chg">+0.031%p</div>
-    </div>
-    <div class="macro-card">
-      <div class="macro-label">WTI 유가</div>
-      <div class="macro-val">$100.05</div>
-      <div class="macro-chg down">-2.37%</div>
-    </div>
-    <div class="macro-card">
-      <div class="macro-label">원/달러</div>
-      <div class="macro-val">1,341.05</div>
-      <div class="macro-chg down">-0.53%</div>
+      <div class="badge">AI 데이터센터 기대</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
+
     <div class="issue-item">
       <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">국제유가 급등세 진정 — 반등의 1등 공신</div>
-        <div class="issue-body">중동 정세 불안으로 최근 급등하던 국제유가가 하루 만에 3% 안팎 되밀렸다. WTI 최근월물은 2.4% 하락한 100.05달러에 마감했고 브렌트유도 약 3% 내렸다. 유가발 인플레이션 공포가 한 발 물러서면서 위험자산 선호 심리가 되살아났고, VIX는 11% 급락한 15.84까지 내려왔다.</div>
+        <div class="issue-title">유가 하락이 반등의 방아쇠 — 그런데 주말에 되돌려졌다</div>
+        <div class="issue-body">호르무즈 해협 통행 재개 기대감에 WTI가 금요일 100달러선까지 밀리며 증시 반등을 이끌었다. 하지만 주말 사이 관련 회의가 연기되면서 WTI는 다시 102.87달러(+2.82%)로 튀어올랐다. 금요일 랠리의 근거 자체가 하루 만에 약해진 셈이라, 이번 주 지수는 유가 헤드라인에 그대로 끌려다닐 가능성이 크다.</div>
       </div>
     </div>
+
     <div class="issue-item">
       <div class="issue-icon">📈</div>
       <div>
-        <div class="issue-title">8월 CPI, 헤드라인은 예상 부합 / 근원은 상회</div>
-        <div class="issue-body">8월 소비자물가지수는 전월 대비 0.4%, 전년 대비 3.4% 올라 시장 예상에 부합했다. 다만 변동성이 큰 식품·에너지를 제외한 근원 CPI는 0.3% 상승해 예상치(0.2%)를 웃돌았다. 불확실성 해소라는 안도감이 우선 반영됐지만, 물가 경로 자체는 연준 목표 2%에서 여전히 크게 벗어나 있다.</div>
+        <div class="issue-title">8월 CPI 전년비 3.4% — 예상 부합이지만 목표치와는 여전히 먼 거리</div>
+        <div class="issue-body">8월 소비자물가지수는 전월비 0.4%, 전년비 3.4% 상승해 시장 컨센서스에 부합했다. 근원 CPI는 전월비 0.3%, 전년비 2.4%. '서프라이즈가 없었다'는 안도감이 매수를 불렀지만, 에너지발 물가 압력이 아직 8월 지표에 온전히 반영되지 않았다는 점은 남는 숙제다.</div>
       </div>
     </div>
+
     <div class="issue-item">
       <div class="issue-icon">🏛️</div>
       <div>
-        <div class="issue-title">다음 주 FOMC — 시장은 '금리 인상'에 베팅</div>
-        <div class="issue-body">근원 물가 상회로 다음 주 FOMC에서 금리를 인상할 확률이 85%를 넘어섰다. 채권시장은 이미 이를 반영해 10년물 금리가 4.975%까지 올랐다. 금리 상승에도 주식이 오른 이 조합은 오래 가기 어려운 구도로, 다음 주 연준의 메시지가 방향을 가를 분기점이다.</div>
+        <div class="issue-title">9/15~16 FOMC — 동결이 아니라 '인상' 여부가 쟁점</div>
+        <div class="issue-body">이번 주 수요일(현지 9/16) 금리 결정과 점도표가 나온다. 현 3.50~3.75% 구간에서 25bp 인상 가능성이 시장에 상당 부분 반영된 상태다. 8월 고용이 16.2만 명으로 예상(5.5만 명)을 크게 웃돈 점이 인상론에 힘을 실었다. 10년물 금리는 4.975%로 5% 문턱에 붙어 있다.</div>
       </div>
     </div>
+
+    <div class="issue-item">
+      <div class="issue-icon">🤖</div>
+      <div>
+        <div class="issue-title">골드만삭스 "S&amp;P500 이익 성장의 절반이 AI" — 양날의 칼</div>
+        <div class="issue-body">골드만삭스는 AI 지출이 S&amp;P500 이익 성장의 절반을 떠받치고 있다고 분석했다. 뒤집어 보면 소수 빅테크의 자본지출 결정 하나에 지수 전체 이익이 흔들린다는 뜻이다. 상위 10개 종목이 S&amp;P500 시총의 약 38%를 차지하는 현재 구조에서 분산은 이미 착시에 가깝다.</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
+
     <div class="stock-card">
-      <div class="stock-ticker">DELL</div>
-      <div class="stock-name">델 테크놀로지스 · +11.98%</div>
-      <div class="stock-desc">AI 서버 수요를 등에 업고 하루 만에 12% 가까이 급등하며 이날 대형주 중 가장 강한 움직임을 보였다. HPE 등 AI 인프라 관련주도 동반 상승하며 나스닥 반등을 견인했다.</div>
+      <div class="stock-ticker">XLE / ENERGY</div>
+      <div class="stock-name">에너지 섹터</div>
+      <div class="stock-desc">WTI가 102달러를 회복하며 유일하게 '지정학 프리미엄'을 온전히 받는 섹터. EIA 추산 원유 생산 차질이 8월 일평균 670만 배럴로 7월(500만)보다 확대됐다. 다만 이미 많이 오른 구간이라 추격 매수 부담도 함께 커졌다.</div>
     </div>
+
     <div class="stock-card">
-      <div class="stock-ticker">SOX</div>
-      <div class="stock-name">반도체 · 필라델피아 반도체지수 +1.81%</div>
-      <div class="stock-desc">반도체 섹터가 지수 대비 두 배 가까운 상승률을 기록했다. 다만 엔비디아는 0.03% 하락한 약보합에 머물러 대장주 없이 올라간 랠리였다는 점은 체크 포인트다. 애플은 1.74% 상승.</div>
+      <div class="stock-ticker">DELL / HPE</div>
+      <div class="stock-name">AI 서버·데이터센터</div>
+      <div class="stock-desc">금요일 나스닥 반등의 실질적 주역. 데이터센터 투자 확대 기대가 재차 부각되며 주목받았다. AI 설비투자 사이클이 지수 이익 성장의 절반을 책임지는 만큼, 이 그룹의 가이던스가 곧 시장 방향성이다.</div>
     </div>
+
     <div class="stock-card">
-      <div class="stock-ticker">CIEN / ANET / CSCO</div>
-      <div class="stock-name">네트워킹 장비 · +4~5%</div>
-      <div class="stock-desc">시에나가 실적 발표 후 낙폭을 되돌리며 5% 올랐고 아리스타 네트웍스 5%, 시스코 4% 상승했다. 개별 재료 없이 섹터 전체가 동시에 움직인 흐름으로, AI 데이터센터 네트워크 투자 기대가 배경으로 읽힌다.</div>
+      <div class="stock-ticker">GC=F</div>
+      <div class="stock-name">금 (4,375.5달러)</div>
+      <div class="stock-desc">중동 긴장과 5%에 근접한 국채 금리가 동시에 작동하는 국면에서도 고점권을 지키고 있다. 실질금리 상승에도 밀리지 않는다는 건 안전자산 수요가 그만큼 두껍다는 신호다.</div>
     </div>
+
     <div class="stock-card">
-      <div class="stock-ticker">STX / SNDK</div>
-      <div class="stock-name">스토리지 · 차익실현 매물</div>
-      <div class="stock-desc">시게이트가 4%, 샌디스크가 3% 하락하며 올해 급등분을 일부 반납했다. 마이크론은 보합을 지켰다. 반도체 내에서도 메모리·스토리지 쪽은 이익 실현 압력이 먼저 나타나는 구간에 들어섰다.</div>
+      <div class="stock-ticker">WMT / EL</div>
+      <div class="stock-name">소비주</div>
+      <div class="stock-desc">유가발 물가 상승은 결국 실질 소비여력을 갉아먹는다. 필수소비(WMT)와 재량소비(EL)의 갈림이 이번 분기 실적 시즌의 핵심 관전 포인트가 될 가능성이 높다.</div>
     </div>
+
   </div>
 
   <div class="notice">
-    ⚠️ 주간 기준으로는 3대 지수 모두 하락 마감(다우 -1.57%, S&amp;P500 -0.80%, 나스닥 -0.66%). 금요일 반등은 4거래일 연속 하락에 대한 되돌림 성격이 강하며, 추세 전환으로 단정하기에는 이르다.
+    ⚠️ 금요일 반등에도 주간 기준으로는 S&amp;P500 약 -0.8%, 다우 약 -1.6% 하락 마감. VIX는 15.84로 -11.2% 급락했으나, 주말 호르무즈 회의 연기로 변동성 재확대 여지가 있다.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 유가 급등세가 꺾이면서 시장을 짓누르던 가장 큰 단기 변수 하나가 완화됐다. VIX가 15선까지 내려오며 공포 심리도 정상화됐고, CPI 헤드라인이 예상에 부합하며 '최악은 아니다'라는 안도가 확인됐다. AI 인프라·네트워킹·반도체 등 실적이 뒷받침되는 섹터로 자금이 다시 유입되는 흐름도 살아 있다.<br/><br/>
-      <strong>주의 요인:</strong> 근원 CPI가 예상을 웃돌며 다음 주 금리 인상 확률이 85%를 넘어섰고, 10년물 금리는 5%선을 눈앞에 두고 있다. 금리가 오르는데 주가도 오르는 조합은 지속되기 어렵다. 유가 하락 역시 중동 정세에 달린 문제라 언제든 되돌아올 수 있다. 엔비디아가 빠진 채 올라간 반등이라는 점, 주간으로는 여전히 마이너스라는 점도 반등의 체력을 의심케 한다.<br/><br/>
-      <strong>결론:</strong> 이번 반등은 추세 전환보다 4거래일 낙폭에 대한 기술적 되돌림으로 보는 편이 안전하다. 다음 주 FOMC가 사실상 모든 것을 결정하는 구간이며, 인상 자체보다 연준이 추가 긴축 경로를 어떻게 시사하느냐가 관건이다. 유가와 10년물 금리 5% 돌파 여부, 이 두 가지를 매일 체크하는 것이 지금 가장 실용적인 대응이다.
+      <strong>긍정 요인:</strong> 8월 CPI가 헤드라인·근원 모두 컨센서스에 부합하며 인플레 서프라이즈 리스크를 일단 걷어냈다. VIX가 17.8 → 15.8로 급락해 공포 심리가 빠르게 진정됐고, AI 데이터센터 투자 사이클은 여전히 이익 성장의 실질 엔진으로 작동 중이다. 원/달러는 1,345원으로 소폭 하락해 한국 투자자 입장의 환 부담도 완화됐다.<br/><br/>
+      <strong>주의 요인:</strong> 금요일 반등의 근거였던 '유가 하락'이 주말 호르무즈 회의 연기로 이미 되돌려졌다. WTI는 102달러대로 재상승했고, 10년물 금리는 4.975%로 5% 문턱에 붙어 있다. 무엇보다 9/16 FOMC가 동결이 아닌 25bp <em>인상</em>을 놓고 갈리는 국면이라, 점도표 한 줄이 지수 방향을 바꿀 수 있다. 상위 10개 종목이 시총의 38%를 차지하는 집중도는 하락 시 완충 장치가 없다는 뜻이기도 하다.<br/><br/>
+      <strong>결론:</strong> 금요일 상승은 추세 전환이 아니라 4거래일 연속 하락 뒤의 기술적 반등으로 보는 편이 안전하다. 이번 주 시장의 무게중심은 유가 헤드라인과 수요일 FOMC 두 축에 완전히 걸려 있다. 수요일 오후(현지)까지는 신규 방향성 베팅보다 포지션 축소와 현금 비중 확보가 합리적인 구간으로 판단된다. 에너지와 AI 인프라라는 두 갈래의 상대적 강세는 유지되겠지만, 둘 다 이미 상당한 기대가 선반영된 상태다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Yahoo Finance · 네이버 뉴스 · Yahoo Finance Live · TheStreet · 연합/뉴시스 · 생성일시: 2026.09.12
+    데이터 출처: Yahoo Finance · CNBC · TheStreet · 연합뉴스 · 네이버뉴스 · EIA · 생성일시: 2026.09.14
   </div>
 
 </div>
