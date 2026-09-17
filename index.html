@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.09.16</title>
+  <title>미국증시 브리핑 | 2026.09.17</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -49,13 +49,14 @@
     }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
-    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
-    .macro-card {
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
       padding: 14px 16px; display: flex; justify-content: space-between; align-items: center;
     }
-    .macro-label { font-size: 12px; color: #8b949e; }
-    .macro-val { font-size: 16px; font-weight: 700; color: #f85149; }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -72,156 +73,112 @@
     .notice {
       background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3);
       border-radius: 10px; padding: 14px 18px; display: flex; align-items: center;
-      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; line-height: 1.6;
+      gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922;
     }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
-    @media (max-width: 640px) {
-      .index-grid, .macro-grid, .stock-grid { grid-template-columns: 1fr; }
-    }
   </style>
 </head>
 <body>
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.09.16 (수) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.09.17 (목) · 9/16 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">10년물 국채금리 5% 돌파 + 국제유가 급등 겹악재에 3대 지수 이틀 연속 하락, 오늘 밤 FOMC가 분수령</div>
+    <div class="subtitle">연준, 3년 2개월 만의 금리 인상 — 다우 631p 급락, 10년물 국채금리 5% 돌파</div>
   </div>
 
-  <div class="section-title">지수 현황 (9/15 현지시간 종가)</div>
+  <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">52,093.11</div>
-      <div class="index-change down">▼ -0.63%</div>
-      <div class="index-pts">-328.09pt</div>
-      <div class="badge neg">2일 연속 하락</div>
+      <div class="index-value">51,461.90</div>
+      <div class="index-change down">▼ -1.21%</div>
+      <div class="index-pts">-631.21pt</div>
+      <div class="badge neg">금융주 급락 주도</div>
     </div>
     <div class="index-card down">
-      <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,585.73</div>
+      <div class="index-name">S&P 500</div>
+      <div class="index-value">7,551.81</div>
       <div class="index-change down">▼ -0.45%</div>
-      <div class="index-pts">-34.25pt</div>
-      <div class="badge neg">2일 연속 하락</div>
+      <div class="index-pts">-33.92pt</div>
+      <div class="badge neg">7월 이후 최저권</div>
     </div>
     <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">25,981.57</div>
-      <div class="index-change down">▼ -0.78%</div>
-      <div class="index-pts">-204.84pt</div>
-      <div class="badge neg">기술주 낙폭 최대</div>
-    </div>
-  </div>
-
-  <div class="section-title">매크로 지표</div>
-  <div class="macro-grid">
-    <div class="macro-card">
-      <span class="macro-label">美 10년물 국채</span>
-      <span class="macro-val">5.041%</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">WTI 원유</span>
-      <span class="macro-val">$105.36 (+3.92%)</span>
-    </div>
-    <div class="macro-card">
-      <span class="macro-label">브렌트유</span>
-      <span class="macro-val">$108.75 (+2.90%)</span>
+      <div class="index-value">25,978.43</div>
+      <div class="index-change down">▼ -0.01%</div>
+      <div class="index-pts">-3.14pt</div>
+      <div class="badge">기술주 선방·보합</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
-
+    <div class="issue-item">
+      <div class="issue-icon">🏛️</div>
+      <div>
+        <div class="issue-title">연준, 3년 2개월 만에 기준금리 25bp 인상 (3.75~4.00%)</div>
+        <div class="issue-body">FOMC는 만장일치로 기준금리를 기존 3.50~3.75%에서 3.75~4.00%로 올렸다. 2023년 이후 첫 인상이다. 점도표상 위원 18명 중 16명이 연내 최소 한 차례 추가 인상을 예상했고, 연말 금리 전망치 중간값은 4.1%로 6월 대비 0.3%p 상향됐다. 인상 자체는 예상됐지만 '추가 긴축 장기화' 신호가 시장을 눌렀다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">🦅</div>
+      <div>
+        <div class="issue-title">케빈 워시 의장의 매파적 기자회견 — 장중 반전 트리거</div>
+        <div class="issue-body">지수는 FOMC 발표 직후 비교적 담담했으나, 워시 의장이 기자회견에서 인플레이션 지속성에 대해 강경한 태도를 유지하자 하락 전환했다. 시장은 그의 절제된 발언을 '완화 여지 없음'으로 해석했고, S&P500은 7월 이후 최저 수준 근방까지 밀렸다.</div>
+      </div>
+    </div>
     <div class="issue-item">
       <div class="issue-icon">📈</div>
       <div>
         <div class="issue-title">10년물 국채금리 5% 돌파 — 2007년 이후 최고</div>
-        <div class="issue-body">미 10년물 국채금리가 장중 5.041%까지 치솟으며 2007년 이후 최고 수준을 기록했다. 30년물도 3.6bp 오른 5.362%로 마감했다. 금리 벤치마크가 5% 선을 넘어서면서 밸류에이션 부담이 큰 기술주·성장주에 직격탄이 됐고, 나스닥이 3대 지수 중 가장 큰 폭으로 밀렸다.</div>
+        <div class="issue-body">미 10년물 금리는 5.006%로 올라 2007년 이후 최고 수준을 기록했고, 달러도 동반 강세를 보였다. 원/달러 환율은 1,380원대로 1.21% 뛰었다. 금리 상승은 밸류에이션 부담이 큰 자산 전반에 압력으로 작용하고 있다.</div>
       </div>
     </div>
-
-    <div class="issue-item">
-      <div class="issue-icon">🛢️</div>
-      <div>
-        <div class="issue-title">중동 공급 차질 우려로 국제유가 급등</div>
-        <div class="issue-body">이란 분쟁과 사우디 원유 공급 차질 우려가 겹치며 WTI가 3.92% 오른 배럴당 105달러대, 브렌트유는 2.90% 오른 108.75달러에 마감했다. 에너지 가격 상승은 인플레이션 재점화 우려로 직결되며 국채금리를 한 번 더 밀어올리는 악순환을 만들고 있다.</div>
-      </div>
-    </div>
-
-    <div class="issue-item">
-      <div class="issue-icon">🏛️</div>
-      <div>
-        <div class="issue-title">FOMC 개시 — 이번엔 '인하'가 아니라 '인상' 경계</div>
-        <div class="issue-body">연준 9월 FOMC가 시작됐고 시장은 25bp 인상 가능성을 상당 부분 가격에 반영하고 있다. 현재 기준금리는 3.50~3.75%로, 7월에는 3명의 위원이 인상 소수의견을 냈다. 에너지발 공급 충격이 인상 문턱을 낮췄다는 평가가 나오면서 투자자들은 결과 확인 전까지 관망세로 돌아섰다.</div>
-      </div>
-    </div>
-
-    <div class="issue-item">
-      <div class="issue-icon">₿</div>
-      <div>
-        <div class="issue-title">클래리티법 상원 부결 — 가상자산 관련주 급락</div>
-        <div class="issue-body">미 상원에서 가상자산 규제 명확화를 담은 클래리티법 표결이 부결되며 비트코인이 7만 5000달러대로 급락했다. 코인베이스와 스테이블코인 발행사 서클 주가가 각각 9% 안팎 하락했다. 11월 중간선거를 앞두고 연내 처리 가능성이 크게 낮아졌다는 평가다.</div>
-      </div>
-    </div>
-
-    <div class="issue-item">
-      <div class="issue-icon">🤖</div>
-      <div>
-        <div class="issue-title">AI 속도조절론이 반도체·기술주 압박</div>
-        <div class="issue-body">AI 개발 속도조절 우려가 며칠째 기술주 투자심리를 누르고 있다. 고금리 환경에서 AI 인프라 투자 회수 시점에 대한 의문이 커지며 반도체주 중심으로 매물이 출회됐다. 국내 증시에서도 이 흐름이 그대로 전이되어 코스피가 6600선에서 눈치보기 장세를 이어갔다.</div>
-      </div>
-    </div>
-
   </div>
 
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
-
     <div class="stock-card">
-      <div class="stock-ticker">RIG · VAL · WTI</div>
-      <div class="stock-name">해양 시추 / 오프쇼어 에너지</div>
-      <div class="stock-desc">트랜스오션, 발라리스, W&amp;T 오프쇼어가 나란히 6% 급등하며 약세장에서 역주행했다. 유가 급등 국면에서 시추 계약 단가 상승 기대가 반영된 결과로, 현재 시장에서 몇 안 되는 '금리 상승이 오히려 호재'인 섹터다.</div>
+      <div class="stock-ticker">GS · 금융</div>
+      <div class="stock-name">골드만삭스 / 금융주</div>
+      <div class="stock-desc">다우 하락을 주도했다. 금리 인상은 통상 은행 순이자마진에 우호적이지만, 이번엔 긴축 장기화에 따른 신용·거래 환경 악화 우려가 더 크게 반영된 모습이다.</div>
     </div>
-
     <div class="stock-card">
-      <div class="stock-ticker">COIN · CRCL</div>
-      <div class="stock-name">코인베이스 / 서클</div>
-      <div class="stock-desc">클래리티법 부결 직격탄으로 각각 9% 안팎 급락했다. 규제 불확실성이 연내 해소되기 어려워졌다는 인식이 확산되며 가상자산 익스포저가 큰 종목 전반에 매도세가 집중됐다.</div>
+      <div class="stock-ticker">^IXIC · 기술</div>
+      <div class="stock-name">빅테크 / 나스닥</div>
+      <div class="stock-desc">금리 급등 국면에서 의외로 보합(-0.01%)을 지켜냈다. AI 관련 투자 사이클에 대한 기대가 금리 부담을 상쇄하며 상대적 강세를 보였다.</div>
     </div>
-
     <div class="stock-card">
-      <div class="stock-ticker">SEMI</div>
-      <div class="stock-name">반도체 섹터</div>
-      <div class="stock-desc">AI 속도조절론과 고금리 부담이 동시에 작용하며 전일 급락 후 반등 시도 중이다. 밸류에이션 멀티플이 금리에 가장 민감한 섹터라 FOMC 결과에 따라 방향성이 크게 갈릴 구간이다.</div>
+      <div class="stock-ticker">OKTA · 사이버보안</div>
+      <div class="stock-name">옥타</div>
+      <div class="stock-desc">한 달간 28% 급등하며 약세장에서 두드러진 성과를 냈다. 사이버보안 섹터 전반이 시장 하락과 무관하게 강한 자금 유입을 보이고 있다.</div>
     </div>
-
     <div class="stock-card">
-      <div class="stock-ticker">CCL · NCLH · RCL</div>
-      <div class="stock-name">크루즈 섹터</div>
-      <div class="stock-desc">웰스파고가 카리브해 가격 압박을 이유로 카니발 목표주가를 하향하면서 노르웨지안이 3% 하락했다. 유가 급등이 연료비 부담으로 직결되는 구조라 에너지 랠리의 반대편에 서 있는 섹터다.</div>
+      <div class="stock-ticker">GC=F · 원자재</div>
+      <div class="stock-name">금 / 원유</div>
+      <div class="stock-desc">금 선물은 4,387.5달러로 1.26% 올라 안전자산 수요를 반영했다(장중 금·은은 변동성이 컸다). WTI는 102.43달러로 3.21% 하락했으나 여전히 100달러선 위다.</div>
     </div>
-
   </div>
 
   <div class="notice">
-    ⚠️ 오늘(9/16) 한국시간 새벽 FOMC 기준금리 결정 발표. 시장은 25bp 인상 가능성을 상당 부분 반영 중이며, 결과 및 파월 의장 기자회견 톤에 따라 변동성 확대가 예상된다.
+    ⚠️ VIX 17.71(+2.97%)로 경계심 확대. 국내 증시는 코스피가 6,700선 강보합으로 출발하며 악재를 비교적 잘 소화하는 중.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 하락폭 자체는 0.5~0.8% 수준으로 패닉이라 부르기엔 얕다. 지수는 여전히 고점권에 머물러 있고, 이번 조정은 실적 훼손이 아니라 금리·유가라는 외생 변수에서 비롯됐다. 에너지 섹터는 명확한 수혜를 받고 있어 자금이 시장 밖으로 빠져나가기보다 섹터 간 로테이션 형태로 돌고 있다. WTI와 브렌트유가 다음 날 되돌림을 보인 점도 유가 급등이 일시적 스파이크였을 가능성을 열어둔다.<br/><br/>
-      <strong>주의 요인:</strong> 10년물 5% 돌파는 단순한 숫자가 아니라 무위험 수익률이 주식의 기대수익률과 경쟁 가능한 구간에 진입했다는 신호다. 여기에 유가 급등이 겹치면 연준은 인플레 재점화를 막기 위해 매파적으로 기울 수밖에 없고, 이는 다시 금리를 밀어올린다. 3거래일 연속 하락이 이 악순환의 초기 반영일 수 있다. 중동 지정학 리스크는 통제 불가능한 변수이고, 규제 불확실성(클래리티법 부결)까지 겹치며 위험자산 전반의 할인율이 높아지는 국면이다.<br/><br/>
-      <strong>결론:</strong> 오늘 밤 FOMC가 방향을 결정한다. 인상 시 시장은 이미 어느 정도 각오한 상태라 '한 번으로 끝'이라는 시그널이 나오면 오히려 안도 랠리가 가능하고, 추가 인상 여지를 열어두면 조정이 길어질 공산이 크다. 동결로 나오더라도 유가발 인플레 우려가 남아 국채금리가 쉽게 내려오긴 어렵다. 당분간은 방향성 베팅보다 에너지 익스포저 확인과 고멀티플 종목 비중 점검이 실용적인 대응이다.
+      <strong>긍정 요인:</strong> FOMC라는 최대 이벤트가 지나가며 통화정책 불확실성이 일부 해소됐다. 인상 폭은 시장 예상에 부합했고, 나스닥이 보합을 지켜낸 것은 AI·기술 투자 사이클이 금리 충격을 어느 정도 흡수할 체력을 갖췄다는 신호다. 사이버보안 등 실적 모멘텀이 살아있는 섹터로의 순환매도 관찰된다.<br/><br/>
+      <strong>주의 요인:</strong> 핵심은 금리 인상 자체가 아니라 점도표다. 위원 18명 중 16명이 연내 추가 인상을 본다는 건 '한 번 올리고 끝'이 아니라는 뜻이다. 10년물 5% 돌파는 2007년 이후 처음으로, 고밸류 성장주에 구조적 부담이다. 달러 강세와 원/달러 1,380원 역시 신흥국 자금 흐름에 부정적이다.<br/><br/>
+      <strong>결론:</strong> 시장은 '인상'이 아니라 '인상의 지속성'을 소화하는 국면에 들어섰다. 다우와 나스닥의 극단적 온도차(-1.21% vs -0.01%)가 보여주듯 지수 단위보다 섹터 단위로 갈리는 장세다. 금리에 민감한 밸류에이션 자산은 당분간 변동성을 감내해야 하며, 다음 분기점은 향후 물가 지표와 워시 의장의 추가 발언이 될 것으로 보인다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Yahoo Finance · CNBC · 네이버뉴스(연합·한경·뉴스핌·비즈니스코리아) · US Stock Info · 생성일시: 2026.09.16
+    데이터 출처: Yahoo Finance · CNBC · Kiplinger · 네이버뉴스(YTN, 아시아경제, 뉴스핌, 전자신문) · 생성일시: 2026.09.17
   </div>
 
 </div>
