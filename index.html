@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.09.18</title>
+  <title>미국증시 브리핑 | 2026.09.21</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -57,6 +57,7 @@
     .weekly-label { font-size: 12px; color: #8b949e; }
     .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
     .weekly-val.down { color: #f85149; }
+    .weekly-val.flat { color: #8b949e; }
     .issue-list { margin-bottom: 32px; }
     .issue-item {
       background: #161b22; border: 1px solid #21262d; border-radius: 10px;
@@ -79,55 +80,58 @@
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
     .footer { text-align: center; font-size: 11px; color: #484f58; padding-top: 20px; border-top: 1px solid #21262d; }
+    @media (max-width: 640px) {
+      .index-grid, .weekly-grid, .stock-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.09.17 (목) 종가 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.09.18 (금) 종가 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">금리 인상 충격 하루 만에 소화 — 유가·금리 동반 하락에 3대 지수 일제히 반등</div>
+    <div class="subtitle">10년물 5%·유가 100달러 부담 속 혼조 마감 — 다우는 6개월 만의 최악의 주간, 나스닥은 AI 반도체가 방어</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,778.04</div>
-      <div class="index-change">▲ +0.61%</div>
-      <div class="index-pts">+316.14pt</div>
-      <div class="badge">반등</div>
+      <div class="index-value">51,682.64</div>
+      <div class="index-change down">▼ -0.18%</div>
+      <div class="index-pts">-95.40pt</div>
+      <div class="badge neg">주간 -1.69% · 3월來 최악</div>
     </div>
     <div class="index-card">
-      <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,637.76</div>
-      <div class="index-change">▲ +1.14%</div>
-      <div class="index-pts">+85.95pt</div>
-      <div class="badge record">6주 만의 최대 상승</div>
+      <div class="index-name">S&P 500</div>
+      <div class="index-value">7,650.50</div>
+      <div class="index-change">▲ +0.17%</div>
+      <div class="index-pts">+13.0pt (추정)</div>
+      <div class="badge">주간 거의 보합</div>
     </div>
     <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">26,418.30</div>
-      <div class="index-change">▲ +1.69%</div>
-      <div class="index-pts">+439.87pt</div>
-      <div class="badge record">기술주 주도</div>
+      <div class="index-value">26,522.55</div>
+      <div class="index-change">▲ +0.39%</div>
+      <div class="index-pts">+103.1pt (추정)</div>
+      <div class="badge record">주간 +0.72% · 3대 지수 중 유일 상승</div>
     </div>
   </div>
 
-  <div class="section-title">시장 온도계</div>
+  <div class="section-title">주간 성과 (9/14~9/18)</div>
   <div class="weekly-grid">
     <div class="weekly-card">
-      <span class="weekly-label">VIX</span>
-      <span class="weekly-val">15.44 (-12.8%)</span>
+      <span class="weekly-label">다우</span>
+      <span class="weekly-val down">-1.69%</span>
     </div>
     <div class="weekly-card">
-      <span class="weekly-label">美 10년물</span>
-      <span class="weekly-val">4.947%</span>
+      <span class="weekly-label">S&P 500</span>
+      <span class="weekly-val flat">거의 보합</span>
     </div>
     <div class="weekly-card">
-      <span class="weekly-label">WTI</span>
-      <span class="weekly-val down">$101.0</span>
+      <span class="weekly-label">나스닥</span>
+      <span class="weekly-val">+0.72%</span>
     </div>
   </div>
 
@@ -136,22 +140,29 @@
     <div class="issue-item">
       <div class="issue-icon">🏛️</div>
       <div>
-        <div class="issue-title">연준, 3년 2개월 만의 금리 인상 — 충격은 하루로 끝</div>
-        <div class="issue-body">16일 FOMC에서 연준이 기준금리를 25bp 인상하며 2023년 이후 첫 긴축에 나섰다. 예상보다 매파적인 문구에 당일 증시는 급락했지만, 17일 시장은 "인상은 이미 가격에 반영됐다"는 쪽으로 방향을 틀며 전면 반등했다. 관심은 10월 또는 12월 추가 인상 여부로 옮겨간 상태다.</div>
+        <div class="issue-title">연준, 3년 2개월 만의 금리 인상 — 케빈 워시 의장의 인플레 경고</div>
+        <div class="issue-body">연준이 9월 16일 기준금리를 25bp 인상해 목표범위를 3.75~4.00%로 올렸다. 2023년 이후 첫 인상이며, 케빈 워시 의장은 인플레이션이 여전히 끈적하다는 점을 강조하며 연내 추가 인상 가능성까지 시사했다. 발표 당일 다우는 600포인트 넘게 급락했고, 이 충격이 주간 성과 전체를 끌어내렸다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">📈</div>
+      <div>
+        <div class="issue-title">10년물 국채금리 5% 재돌파 — 2007년 7월 이후 최고 수준</div>
+        <div class="issue-body">미 10년물 금리가 주중 5%를 넘어서며 2007년 7월 이후 가장 높은 수준을 기록했고, 금요일에도 약 6bp 올라 5.006% 부근에서 마감했다. 금리 민감도가 큰 러셀2000(주간 -1.50%)과 배당·경기민감 업종 중심의 다우가 가장 크게 눌렸다. 밸류에이션 할인율 상승이 시장의 최대 압력 요인이다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">🤖</div>
+      <div>
+        <div class="issue-title">AI 반도체가 금리 부담을 밀어냈다 — 젠슨 황의 "내년 칩 판매 2배" 발언</div>
+        <div class="issue-body">엔비디아 CEO 젠슨 황이 내년 칩 판매량이 두 배로 늘 수 있다고 전망하면서 AI 투자 지속 기대가 살아났다. 금요일 엔비디아(+1.34%)·브로드컴(+2.97%)·AMD(+2.70%)·마이크론(+3.92%)이 일제히 강세를 보여 나스닥을 홀로 플러스로 끌어올렸다. 금리 역풍 속에서도 AI 테마만은 별도의 사이클로 움직이고 있다는 신호다.</div>
       </div>
     </div>
     <div class="issue-item">
       <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">유가 하락 + 국채금리 진정이 반등의 실제 연료</div>
-        <div class="issue-body">WTI가 배럴당 101달러 선으로 밀리며 인플레이션 압력 우려가 완화됐고, 미 10년물 국채금리는 8거래일 만에 5% 아래인 4.947%로 내려왔다. 금리 부담이 가장 큰 성장주·기술주에 곧바로 매수세가 붙었고, VIX는 12.8% 급락한 15.44로 안정됐다.</div>
-      </div>
-    </div>
-    <div class="issue-item">
-      <div class="issue-icon">🌍</div>
-      <div>
-        <div class="issue-title">트럼프의 EU 교역 중단·이란 강경 발언에도 시장은 무덤덤</div>
-        <div class="issue-body">트럼프 대통령이 EU와의 교역 중단 가능성과 이란에 대한 강경 발언을 내놓았지만 주식·채권이 동반 반등하며 시장은 이를 흘려보냈다. 다만 지정학 리스크는 유가를 통해 언제든 인플레이션 경로로 되돌아올 수 있는 변수로 남아 있다.</div>
+        <div class="issue-title">유가 100달러 돌파와 트럼프의 이란 압박</div>
+        <div class="issue-body">국제유가가 배럴당 100달러를 웃돌며 인플레 재점화 우려를 키웠다. 트럼프 대통령은 이란 대통령과의 회담 가능성을 언급하면서도 강경 군사 옵션까지 거론해 중동 리스크 프리미엄이 유지되고 있다. 다만 월요일 새벽 유가가 진정되면서 선물은 반등 흐름을 보였다.</div>
       </div>
     </div>
   </div>
@@ -159,42 +170,42 @@
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">SOX</div>
-      <div class="stock-name">필라델피아 반도체지수 +3.1%</div>
-      <div class="stock-desc">금리 하락과 함께 반도체가 가장 크게 튀어올랐다. 전일 FOMC 충격으로 동반 하락했던 대형 반도체주가 일제히 회복하며 나스닥 상승폭을 견인했고, 국내 삼성전자·SK하이닉스도 다음 날 3~4%대 급등으로 이어졌다.</div>
+      <div class="stock-ticker">NVDA</div>
+      <div class="stock-name">엔비디아 +1.34%</div>
+      <div class="stock-desc">CEO의 "내년 칩 판매 2배" 전망이 AI 설비투자 지속론에 힘을 실었다. 금리 급등 국면에서 시장의 유일한 방어 축 역할을 하고 있으나, 그만큼 지수의 AI 단일 테마 의존도가 위험 수준으로 높아진 상태다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">OKLO / SMR</div>
-      <div class="stock-name">원자력 · 데이터센터 전력</div>
-      <div class="stock-desc">데이터센터 전력 비용을 겨냥한 하원 표결 소식에 오클로가 13%, 뉴스케일파워가 10% 급등했다. 다만 우라늄 채굴주는 이 랠리에 동참하지 않아, 시장이 믿는 건 원전 자체보다 'AI 전력 수요'라는 해석이 가능하다.</div>
+      <div class="stock-ticker">MU / INTC / AVGO</div>
+      <div class="stock-name">메모리·반도체 섹터</div>
+      <div class="stock-desc">마이크론 +3.92%, 브로드컴 +2.97%. 제한적인 메모리 생산능력 탓에 내년 공급이 더 타이트해진다는 전망이 가격 결정력 기대를 키웠다. 국내 SK하이닉스·삼성전자 급등의 직접적 원인이기도 하다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">RUN / FSLR</div>
-      <div class="stock-name">태양광 — 낙폭 과대 되돌림</div>
-      <div class="stock-desc">선런과 퍼스트솔라가 6%, 솔라엣지가 4% 올랐다. 실적·목표주가 상향·정책 뉴스 어느 것도 없는 상승으로, 그간 눌렸던 섹터의 기술적 되돌림 성격이 강하다.</div>
+      <div class="stock-ticker">IWM</div>
+      <div class="stock-name">러셀2000 (소형주) 주간 -1.50%</div>
+      <div class="stock-desc">주간 최악의 성과. 변동금리 부채 비중이 높은 소형주는 5% 금리 환경에서 조달 비용이 직접 실적을 깎는다. 금리 인상 사이클이 재개될 경우 가장 먼저 무너지는 구간이다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">MAG 7</div>
-      <div class="stock-name">매그니피센트 7 전반 강세</div>
-      <div class="stock-desc">금리 민감도가 높은 빅테크가 국채금리 하락의 직접 수혜를 받았다. 나스닥이 다우 상승률의 세 배 가까이 오른 구조 자체가 이번 반등이 철저히 금리 주도였음을 보여준다.</div>
+      <div class="stock-ticker">XLE / XLV</div>
+      <div class="stock-name">에너지 · 헬스케어</div>
+      <div class="stock-desc">유가 100달러 돌파로 에너지가 수혜 구간에 들어섰고, XLV(헬스케어)는 최근 시장을 앞서는 성과를 냈다. 노보 노디스크가 월요일 런던에서 2026 캐피털 마켓 데이를 개최해 비만·대사질환 파이프라인 가이던스가 주목된다.</div>
     </div>
   </div>
 
   <div class="notice">
-    ⚠️ 이번 반등은 실적이나 신규 호재가 아니라 '유가·금리 하락'이라는 외생 변수에 기댄 상승이다. 두 변수가 되돌아서면 되돌림도 빠를 수 있다.
+    ⚠️ 9월 18일은 선물·옵션 만기가 겹치는 이른바 '세 마녀의 날'이었다. 당일 거래량과 변동성 일부는 만기 수급 요인으로, 방향성 해석 시 과대평가에 주의.
   </div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 3년여 만의 금리 인상이라는 최대 이벤트가 소화됐고, 불확실성 해소 자체가 매수 근거가 됐다. 10년물 금리가 5% 아래로 내려오고 VIX가 15선으로 안정된 점은 위험자산 선호 회복을 뒷받침한다. 유가 하락은 인플레이션 경로를 완만하게 만드는 가장 직접적인 재료다.<br/><br/>
-      <strong>주의 요인:</strong> 연준이 10월 또는 12월 추가 인상 가능성을 열어둔 상태라 금리 경로의 불확실성은 끝나지 않았다. 트럼프의 EU 교역·이란 관련 강경 기조는 유가를 다시 밀어올릴 수 있는 변수이며, 인플레이션 지지율이 19%까지 떨어진 정치 환경은 정책의 예측 가능성을 낮춘다. 원자력·태양광 급등처럼 뚜렷한 촉매 없이 움직인 섹터들은 되돌림 위험이 크다.<br/><br/>
-      <strong>결론:</strong> 하루 만의 V자 반등이지만 체질 개선이 아니라 금리·유가라는 두 변수에 올라탄 상승이다. 방향성 베팅보다 금리 경로를 확인하며 반도체·빅테크 중심으로 대응하되, 유가가 다시 반등하면 이번 랠리의 전제가 통째로 흔들린다는 점을 염두에 둘 필요가 있다.
+      <strong>긍정 요인:</strong> AI 반도체 사이클이 금리 역풍과 무관하게 독자적으로 작동하고 있다. 젠슨 황의 물량 전망과 메모리 공급 타이트닝은 최소 내년 상반기까지 실적 가시성을 제공한다. 나스닥이 최악의 주간에도 홀로 플러스로 마감한 것은 이 축이 아직 견고하다는 증거다. 월요일 새벽 유가 진정과 선물 반등도 단기 심리에 우호적이다.<br/><br/>
+      <strong>주의 요인:</strong> 문제는 시장 폭이다. 다우 -1.69%, 러셀2000 -1.50% 대 나스닥 +0.72%의 격차는 지수가 소수 AI 대형주에 업혀 있다는 뜻이며, 이런 구조는 한 번 균열이 생기면 빠르게 무너진다. 10년물 5%는 2007년 이후 처음이고 연준은 추가 인상을 시사했으며 유가는 100달러다. 인플레 재점화 → 추가 인상 → 밸류에이션 압축 경로가 열려 있다. 이번 주 주요 소비재·리테일 실적이 소비 둔화를 확인시켜줄 경우 '고금리 + 수요 약화' 조합이 가장 나쁜 시나리오가 된다.<br/><br/>
+      <strong>결론:</strong> 방향성을 결정하는 변수는 AI 실적이 아니라 금리다. 나스닥의 상대 강세를 시장 전체의 건강으로 오독하지 말 것. 소비재 실적과 10년물 5% 고착 여부가 이번 주 확인 포인트이며, 5%가 추세로 굳어지면 AI 테마조차 멀티플 재조정을 피하기 어렵다.
     </p>
   </div>
 
   <div class="footer">
-    데이터 출처: Yahoo Finance · Naver News · Benzinga · TheStreet · Stocktwits · 생성일시: 2026.09.18
+    데이터 출처: CNBC · Yahoo Finance · TheStreet · Kiplinger · 네이버뉴스(한국경제TV, 뉴스1, 머니스톰 등) · Benzinga · 생성일시: 2026.09.21
   </div>
 
 </div>
