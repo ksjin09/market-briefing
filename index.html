@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.11.07</title>
+  <title>미국증시 브리핑 | 2026.11.10</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; padding: 40px 20px; }
@@ -26,11 +26,6 @@
     .badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; padding: 2px 6px; border-radius: 4px; background: rgba(88, 166, 255, 0.15); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px; }
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
-    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
-    .weekly-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
-    .weekly-label { font-size: 12px; color: #8b949e; }
-    .weekly-val { font-size: 16px; font-weight: 700; color: #8b949e; }
-    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start; }
     .issue-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
@@ -53,101 +48,97 @@
 <div class="container">
 
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.11.07 (토) 기준 · 11/6(금) 장</div>
+    <div class="date">📊 US Market Briefing · 2026.11.10 (화) 기준 · 11/9 월요일 장</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">나스닥 +1.09% 반등, 다우는 -0.46% 하락 — 호조 고용지표에 금리 상승 부담</div>
+    <div class="subtitle">유가 급락·반도체 반등에 3대 지수 2%대 급등, S&amp;P500 4월 이후 최고의 하루</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
-    <div class="index-card down">
+    <div class="index-card">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">51,285.73</div>
-      <div class="index-change down">▼ -0.46%</div>
-      <div class="index-pts">-237.33pt</div>
-      <div class="badge neg">경기민감주 약세</div>
+      <div class="index-value">52,389.75</div>
+      <div class="index-change">▲ +2.15%</div>
+      <div class="index-pts">+1,104.02pt</div>
+      <div class="badge record">연중 최대 상승폭급</div>
     </div>
     <div class="index-card">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,376.86</div>
-      <div class="index-change">▲ +0.31%</div>
-      <div class="index-pts">+23.13pt</div>
-      <div class="badge">반등</div>
+      <div class="index-value">7,549.94</div>
+      <div class="index-change">▲ +2.35%</div>
+      <div class="index-pts">+173.08pt</div>
+      <div class="badge record">4월 이후 최고의 하루</div>
     </div>
     <div class="index-card">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">24,579.43</div>
-      <div class="index-change">▲ +1.09%</div>
-      <div class="index-pts">+264.43pt</div>
-      <div class="badge record">기술주 반발 매수</div>
+      <div class="index-value">25,253.14</div>
+      <div class="index-change">▲ +2.74%</div>
+      <div class="index-pts">+673.71pt</div>
+      <div class="badge">반도체 SOX +6.9%</div>
     </div>
-  </div>
-
-  <div class="section-title">주간 성과</div>
-  <div class="weekly-grid">
-    <div class="weekly-card"><span class="weekly-label">다우</span><span class="weekly-val">확인 필요</span></div>
-    <div class="weekly-card"><span class="weekly-label">S&amp;P 500</span><span class="weekly-val">확인 필요</span></div>
-    <div class="weekly-card"><span class="weekly-label">나스닥</span><span class="weekly-val">확인 필요</span></div>
-  </div>
-
-  <div class="section-title">시장 지표</div>
-  <div class="weekly-grid">
-    <div class="weekly-card"><span class="weekly-label">VIX</span><span class="weekly-val">25.64 (-9.0%)</span></div>
-    <div class="weekly-card"><span class="weekly-label">10년물</span><span class="weekly-val down">4.86%</span></div>
-    <div class="weekly-card"><span class="weekly-label">원/달러</span><span class="weekly-val down">1,356 (+1.2%)</span></div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">💼</div>
-      <div>
-        <div class="issue-title">10월 고용 +16.5만 명, 예상 크게 상회 · 실업률 4.1%</div>
-        <div class="issue-body">10월 비농업 고용이 시장 예상을 웃돌고 실업률이 4.1%로 내려갔어. 고용이 강하니 연준 금리 인상 가능성이 다시 거론되며 국채금리가 올랐고, 10년물은 4.86%, 30년물은 5.26%까지 올랐어.</div>
-      </div>
-    </div>
-    <div class="issue-item">
-      <div class="issue-icon">🤖</div>
-      <div>
-        <div class="issue-title">AI·반도체 급락 뒤 반발 매수</div>
-        <div class="issue-body">직전 거래일 나스닥은 약 18개월 만의 최악 하루를 겪었고, 이 날은 과매도 인식 속에 기술주를 주워 담으며 +1%대로 반등했어. VIX도 28.18에서 25.64로 내려 공포가 조금 누그러졌지만 아직 높은 수준이야.</div>
-      </div>
-    </div>
-    <div class="issue-item">
       <div class="issue-icon">🛢️</div>
       <div>
-        <div class="issue-title">유가 90달러대 · 금 하락 · 달러 강세</div>
-        <div class="issue-body">WTI는 90.83달러(+0.34%)로 높은 수준을 유지했고, 금은 -0.94% 하락한 4,075달러야. 원/달러 환율은 1,356원으로 하루 1.2% 올랐어.</div>
+        <div class="issue-title">유가 5% 급락, 인플레 우려 완화</div>
+        <div class="issue-body">트럼프 대통령이 이란 추가 공습 가능성을 "매우 낮다"고 언급하며 협상 지속 입장을 보이자 WTI는 약 5% 내린 86달러대, 브렌트는 92달러대로 밀렸다. 에너지 비용 부담이 줄며 위험자산 선호가 살아났고 VIX는 25.6에서 19.9로 20% 넘게 하락했다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">💾</div>
+      <div>
+        <div class="issue-title">지난주 AI·반도체 급락 후 강한 반등</div>
+        <div class="issue-body">지난주 SOX는 2025년 3월 이후 최악의 주간 성과를 냈는데, 이날 반도체 ETF가 약 7% 오르며 7월 말 이후 최고의 하루를 기록했다. 중간선거 이후 데이터센터·에너지 규제 강화 우려가 눌러왔던 기술주가 일제히 낙폭을 되돌렸다.</div>
+      </div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">⚠️</div>
+      <div>
+        <div class="issue-title">엔비디아 -4%대, 이사회 조사 보도</div>
+        <div class="issue-body">엔비디아는 다우 구성종목 중 최대 낙폭(약 -4.4%)을 기록했다. 일부 보도는 이사회가 CEO 관련 독립 조사를 공개했다고 전하나 단일 출처 내용이라 사실 여부 확인 필요. 오늘 밤 10월 CPI(헤드라인 컨센서스 3.9%)가 다음 변수다.</div>
       </div>
     </div>
   </div>
 
-  <div class="section-title">주목 섹터</div>
+  <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
     <div class="stock-card">
-      <div class="stock-ticker">SEMIS / AI</div>
-      <div class="stock-name">반도체·AI 대형주</div>
-      <div class="stock-desc">급락 후 반등 국면의 중심이야. 개별 종목 등락률은 확인 필요.</div>
+      <div class="stock-ticker">AMD · AMAT · LRCX · AVGO</div>
+      <div class="stock-name">반도체 반등 주도</div>
+      <div class="stock-desc">AMD 약 +13%, 어플라이드머티리얼즈 +11%, 램리서치 +10%, 브로드컴 +9%. 낙폭과대 매수세가 집중됐다.</div>
     </div>
     <div class="stock-card">
-      <div class="stock-ticker">DOW / VALUE</div>
-      <div class="stock-name">경기민감·가치주</div>
-      <div class="stock-desc">금리 상승 부담에 다우가 홀로 하락했어. 지수 내 순환매 성격이 강해.</div>
+      <div class="stock-ticker">CAT</div>
+      <div class="stock-name">캐터필러 +7%</div>
+      <div class="stock-desc">산업재 섹터가 +4%대로 가장 강했고, 캐터필러는 다우 상승에 가장 크게 기여했다.</div>
+    </div>
+    <div class="stock-card">
+      <div class="stock-ticker">TSLA · META · MSFT</div>
+      <div class="stock-name">빅테크 동반 강세</div>
+      <div class="stock-desc">테슬라 +5%, 메타 +5%, 마이크로소프트 +2.6%, 애플 +2.3%. 소형주(러셀2000)는 +3%대로 더 크게 올랐다.</div>
+    </div>
+    <div class="stock-card">
+      <div class="stock-ticker">XLE</div>
+      <div class="stock-name">에너지 유일 약세</div>
+      <div class="stock-desc">11개 섹터 중 에너지만 소폭 하락(-0.3%). 쉐브론·엑슨모빌은 유가 하락에 약세였다.</div>
     </div>
   </div>
 
-  <div class="notice">⚠️ 일부 매체 접속 제한으로 주간 성과와 개별 종목 등락률은 확인하지 못했어(확인 필요). 지수·지표는 시장 스냅샷 기준.</div>
+  <div class="notice">⚠️ 10년물 금리 4.86%, 달러/원 약 1,339원(전일 대비 -1.7%). 12월 FOMC 금리 인상 가능성이 높게 거론돼 금리 부담은 여전. 일부 수치는 기사별로 소폭 차이가 있어 시장 데이터 기준.</div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook">
     <p>
-      <strong>긍정 요인:</strong> 고용 호조로 경기 침체 우려가 줄었고, 과매도 이후 기술주 반발 매수와 VIX 하락이 나타났어.<br/><br/>
-      <strong>주의 요인:</strong> 국채 10년물 4.86%·30년물 5.26%, 연준 인상 가능성, 유가 90달러대, AI 매도 재발 위험.<br/><br/>
-      <strong>결론:</strong> 단기 기술적 반등이지만 금리가 변수야. 다음 주 물가 지표와 연준 발언 전까지 변동성이 이어질 가능성이 커.
+      <strong>긍정 요인:</strong> 유가 하락으로 인플레 부담 완화, VIX 20 아래로 진정, 반도체 낙폭 만회, 폭넓은 상승(11개 중 10개 섹터)<br/><br/>
+      <strong>주의 요인:</strong> 오늘 발표될 10월 CPI(컨센서스 헤드라인 3.9%·근원 2.8%)가 예상을 웃돌 경우 금리 인상 우려 재부각, 10년물 4.86% 고금리, 이란 협상 변동성, 엔비디아 이슈, 금요일 PPI<br/><br/>
+      <strong>결론:</strong> 하루 반등 폭이 컸던 만큼 CPI 결과에 따라 방향이 갈릴 가능성이 크다. 추격 매수보다 이벤트 확인이 우선이다.
     </p>
   </div>
 
-  <div class="footer">데이터 출처: UsStockInfo 시장 스냅샷, CNBC, Benzinga, Yahoo Finance 검색 결과 · 생성일시: 2026.11.07</div>
+  <div class="footer">데이터 출처: UsStockInfo(지수), HDFC Sky 등 웹 기사 · 생성일시: 2026.11.10</div>
 
 </div>
 </body>
