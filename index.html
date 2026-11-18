@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.11.17</title>
+  <title>미국증시 브리핑 | 2026.11.18</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; padding: 40px 20px; }
@@ -24,7 +24,13 @@
     .index-change.down { color: #f85149; }
     .index-pts { font-size: 11px; color: #8b949e; margin-top: 2px; }
     .badge { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; padding: 2px 6px; border-radius: 4px; background: rgba(88, 166, 255, 0.15); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.3); margin-top: 8px; }
+    .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
+    .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start; }
     .issue-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
@@ -46,37 +52,70 @@
 <body>
 <div class="container">
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.11.16 (월) 기준</div>
+    <div class="date">📊 US Market Briefing · 2026.11.18 (수) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">엔비디아發 AI 반도체 매도세 지속 — 나스닥 -2.5%, 3대 지수 동반 급락 (3거래일 연속 하락)</div>
+    <div class="subtitle">AI·소프트웨어 투매에 이틀 연속 급락, S&amp;P 500 7월 말 이후 최저 — 장 마감 후 엔비디아 실적은 서프라이즈</div>
   </div>
-  <div class="section-title">지수 현황</div>
+
+  <div class="section-title">지수 현황 (11/17 화 마감)</div>
   <div class="index-grid">
-    <div class="index-card down"><div class="index-name">DOW JONES</div><div class="index-value">51,608.17</div><div class="index-change down">▼ -1.41%</div><div class="index-pts">-739.38pt</div><div class="badge neg">3일 연속 하락</div></div>
-    <div class="index-card down"><div class="index-name">S&amp;P 500</div><div class="index-value">7,416.59</div><div class="index-change down">▼ -1.92%</div><div class="index-pts">-145.08pt</div><div class="badge neg">3일 연속 하락</div></div>
-    <div class="index-card down"><div class="index-name">NASDAQ</div><div class="index-value">24,509.76</div><div class="index-change down">▼ -2.49%</div><div class="index-pts">-626.51pt</div><div class="badge neg">기술주 주도 급락</div></div>
+    <div class="index-card down">
+      <div class="index-name">DOW JONES</div>
+      <div class="index-value">50,759.42</div>
+      <div class="index-change down">▼ -1.64%</div>
+      <div class="index-pts">-848.75pt</div>
+      <div class="badge neg">2일 연속 급락</div>
+    </div>
+    <div class="index-card down">
+      <div class="index-name">S&amp;P 500</div>
+      <div class="index-value">7,340.53</div>
+      <div class="index-change down">▼ -1.03%</div>
+      <div class="index-pts">-76.06pt</div>
+      <div class="badge neg">7월 말 이후 최저</div>
+    </div>
+    <div class="index-card down">
+      <div class="index-name">NASDAQ</div>
+      <div class="index-value">24,328.38</div>
+      <div class="index-change down">▼ -0.74%</div>
+      <div class="index-pts">-181.38pt</div>
+      <div class="badge neg">장중 4월 이후 최저</div>
+    </div>
   </div>
+
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
-    <div class="issue-item"><div class="issue-icon">🧨</div><div><div class="issue-title">엔비디아 리더십 공백 충격 지속</div><div class="issue-body">젠슨 황 CEO가 개인 스캔들 여파로 지난주 사임한 이후 엔비디아 시가총액이 약 7,350억 달러 증발했어. 이날도 -4.1%로 지수에 가장 큰 부담을 줬고, 화요일(현지) 장 마감 후 실적 발표에는 콜레트 크레스 임시 CEO가 나설 예정이야.</div></div></div>
-    <div class="issue-item"><div class="issue-icon">🏛️</div><div><div class="issue-title">AI 버블 우려 + 정책 리스크 확대</div><div class="issue-body">AI 주가 고평가 논란에 더해, 민주당의 중간선거 승리로 AI 데이터센터 신규 건설 규제 가능성이 거론되며 AI 인프라 종목 전반이 흔들렸어. 반도체 업종에 대한 미 정부의 감시도 강화되는 분위기야.</div></div></div>
-    <div class="issue-item"><div class="issue-icon">🔒</div><div><div class="issue-title">첨단 반도체 수출·원격접근 규제 신설</div><div class="issue-body">트럼프 행정부가 첨단 미국산 칩·서버에 대한 원격 접근을 제한하는 새 규정을 내놨어. 동남아(인도네시아·말레이시아·싱가포르·태국)와 브라질향 첨단 반도체에 라이선스를 요구하는 내용으로 알려져 반도체 매도를 키웠어.</div></div></div>
+    <div class="issue-item">
+      <div class="issue-icon">💥</div>
+      <div><div class="issue-title">소프트웨어 대학살 — "AI 에이전트가 구독 모델을 잡아먹는다"</div><div class="issue-body">AI 에이전트가 SaaS 구독 가격을 무너뜨릴 거란 공포가 번지며 세일즈포스(-9.4%), 인튜이트(-7.2%), 서비스나우(-6.5%)가 폭락했어. S&amp;P 500 11개 섹터가 전부 하락했고, 상승 종목은 74개에 불과할 정도로 매도가 광범위했어.</div></div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">🏦</div>
+      <div><div class="issue-title">금리 인상 공포 — 10년물 5.1%, 12월 인상 완전 반영</div><div class="issue-body">10년물 국채금리가 장중 5.15%까지 올랐다가 5.10% 선으로 마감했어. CME FedWatch 기준 12월 금리 인상이 사실상 확정 반영됐고, 세인트루이스 연은 무살렘 총재는 2027년 봄 전까지 여러 차례 인상을 언급했어. 금융주도 -1.9%로 동반 약세.</div></div>
+    </div>
+    <div class="issue-item">
+      <div class="issue-icon">🟢</div>
+      <div><div class="issue-title">장 마감 후 엔비디아 실적 서프라이즈</div><div class="issue-body">엔비디아가 매출 1,158억 달러(+103%)로 기대를 넘고 다음 분기 가이던스 1,300억 달러를 제시해 시간외 최대 약 +4% 올랐어. 젠슨 황 사임 이후 첫 실적(임시 CEO 콜레트 크레스)이라 AI 심리 반전 여부가 오늘 장의 핵심이야. 장중엔 NSA 기밀망 장애 보도로 급락했다가 사이버공격 증거 없다는 소식에 일부 회복했어.</div></div>
+    </div>
   </div>
+
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
-    <div class="stock-card"><div class="stock-ticker">NVDA · AMD · AVGO</div><div class="stock-name">AI 반도체 동반 약세</div><div class="stock-desc">엔비디아 -4.1%, AMD -5.6%, 브로드컴 -3.9%(2일 연속 하락). 엔비디아 악재의 반사이익 기대로 앞서 올랐던 경쟁 칩주들도 함께 밀렸어. 인텔도 약 -7%로 보도됨(확인 필요).</div></div>
-    <div class="stock-card"><div class="stock-ticker">CRWV · GEV</div><div class="stock-name">AI 인프라: 코어위브 / GE 버노바</div><div class="stock-desc">엔비디아 칩을 빌려주는 코어위브 -6.1%, 데이터센터 전력 공급 수혜주 GE 버노바 -4.9%. 데이터센터 건설 규제 우려가 직격탄이 됐어.</div></div>
-    <div class="stock-card"><div class="stock-ticker">SMMT</div><div class="stock-name">서밋 테라퓨틱스</div><div class="stock-desc">FDA가 폐암 치료제 신청을 "승인할 수 없다"는 입장을 밝히며 -16.5% 급락.</div></div>
-    <div class="stock-card"><div class="stock-ticker">TSN</div><div class="stock-name">타이슨 푸드</div><div class="stock-desc">이익이 예상치를 웃돌며 +8.7%. 소고기 판매 감소로 매출은 다소 부진했지만 하락장 속 방어주 역할을 했어.</div></div>
+    <div class="stock-card"><div class="stock-ticker">NVDA</div><div class="stock-name">엔비디아</div><div class="stock-desc">정규장 -0.4%(장중 -3.7%) 후 실적 발표로 시간외 반등. 지배구조 리스크로 시총 약 7,350억 달러가 증발한 상태라 실적이 신뢰 회복의 첫 시험대야.</div></div>
+    <div class="stock-card"><div class="stock-ticker">CRM · INTU · NOW</div><div class="stock-name">소프트웨어 섹터</div><div class="stock-desc">세일즈포스 -9.4%는 2024년 5월 이후 최대 낙폭. 소프트웨어 ETF -3.3%, 오라클 -3.4%, 마이크로소프트 -2.3%로 AI 수혜주가 오히려 AI 피해주로 재평가되는 중이야.</div></div>
+    <div class="stock-card"><div class="stock-ticker">HD</div><div class="stock-name">홈디포</div><div class="stock-desc">-2.4%. 동일점포 매출 전망 하향과 테드 데커 CEO 퇴임(후임 CFO 리처드 맥파일, 11/23) 발표. NAHB 건설업 심리도 2012년 4월 이후 최저로 주택 경기 경고등.</div></div>
+    <div class="stock-card"><div class="stock-ticker">NKE · UNH · UAL</div><div class="stock-name">개별 악재주</div><div class="stock-desc">나이키 -6.3%(신임 CFO의 내년 실적 경고), 유나이티드헬스 -5.4%, 유나이티드항공 -4%(시스템 장애+유가). JP모건도 젤(Zelle) 장애로 -2.4%.</div></div>
   </div>
-  <div class="notice">⚠️ 엔비디아 3분기 실적 발표: 미국 시간 11/17(화) 장 마감 후 (한국 시간 11/18 수요일 새벽). 임시 CEO 체제 첫 실적이라 변동성 확대 주의. VIX 22.91 (+18.7%).</div>
+
+  <div class="notice">⚠️ VIX 25.46(+11.1%)로 11/6 이후 최고. 금 -2.1%, 비트코인 선물 8월 중순 이후 최저 — 안전자산까지 같이 빠지는 디레버리징 신호야.</div>
+
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook"><p>
-    <strong>긍정 요인:</strong> S&amp;P 500 기업들의 3분기 EPS가 전년 대비 약 32% 증가 추세(FactSet)로 3분기 연속 25%+ 성장 중이야. 10년물 금리가 5.15% → 5.12%로 소폭 내려왔고 유가(WTI 84.9달러)도 하락해 금리 압박은 다소 완화됐어.<br/><br/>
-    <strong>주의 요인:</strong> 엔비디아 리더십 리스크, 데이터센터 규제·수출 통제라는 정책 변수, 지난주 예상보다 뜨거웠던 물가 지표, 이란 전쟁發 유가 변동성이 겹쳐 있어. VIX가 20을 넘어 공포 구간에 진입했고, 금리도 여전히 5%대 고공권이야.<br/><br/>
-    <strong>결론:</strong> 오늘 밤 엔비디아 실적이 이번 주의 분수령. 가이던스와 임시 경영진 메시지가 시장을 안심시키면 AI주 기술적 반등이 가능하지만, 실망 시 AI 인프라 전반의 추가 조정이 이어질 수 있어. 실적 확인 전까지는 보수적 접근이 합리적이야.
+    <strong>긍정 요인:</strong> 엔비디아 실적과 가이던스가 기대 이상이라 AI 하드웨어 쪽 투매는 일단 숨 돌릴 여지가 생겼어. S&amp;P 500 기업들의 분기 EPS 성장률이 약 32%(FactSet)로 펀더멘털 자체는 아직 탄탄하고, 10월 소매판매도 예상 부합(+0.2%).<br/><br/>
+    <strong>주의 요인:</strong> 10년물 5%대 고금리와 12월 금리 인상 기정사실화, 소프트웨어 비즈니스 모델에 대한 구조적 의심, 엔비디아 지배구조 리스크, 이란 전쟁 관련 유가 불확실성(브렌트 90달러대)이 동시에 겹쳐 있어. 오늘 밤 FOMC 의사록(미 동부 14시)과 타깃·로우스·TJX·팔로알토 실적이 다음 변수.<br/><br/>
+    <strong>결론:</strong> 엔비디아 덕에 단기 기술적 반등은 나올 수 있지만, 이번 하락의 본질은 반도체가 아니라 '고금리 + 소프트웨어 재평가'라서 한 번의 실적으로 해결되진 않아. VIX 25 위에선 추격 매수보다 의사록 이후 금리 방향을 확인하는 게 맞아.
   </p></div>
-  <div class="footer">데이터 출처: Yahoo Finance(US Stock Info), AP via BNN Bloomberg, PR Newswire, Motley Fool · 생성일시: 2026.11.17</div>
+
+  <div class="footer">데이터 출처: US Stock Info(Yahoo Finance 시세), AP/BNN Bloomberg, HNGN, TV News Check · 생성일시: 2026.11.18</div>
 </div>
 </body>
 </html>
