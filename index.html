@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>미국증시 브리핑 | 2026.11.19</title>
+  <title>미국증시 브리핑 | 2026.11.20</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; padding: 40px 20px; }
@@ -27,6 +27,10 @@
     .badge.record { background: rgba(63, 185, 80, 0.15); color: #3fb950; border-color: rgba(63, 185, 80, 0.3); }
     .badge.neg { background: rgba(248, 81, 73, 0.15); color: #f85149; border-color: rgba(248, 81, 73, 0.3); }
     .weekly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px; }
+    .weekly-card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
+    .weekly-label { font-size: 12px; color: #8b949e; }
+    .weekly-val { font-size: 16px; font-weight: 700; color: #3fb950; }
+    .weekly-val.down { color: #f85149; }
     .issue-list { margin-bottom: 32px; }
     .issue-item { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 18px 20px; margin-bottom: 10px; display: flex; gap: 14px; align-items: flex-start; }
     .issue-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
@@ -37,7 +41,7 @@
     .stock-ticker { font-size: 11px; font-weight: 700; color: #58a6ff; letter-spacing: 0.1em; margin-bottom: 4px; }
     .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; margin-bottom: 6px; }
     .stock-desc { font-size: 12px; color: #8b949e; line-height: 1.6; }
-    .notice { background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; line-height: 1.6; }
+    .notice { background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.3); border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; margin-bottom: 32px; font-size: 13px; color: #d29922; }
     .outlook { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px; margin-bottom: 32px; }
     .outlook p { font-size: 13px; color: #8b949e; line-height: 1.85; }
     .outlook strong { color: #e6edf3; }
@@ -48,70 +52,70 @@
 <body>
 <div class="container">
   <div class="header">
-    <div class="date">📊 US Market Briefing · 2026.11.19 (목) 기준 · 11/18(수) 미국장</div>
+    <div class="date">📊 US Market Briefing · 2026.11.20 (금) 기준</div>
     <h1>미국증시 일일 브리핑</h1>
-    <div class="subtitle">보험주 폭락에 다우 -561pt, 엔비디아 실적 후 하락에도 AMD·브로드컴 반등으로 나스닥은 상승 — 앤트로픽 IPO 앞두고 혼조</div>
+    <div class="subtitle">앤트로픽 상장일에 3대 지수 2%대 급락 — 다우 1,100pt 빠지며 5만선 붕괴, S&amp;P 6일 연속 하락</div>
   </div>
 
   <div class="section-title">지수 현황</div>
   <div class="index-grid">
     <div class="index-card down">
       <div class="index-name">DOW JONES</div>
-      <div class="index-value">50,198.17</div>
-      <div class="index-change down">▼ -1.11%</div>
-      <div class="index-pts">-561.25pt</div>
-      <div class="badge neg">헬스케어 보험주 급락</div>
+      <div class="index-value">49,097.06</div>
+      <div class="index-change down">▼ -2.19%</div>
+      <div class="index-pts">-1,101.11pt</div>
+      <div class="badge neg">50,000선 붕괴</div>
     </div>
     <div class="index-card down">
       <div class="index-name">S&amp;P 500</div>
-      <div class="index-value">7,323.63</div>
-      <div class="index-change down">▼ -0.23%</div>
-      <div class="index-pts">-16.90pt</div>
-      <div class="badge neg">5거래일 연속 하락</div>
+      <div class="index-value">7,175.83</div>
+      <div class="index-change down">▼ -2.02%</div>
+      <div class="index-pts">-147.80pt</div>
+      <div class="badge neg">6거래일 연속 하락</div>
     </div>
-    <div class="index-card">
+    <div class="index-card down">
       <div class="index-name">NASDAQ</div>
-      <div class="index-value">24,429.88</div>
-      <div class="index-change">▲ +0.42%</div>
-      <div class="index-pts">+101.50pt</div>
-      <div class="badge">반도체 순환매</div>
+      <div class="index-value">23,879.20</div>
+      <div class="index-change down">▼ -2.25%</div>
+      <div class="index-pts">-550.69pt</div>
+      <div class="badge neg">장중 +2% → 반전</div>
     </div>
   </div>
 
   <div class="section-title">주요 이슈</div>
   <div class="issue-list">
     <div class="issue-item">
-      <div class="issue-icon">🧠</div>
-      <div><div class="issue-title">엔비디아, 역대급 실적에도 -2.89% — 돈은 AMD·브로드컴으로</div><div class="issue-body">3분기 매출 1,158억 달러(+103% YoY), 다음 분기 가이던스 약 1,300억 달러로 숫자는 압도적이었지만 주가는 장전 +2.7%에서 반전해 150.96달러로 마감했어. 중국 호퍼 출하 중단과 향후 중국 데이터센터 매출 0 가정이 부담으로 작용. 반면 AMD +5.31%, 브로드컴 +3.6%로 AI 반도체 내부 순환매가 나스닥을 받쳤어.</div></div>
+      <div class="issue-icon">🚀</div>
+      <div><div class="issue-title">앤트로픽(ANT) 나스닥 상장 — 사상 최대 IPO</div><div class="issue-body">공모가 83달러로 약 813억 달러를 조달한 역대 최대 규모 IPO. 첫 거래가 111.50달러(+34%)로 출발했지만 장중 밀리며 97.17달러(+17.07%)로 마감했고, 시간외에선 92달러대로 더 내려갔어. 개인 투자자들이 기존 기술주(특히 AMD)를 팔아 ANT를 사는 자금 이동이 지수 하락을 키웠다는 분석이 나왔어.</div></div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🏥</div>
-      <div><div class="issue-title">CMS 메디케어 어드밴티지 감사 규칙 — 보험주 이틀째 폭락</div><div class="issue-body">CMS가 메디케어 어드밴티지 플랜의 감사 기반 환수를 확대하는 규칙을 제안하면서(2027~2036년 약 902억 달러 환수 추정) 휴매나 -12.98%, 유나이티드헬스 -10.21%, 엘레번스 -7.63%, 센틴 -7.03%. 다우 구성 종목인 유나이티드헬스가 지수 하락을 주도했고, 셰브론·캐터필러도 발목을 잡았어.</div></div>
+      <div class="issue-icon">📉</div>
+      <div><div class="issue-title">장중 상승분 반납 후 전면 매도 — 11개 섹터 모두 하락</div><div class="issue-body">나스닥이 장 초반 +2%까지 올랐다가 오후 내내 밀렸어. S&amp;P 500 종목 중 하락 464개, 상승 37개로 사실상 전면 매도였고 다우 30종목 중 1개만 올랐어. AI 거품·규제 우려(민주당 주도 의회 출범, 대중 칩 접근 규제 강화)에 AMD 공매도 보고서까지 겹쳤어.</div></div>
     </div>
     <div class="issue-item">
-      <div class="issue-icon">🦅</div>
-      <div><div class="issue-title">10월 FOMC 의사록 '매파' — 12월 50bp 인상론까지</div><div class="issue-body">의사록에서 거의 모든 위원이 추가 인상이 적절할 것으로 봤고, 일부는 인플레이션이 실망스러우면 25bp 초과 인상도 고려 가능하다고 언급. 월러 이사는 12월 8~9일 회의에서 50bp 인상 검토를 거론했어. 다만 10년물 금리는 5.07%로 소폭 하락, VIX는 24.5 수준으로 진정.</div></div>
+      <div class="issue-icon">🏦</div>
+      <div><div class="issue-title">12월 FOMC 금리 '인상' 베팅 90%대 — 달러 강세, 금 급락</div><div class="issue-body">CME FedWatch 기준 12월 9일 25bp 인상 확률이 96%대로 반영돼 있어. 10년물 금리는 5.05% 수준에서 소폭 내렸지만 달러인덱스는 19개월 고점 부근이고, 금 선물은 약 4% 급락했어. 필라델피아 연은 제조업지수는 6.3으로 6개월 최저까지 떨어졌어.</div></div>
     </div>
   </div>
 
   <div class="section-title">주목 종목 / 섹터</div>
   <div class="stock-grid">
-    <div class="stock-card"><div class="stock-ticker">ANT</div><div class="stock-name">Anthropic (IPO)</div><div class="stock-desc">나스닥 상장, 11/19(목) 첫 거래 예정. 공모가는 매체별로 엇갈림(SEC 수수료 표 기준 주당 83달러, 희망밴드 70~78달러 상단 초과 관측) — 최종 공모가 확인 필요. AI 트레이드의 체온계가 될 이벤트.</div></div>
-    <div class="stock-card"><div class="stock-ticker">TGT · TJX</div><div class="stock-name">타깃 / TJX — 리테일 실적 호조</div><div class="stock-desc">타깃 +4.01%(동일점 매출 +5.6%, 연간 매출 전망 상향, 단 EPS의 약 1/5이 관세 환급 효과). TJX +8.05%(동일점 매출 +4%). 소비 체력은 아직 버티는 중.</div></div>
-    <div class="stock-card"><div class="stock-ticker">PANW</div><div class="stock-name">팔로알토 네트웍스</div><div class="stock-desc">FY2027 매출 전망 상향(145.2억~145.7억 달러)과 45억 달러 규모 Applied Compute 주식 인수 발표로 약 +9.9%. 사이버보안이 AI 인프라 다음 수혜처로 부각.</div></div>
-    <div class="stock-card"><div class="stock-ticker">XLE · CVX</div><div class="stock-name">에너지 섹터</div><div class="stock-desc">WTI가 장중 4% 넘게 급락(82달러대)하며 에너지가 S&amp;P 섹터 중 최약세(장중 약 -3%). 셰브론 하락이 다우에도 부담.</div></div>
+    <div class="stock-card"><div class="stock-ticker">NVDA</div><div class="stock-name">엔비디아 -3.30%</div><div class="stock-desc">3분기 매출 1,158억 달러(+103%)와 강한 가이던스에도 145.98달러로 마감. 장 초반 +4.7%에서 반전했고, 젠슨 황 CEO 사임(11/12) 이후 리더십 불확실성이 계속 부담이야.</div></div>
+    <div class="stock-card"><div class="stock-ticker">AMD</div><div class="stock-name">AMD -7.72%</div><div class="stock-desc">헌터브룩이 중개업체를 통한 중국 노출 의혹으로 공매도 포지션을 공개하면서 489.19달러로 급락. ANT 매수 자금 마련용 매도의 1순위 타깃이었다는 분석도 있어.</div></div>
+    <div class="stock-card"><div class="stock-ticker">GOOGL · AMZN</div><div class="stock-name">알파벳 -3.46% / 아마존 -3.87%</div><div class="stock-desc">둘 다 앤트로픽 대주주인데도 동반 하락. 상장으로 지분 가치가 확정됐지만 '재료 소멸' 매도가 우세했어. 메타 -3.3%, 테슬라 -2.4% 등 매그니피센트7 전원 하락.</div></div>
+    <div class="stock-card"><div class="stock-ticker">PDD · WSM · INTU</div><div class="stock-name">실적 희비</div><div class="stock-desc">PDD는 EPS 서프라이즈로 +11.04%, 윌리엄스소노마는 매출 미달로 -15.16%. 인튜이트는 가이던스 실망에 시간외 약 -10%. 월마트는 실적 상향에도 -1.04%.</div></div>
   </div>
 
-  <div class="notice">⚠️ S&amp;P 500 5거래일 연속 하락(6월 이후 최장) · 미 10년물 5%대 고착 · 다우-나스닥 극단적 디커플링. 앤트로픽 공모가는 소스 간 불일치로 확인 필요.</div>
+  <div class="notice">⚠️ VIX 28.44(+15.8%)로 공포 구간 진입. ANT는 시간외 -4.7%로 상장 이틀째 변동성 주의 · 오늘(금) 월러·쿡 연준 이사 발언, 미시간대 소비자심리 확정치 발표</div>
 
   <div class="section-title">단기 시장 시각</div>
   <div class="outlook"><p>
-    <strong>긍정 요인:</strong> 엔비디아 가이던스와 FY2028 성장 전망 상향(약 75%)은 AI 수요가 꺾이지 않았다는 증거고, 수급이 AMD·브로드컴·사이버보안으로 넓어지는 건 건강한 신호야. 타깃·TJX가 보여준 소비 체력, 금리·VIX의 소폭 진정도 받침목.<br/><br/>
-    <strong>주의 요인:</strong> 연준이 인하가 아니라 '인상' 사이클을 논의 중이라는 게 핵심 리스크. 10년물 5% 위에서 밸류에이션 부담이 크고, CMS 규칙처럼 정책 리스크가 섹터 단위로 터지는 중. 앤트로픽 초대형 IPO가 기존 AI 대형주의 수급을 빨아들일 가능성도 체크해야 해.<br/><br/>
-    <strong>결론:</strong> 지수보다 섹터 장세. 단기 방향은 오늘 밤 앤트로픽 첫 거래 성적과 월마트 실적, 그리고 12월 FOMC 인상 폭 기대치가 결정할 것 — 변동성 높은 구간이니 추격 매수보다는 관망이 유리해 보여.
+    <strong>긍정 요인:</strong> 엔비디아 실적과 가이던스 자체는 여전히 강하고, 국채 금리는 소폭 하락했어. 이번 하락의 일부는 초대형 IPO로 인한 일시적 자금 이동이라 수급이 정리되면 되돌림 여지가 있어.<br/><br/>
+    <strong>주의 요인:</strong> S&amp;P 6일 연속 하락, VIX 28대, 12월 금리 인상 기정사실화, 강달러가 동시에 겹쳤어. AI 규제·대중 칩 리스크와 엔비디아 리더십 공백, 호르무즈 등 지정학 변수도 살아 있어.<br/><br/>
+    <strong>결론:</strong> 단순 조정보다는 'AI 랠리 피로 + 긴축 재개'가 만나는 구간이야. 오늘 연준 인사 발언과 ANT 둘째 날 흐름이 반등 여부를 가를 가능성이 커서, 추격 매수보다는 변동성 확인이 먼저야.
   </p></div>
 
-  <div class="footer">데이터 출처: Yahoo Finance(시장 개요), TradingKey, Vista Partners, StockTitan · 생성일시: 2026.11.19</div>
+  <div class="footer">데이터 출처: US Stock Info(Yahoo Finance), Yahoo Finance Live, The Motley Fool, CappNotes · 생성일시: 2026.11.20</div>
 </div>
 </body>
 </html>
